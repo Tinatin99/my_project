@@ -1,0 +1,299 @@
+ /* @media(max-width:790px){
+    main.wrapper{
+        background-color: beige;
+    }
+    main.wrapper{
+        flex-direction: column;
+        align-items: center;
+}
+}
+@media(max-width:400px){
+    main.wrapper{
+        background-color: palegreen;
+    }
+   
+} */
+
+
+
+
+/* flex-direction: colum;  სვეტად ალაგებს
+align-items: center; მუშაობს მხოლოდ ესენი ერთად. მობილურის რეზოლუციაზე */ 
+
+
+
+
+   @media(max-width:720px){
+    
+    .burger{
+        display: block;
+    }
+    .navigation{
+        display: none;    }
+    
+}
+
+
+
+
+
+
+
+
+/* 27.11.2024 
+
+  @media(max-width:650px){
+    .wrapper{
+        background-color: blue;
+          flex-wrap: wrap;
+        justify-content: center;
+    }         
+
+     ელემენტს მაშინ ჩამოაგდებს, როცა თავად ვერ ჩაეტევა. არ ემორჩილება რასაც გავუწერთ.
+
+
+      flex-wrap: wrap;
+        justify-content: center; ესენი ერთად მუშაობენ
+
+
+
+
+        მწკვრივების დაშორება შეიძლება gap
+ 
+     .box1{
+        width: 60%;
+    }
+    .box2{
+        width: 30%;
+        justify-content:space-between
+    }
+    .box3{
+        width: 10%;
+        justify-content: space-between;
+    }
+    } 
+
+
+    პატარა რეზოლუციაზეც შეგვიძლია გავწეროთ სხვა პარამეტრები
+
+  @media(max-width:350px){
+    .wrapper{
+        background-color: blue;
+          flex-wrap: wrap;
+        justify-content: center;
+    }  
+    .box1{
+        width: 40%;
+        
+    }
+    .box2{
+        width: 40%;
+        justify-content:space-between
+    }
+    .box3{
+        width: 20%;
+        justify-content: space-between;
+
+    } */
+
+
+  /* ჩასამატებელიააააააააა */
+
+
+ /* @media(max-width:350px){
+    .wrapper{
+        background-color: blue;
+         flex-wrap: wrap;
+         justify-content: center;
+
+         
+  
+    }  
+    .box:nth-child(1){
+        width: 90%;
+    }
+    .box{
+        width: 40%;
+       
+    }
+
+  }  */
+
+
+  /* 04,12,2024
+
+  იმ რეზოლუციაზე რაზეც ბურგერი ჩნდება, ნავიგაციიას დამალვა უნდა გავუწეროთ  */
+
+
+  /* @media(max-width:650px){
+    .container_box{
+        background-color: azure;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+      
+    } 
+       .box1:nth-child(1){
+        width: 90%;
+        background-color: rgb(0, 255, 242);
+    }
+    .box2{
+        width:80%;  
+        background-color: rgb(192, 255, 236);  
+
+    }
+    .box3{
+        width: 30%;  
+        background-color: rgb(230, 192, 255);  
+
+    }
+    .box4{
+        width: 30%;  
+        background-color: rgb(255, 192, 192);  
+
+    }
+    .burger{
+           display: block;
+        }
+    .navigation{
+            display: none;  
+        }   
+      }     */
+      
+      /* @media (max-width: 768px) {
+        .scientists {
+            grid-template-columns: 1fr;
+        }
+      } */
+
+
+      /* @media (max-width: 600px) {
+        .phisic-card {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+/*
+    მეორე გვერდის რესპონსივი, ფიზიკოსები */
+    /* მობილური ვერსია */
+
+
+@media (max-width: 768px) {
+    .bg_image1{
+        grid-template-columns: 1fr;
+    }
+  }
+
+
+  /* ფიზიკოსები 
+  მობილურისთვის 2x2 განლაგება
+პლანშეტისთვის 3x3 განლაგება
+მშვენივრად ადაპტირდება სხვადასხვა ეკრანებზე */
+
+
+  /* @media (max-width: 1024px) {
+    .physicists__grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .physicists__grid {
+        grid-template-columns: repeat(1, 1fr); /
+    }
+} */
+
+
+/* მთავარი გვერდის რესფონსივი ყუთების */
+
+/* @media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .container__box {
+        flex: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .test-card {
+        width: 100%;
+    }
+} */
+
+
+
+/* ფიზიკოსების   გვერდი 
+ რესპონსიული სტილები 
+ სრულად*/
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav_li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        width: 100%;
+    }
+
+    .navigation.active {
+        display: block;
+    }
+
+    .bg_image2 {
+        height: 200px;
+    }
+}
+/* მედია მოთხოვნები (რესპონსიულობა)
+ფიზიკოსების ბიოგრაფიები ფოტოებით */
+
+
+
+@media (max-width: 768px) {
+    .scientists__grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .scientists__title {
+        font-size: 1.8em;
+    }
+
+    .main__section.intro {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .scientists__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .scientists__title {
+        font-size: 1.5em;
+    }
+
+    .main__section.intro {
+        font-size: 1em;
+    }
+}
+
+
+
+
