@@ -3,9 +3,9 @@
 
 
 
- /* body{
+ body{
   background-color: blanchedalmond;
- } */
+ }
 
 
 
@@ -13,8 +13,8 @@ header{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    background-color: rgb(192, 255, 195);
-    background-color:#f4f4f4;    
+    background-color: rgb(235, 192, 255);
+    /* background-color:#f4f4f4;     */
     font-size: 25x;
     color:black;
     position: fixed;
@@ -25,6 +25,31 @@ header{
     z-index: 1;
  }
 
+/* header-ის hoveri */
+ /* header - ს დაჰოვერება გავუკეთოთ, კურსორის მიტანისას ცვლილება, a ანქორ ტეგი იქნება რელატივი, ხოლო  ბიფორი და აფტერი აბსოლუტი
+სწორია*/
+/* ტექსტს ხაზები რომ მოვაშოროთ უნდა გავწეროთ text- decoration:nane; */
+
+
+a{
+  position: relative;
+  }
+    a::after{
+      content: "";
+      height: 3px;
+      width: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color:purple ;
+      display: block;
+      /* transition: width 2s linear 1s; */
+    }
+  
+    a:hover::after{
+      width: 100%;
+    }
+  
 
 
  .logo_image{
@@ -267,7 +292,7 @@ img{
 } 
 
 .bg_image3{
-  background-image:url('https://www.davjalandhar.com/wp-content/uploads/2023/05/physics.jpg');
+  background-image:url('https://charlius.com/wp-content/uploads/2022/04/cropped-mwskyglow_moore_2500.jpg');
   height:300px;
   width: 80%;  
   margin: 0 auto;
@@ -578,6 +603,8 @@ css psevdo-elements     ფსევდო ელემენტები
 
 /* 09.12.2024 */
 
+/* გადავამოწმო სისწორე     ????????????????????????????????????? */
+
 /* მარქაფ ვალიდატორი
 შევამოწმოთ ვალიდატორში გაწერილი კოდები
 url(https://validator.w3.org/) */
@@ -848,7 +875,7 @@ h2{
 }
 #intro{
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 100px;
   border-radius: 10px;
 }
 
@@ -938,3 +965,34 @@ h2{
 }
 
 
+/* 11.12.2024
+ფონტები font
+აბსოლიტური მისამართი ონლაინია cdn link  ვსვამთ head ტეგში ან da @import-ით  css-ში ვაკოპირებთ, რელატიური კი ლოკალური ანუ ხელით გავწერთ. web.fonts.ge online sdn  ცავსვათ სტაილის შემდეგ, რესეთამდე.  რომელ ტექსტს ან პარაგრაფს გავუწერთ ისე წაგვიკითხავს, ანუ გაისტილება ასე.*/
+/*xeliT dayeneba unda CamovtvirToT */
+
+
+
+
+
+
+
+/* transition linear, ერთი და იგივე სიჩქარით დაუბრუნდება პოზიციას
+transition ease სწრაფად იწყებს ბოლოშინელდება
+transition ease-in სწრაფად ბოლოში ნელდება
+transition ease out სწრაფად და შენელდა
+transition easein out  ნელა, სწრაფად და ნელდება */
+
+
+
+/* სიმბოლოების შემოტანა 
+საავტორო უფლების დაცვა 
+some other entities supported by html  
+გამზადებული კოდი კოპირებით მოგვაქვს სექციაში
+ბლოკურია და ინლაინ ბლოკი გავუწეროთ ზომა არ ეცვლება არჩვეანი არ გავქვს ეს როგორც აიცონი ისე გადმოგვაქვს*/
+
+/* background image shorthand
+მაქვს ფერი, სურათი, რეპეატ განმეორება და პოზიცია, ცალკ -ცალკე გაწერილი. შეგვიძლია გავაკეთოთ ერთ ხაზზე გაწერით*/
+/* body{
+  background: ფერი სურათი განმეორება რიფიტ ან ნო-რიფით პოზიცია მაგალითათ რაიგთ ტოპ;
+
+} */
