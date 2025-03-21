@@ -23,7 +23,7 @@ align-items: center; მუშაობს მხოლოდ ესენი �
 
 
 
-   @media(max-width:720px){
+   @media(max-width:420px){
     
     .burger{
         display: block;
