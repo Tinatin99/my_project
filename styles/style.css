@@ -1,10 +1,13 @@
 /* @import url("//cdn.web-fonts.ge/fonts/alk-life/css/alk-life.min.css"); */
-/* ფონტის ლინკი */
+/* ფონტის ლინკი ქართული */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+/* ფონტის ლინკი ლათინური */
 
 
  body{
   background-color: blanchedalmond;
+  /* font-family: Arial, Helvetica, sans-serif; */
  }
 
 
@@ -108,6 +111,9 @@ a{
 
   .burger i{
   font-size: 24px;
+  color: #000000;
+  position: relative;
+  display: none;
 }
    
    .nav_li{
@@ -123,7 +129,10 @@ a{
 
    footer{
     margin-top: 100px;
+    width: 100%;
+    height: 200px;
     border-radius: 45px;
+    /* background-color: rgb(86, 48, 255); */
   }
   
    .Newtones_cradle{
@@ -132,17 +141,18 @@ a{
      
    }
    
-   .maps_if{
-      
+   .maps_if{      
       margin-top: 5px;
       margin-bottom: 5px;
       margin-left: 5px;
+      
    }
 
    iframe{
     margin-top: 80px;
     margin-left: 10px;
     margin-bottom: 45px; 
+    
  }
 
 
@@ -150,6 +160,8 @@ a{
  .contact{
     display: block;
     margin-bottom: 15px;
+
+    color: rgb(86, 48, 225);
  }
  
  .chat_icon{
@@ -168,7 +180,7 @@ a{
 /* index.html */
 /* about.html */
 
-.bg_image1{
+/* .bg_image1{
   background-image:url('https://upload.wikimedia.org/wikipedia/ka/7/7e/Portal_Physics_Banner_ka.png');
   height:220px;
   width: 80%; 
@@ -180,7 +192,7 @@ a{
   margin-top: 84px;
   position: relative;
   padding: 12px;  
-}
+} */
 /* contact.html */
 
 /* .bg_image2{
@@ -208,18 +220,22 @@ a{
   text-align:justify;
   padding: 20px;
 }
+#physteria{
+  display: flex;
+
+}
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
-  box-shadow: 5px 10px;
+  gap: 5px;
+  padding: 5px;
+  box-shadow: 15px 10px;
 }
 
 .container__box {
-  display: flex;
+  display: flex;  
   flex-direction:column;
   gap: 15px;
  }
@@ -229,7 +245,7 @@ a{
   }
 
 .container__box--secondary {
-  flex: 1 1 35%;
+  flex: 1 1 45%;
 }
 
 .container__item {
@@ -305,19 +321,19 @@ img{
   padding: 12px;  
   margin-bottom: 35px;
 }
-/* .bg_image4{
-  background-image:url('https://education.geolab.edu.ge/wp-content/uploads/2022/03/96081114_1687490364723384_331677526583672832_n-300x150.png');
-  height:300px;
-  width: 80%;
+.bg_image4{
+  background-image:url('https://scontent.ftbs7-1.fna.fbcdn.net/v/t39.30808-6/214532542_4029671400471598_6678748425135507492_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeH5NBh64l0gcdm6SoiqphZ7uqmRqmdC9Vm6qZGqZ0L1WbvhfOEg3TttnST35Mgynf_HlL9q56Ipww0g6e2J4lCu&_nc_ohc=J7R4QM-qky8Q7kNvgGpyd4u&_nc_oc=Adlpjgaf4_Zy_R6r8pyIR7O_Syp_sQPjJdRH8PucOHuky53jmMkSJ2mIGYugKcnZkr4&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=Qj38I5bKUWsJ8rLv6tL4wg&oh=00_AYGnWleGUGzU24PvskFhTnUtFgf8BU6NSVj4AdGYI5qPVw&oe=67E34BD5');
+  height:500px;
+  width: 90%;
   margin: 0 auto;
   background-color: rgb(218, 255, 196);
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover; 
-  margin-top: 84px;
+  margin-top: 40px;
   position: relative;
   padding: 12px;  
-} */
+}
 
 
 /* ტესტები */
@@ -363,6 +379,9 @@ img{
 after ელემენტის შემდეგ  */
 /* ?????????????????????????????????????????? */
 
+
+
+
  /* h2::before{
   content:url(/images/smyle.jpg);
   width:20px;
@@ -379,12 +398,16 @@ h2::before{
   color: rgb(183, 0, 255);
   font-size: 25px;
 }
-.test::after{
+/* .test::after{
   content:url(/images/smiley.png);
   display: inline-block;
   width: 30px;
-} 
-
+}  */
+h3::after{
+  content:url();
+  color: rgb(183, 0, 255);
+  font-size: 25px;
+}
 
 
 
@@ -1020,3 +1043,67 @@ some other entities supported by html
 .scientists--intro{
   background-color: antiquewhite;
 }
+
+.lat-abs{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+.lat-rel{
+  font-family: 'Playfair Display';
+}
+.lat-rel1{
+  font-family: 'Roboto Condensed';
+}
+
+
+/* კონტაქტების გვერდი Radio Buttons
+სარეგისტრაციო ფორმა ატრიბუტები */
+
+#survey{ 
+  display: flex;
+  flex-wrap: wrap;
+  width: 35%; 
+  margin-top: 20px;
+  background-color: #f4f4f4;
+  color: #000000;
+  border: 5px solid rgb(122, 112, 216);
+  border-radius: 15px;
+  gap: 25px;
+  margin-left: 45PX;
+  padding: 15PX;
+  box-shadow:20px 20px 15px rgb(86, 48, 225);
+}
+/* .input{
+  color: #000000;
+  
+} */
+.geo-abs{
+  font-family: 'BPG Irubaqidze';
+}
+/* .input_element:focus{
+  outline: none;
+
+} */
+
+
+/* მოეხსნას ხაზები */
+ input{
+  outline: none;   
+ }
+
+ /* ქვედა ხაზი ჰქონდეს მარტო */
+
+
+ .input_element{
+ border: none;
+ border-bottom:1px dotted #6200ea;
+ 
+ }
+
+ .box_input{
+  margin-top: 35px;
+  margin-bottom: 15px;
+ }
+
+
+ 

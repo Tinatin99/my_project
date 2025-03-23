@@ -7,3 +7,30 @@
          url('../fonts/bpg-irubaqidze-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/bpg-irubaqidze-webfont.svg#bpg_irubaqidzeregular') format('svg'); /* Legacy iOS */
 }
+/* google.com-ში  transfonter ვკრიბავთ და პირველივეში შევდივართ ჯერ ვაგენერირებთ და შემდეგ  გავხსნით დაგენერირებულს ვირჩევთ რაც გვინდა და გახსნის შემდეგ ყველას მოვნიშნავთ და converts.
+ჩამოტვირთულიდან stylesheet_ს ვაკოპირებთ და სტაილ.სსსში ვსვამთ, ხოლო ფოლდერიდან დანარჩენს ვაკოპირებთ და ფონტს ფოლდერში ვსვამთ.  */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-BlackItalic.eot');
+    src: url('PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+        url('PlayfairDisplay-BlackItalic.woff') format('woff'),
+        url('PlayfairDisplay-BlackItalic.svg#PlayfairDisplay-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('RobotoCondensed-Black.eot');
+    src: url('RobotoCondensed-Black.eot?#iefix') format('embedded-opentype'),
+        url('RobotoCondensed-Black.woff2') format('woff2'),
+        url('RobotoCondensed-Black.woff') format('woff'),
+        url('RobotoCondensed-Black.ttf') format('truetype'),
+        url('RobotoCondensed-Black.svg#RobotoCondensed-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

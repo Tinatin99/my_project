@@ -125,7 +125,7 @@ align-items: center; მუშაობს მხოლოდ ესენი �
   იმ რეზოლუციაზე რაზეც ბურგერი ჩნდება, ნავიგაციიას დამალვა უნდა გავუწეროთ  */
 
 
-  /* @media(max-width:650px){
+  @media(max-width:650px){
     .container_box{
         background-color: azure;
         flex-wrap: wrap;
@@ -158,32 +158,27 @@ align-items: center; მუშაობს მხოლოდ ესენი �
     .navigation{
             display: none;  
         }   
-      }     */
+      }     
       
-      /* @media (max-width: 768px) {
+       @media (max-width: 768px) {
         .scientists {
             grid-template-columns: 1fr;
         }
-      } */
+      }
 
 
-      /* @media (max-width: 600px) {
+       @media (max-width: 600px) {
         .phisic-card {
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
     }
-/*
+
     მეორე გვერდის რესპონსივი, ფიზიკოსები */
     /* მობილური ვერსია */
 
 
-@media (max-width: 768px) {
-    .bg_image1{
-        grid-template-columns: 1fr;
-    }
-  }
 
 
   /* ფიზიკოსები 
@@ -192,7 +187,7 @@ align-items: center; მუშაობს მხოლოდ ესენი �
 მშვენივრად ადაპტირდება სხვადასხვა ეკრანებზე */
 
 
-  /* @media (max-width: 1024px) {
+  @media (max-width: 1024px) {
     .physicists__grid {
         grid-template-columns: repeat(2, 1fr); 
     }
@@ -202,12 +197,11 @@ align-items: center; მუშაობს მხოლოდ ესენი �
     .physicists__grid {
         grid-template-columns: repeat(1, 1fr); /
     }
-} */
+} 
 
 
 /* მთავარი გვერდის რესფონსივი ყუთების */
-
-/* @media (min-width: 768px) {
+ /* @media (min-width: 320px) {
     .container {
         flex-direction: row;
     }
@@ -229,7 +223,7 @@ align-items: center; მუშაობს მხოლოდ ესენი �
  რესპონსიული სტილები 
  სრულად*/
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -241,26 +235,21 @@ align-items: center; მუშაობს მხოლოდ ესენი �
     }
 
     .nav_li {
-        margin: 10px 0;
-    }
-
-    .burger {
+        margin: 30px 0;
+    } */
+     /* .burger {
         display: block;
     }
 
     .navigation {
         display: none;
-        width: 100%;
     }
 
-    .navigation.active {
+    .navigation.active{
         display: block;
-    }
+    }  
+}  */
 
-    .bg_image2 {
-        height: 200px;
-    }
-}
 /* მედია მოთხოვნები (რესპონსიულობა)
 ფიზიკოსების ბიოგრაფიები ფოტოებით */
 
