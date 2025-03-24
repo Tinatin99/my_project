@@ -284,5 +284,36 @@ align-items: center; მუშაობს მხოლოდ ესენი �
 }
 
 
+/* 18,03,2024 ჩვენს შესახებ გვერდის  რეგისტრაციის ფორმა */
+@media screen and (max-width: 480px) {
+    .survey2 {
+        flex-direction: column;
+    }
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+    input {
+        font-size: 14px;
+        padding: 6px;
+    }
+    input[type="submit"] {
+        padding: 8px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container5 {
+        flex-direction: column;
+    }
+    
+    form {
+        min-width: 100%;
+    }
+}
 
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
 

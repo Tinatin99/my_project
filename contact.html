@@ -53,7 +53,7 @@
 
   
 
-    <main class="mainphysics">
+    <main class="mainphysics1">
         <section>
           
             <div class="bg_image4">         
@@ -87,10 +87,29 @@
 <!-- 
 გასარკვევია -->
 
-<section  id="survey">   
+ <!-- <form action="/action_page.php">
+    <fieldset>
+        <legend>პერსონა:</legend>
+        <label for="fname"> სახელი:</label>
+        <input type="text" id="fname" name="fname">
+
+        <label for="lname">გვარი:</label>
+        <input type="text" id="lname" name="lname">
+
+        <label for="email">ელექტრონული ფოსტა:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="birthday">დაბადების თარიღი:</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <input type="submit" value="Submit">
+    </fieldset>
+</form> -->
+<section id="survey">
+   <!-- რეიდიო და ერთნაირი ატრიბუტი -->
     <div>        
          <h3><b>გამოკითხვა <b></h3> <br>
-         <p>გთხოვთ აირჩიოთ თქვენთვის საინტერესო თემა, რომელსაც ისურვებდით იხილოთ ამ გვერდზე :</p><br> <br>
+         <p>გთხოვთ, აირჩიოთ თქვენთვის საინტერესო თემა, რომელსაც ისურვებდით ამ გვერდზე! :</p><br> <br>
         <form>
          <input type="radio" class="input" id="anomalous events" name="fav_language" value="anomalous events">
          <label for="anomalous events">ანომალური მოვლენები</label><br><br>
@@ -103,38 +122,210 @@
          <input type="radio" class="input" id="Video lessons" name="fav_language" value="Video lessons">
          <label for="Video lessons">ვიდეო გაკვეთილები</label>
          </form> 
-         </div>   
+     </div>  
+</section> 
 
-    </section>
-    <section>
-        <form action="#">
+  
+
+
+
+    <!-- <section  id="survey1">  
+           <form action="#">
+            <fieldset>
+            <legend>დაინტერესებული პირი:</legend>
            <div class="box_input">
-            <label for="">first name</label>
+            <label for="">სახელი გვარი</label>
             <input type="text"class="input_element">
            </div>
 
            <div class="box_input">
-            <label for="">lest name</label>
+            <label for="">თარიღი</label>
+            <input type="datetime-local" class="input_element">
+           </div>
+
+           <div class="box_input">
+            <label for="">პაროლი</label>
+            <input type="text"   placeholder="****" class="input_element">
+           </div>
+
+           <div class="box_input">
+            <label for="">გაიმეორე <br> პაროლი</label>
             <input type="text" class="input_element">
            </div>
 
            <div class="box_input">
-            <label for="">password</label>
-            <input type="text" class="input_element">
+            <label for="">კომენტარი</label>
+            <br>
+            <textarea id="კომენტარი" name="კომენტარი" rows="7" cols="30"></textarea>
+            <input type="datetime" name="კომენტარი" class="input_element">
            </div>
+
+
+           
+           <input type="submit" class="input_element" name="" value="დააკლიკე">
         </form>
-    </section>
+    </fieldset>
 
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
 
+    </section> -->
+
+  
+     
+
+<section  id="survey2">  
+    <div>  
+        <h3>სარეგისტრაციო ფორმა</h3><br>
+    <form action="#"><br>
+        <div  class="box_input">
+        <table>
+            <tr>
+                <td>სახელი:</td>
+                <td><input type="text" class="input_element"  name="სახელი" placeholder="სახელი"></td>
+            </tr>
+            <tr> 
+                <td>გვარი:</td>
+                <td><input type="text" class="input_element" name="გვარი" placeholder="გვარი"></td>
+            </tr>
+            <tr>
+                <td>პაროლი:</td>
+                <td><input type="password" class="input_element" name="პაროლი" placeholder="პაროლი"></td>
+            </tr>
+            <tr>
+                <td>სქესი:</td>
+                <td> <input type="radio" class="input_element" name="სქესი" მდედრობითი>
+                    <input type="radio" class="input_element" name="სქესი" მამრობითი>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ელექტრონული ფოსტა:</td>
+                <td> <input type="mail" class="input_element" name="ელექტრონული ფოსტა" placeholder="ელექტრონული ფოსტა">
+                </td>
+            </tr>
+            <tr>
+                <td>პინ კოდი:</td>
+                <td> <input type="pin" class="input_element" name="პინ კოდი" placeholder="პინ კოდი" maxlength="4" size="4">
+                </td>
+            </tr>
+
+            <tr>
+                <td>მომხმარებლის სახელი:</td>
+                <td> <input type="username" class="input_element" name="მომხმარებლის სახელი" placeholder="მომხმარებლის სახელი">
+                </td>
+            </tr>
+
+            <tr>
+                <td>ტელეფონის ნომერი:</td>
+                <td>
+                    <select>
+                         <!-- სელფიე  -->
+                        <option>568</option>
+                        <option>571</option>
+                        <option>574</option>
+                        <option>592</option>
+                        <option>597</option>
+                        <option>579</option>
+                      <!-- მაგთი  -->
+                        <option>599</option>
+                        <option>595</option>
+                        <option>591</option>
+                        <option>551</option>
+                        <option>598</option>
+                        <option>596</option>
+                       <!-- ჯეოსელი  -->
+                        <option>577</option>
+                        <option>593</option>
+                        <option>514</option>
+                        <option>555</option>
+                        <option>557</option>
+                        <option>558</option>
+                    </select>  <br>               
+                <td> 
+                    <input type="phone" class="input_element" min="1" max="6" name="phone" placeholder="56895****">
+                </td>
+            </tr>
+
+            <tr>
+                <td> <input type="submit" class="input_element" name="" value="დააკლიკე">
+                </td>
+            </tr>
+        </table>
+      </div>
+    </form>
+ </section>
+ 
+ 
+<div class="container5">
+    <form action="#">
+        <fieldset>
+            <legend>პერსონა:</legend>
+            <label for="image">სურათი:</label>
+            <input type="image" id="image" name="image">
+
+            <label for="fname">სახელი:</label>
+            <input type="text" id="fname" name="fname">
+
+            <label for="lname">გვარი:</label>
+            <input type="text" id="lname" name="lname">
+
+            <label for="birthday">დაბადების თარიღი:</label>
+            <input type="date" id="birthday" name="birthday">
+
+            <label for="email">ელ. ფოსტა:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="file">ფაილი:</label>
+            <input type="file" id="file" name="file">
+
+            <label for="reset">განახლება:</label>
+            <input type="reset" id="reset" name="reset">
+
+            <label for="hidden">დამალვა:</label>
+            <input type="hidden" id="hidden" name="hidden">         
+
+            <input type="hidden" id="hidden" name="hidden">          
+            <input type="submit" value="დააკლიკე">
+
+
+            
+        </fieldset>
+    </form>
+
+
+    <form action="#">
+        <fieldset>
+            <legend>დაინტერესებული პირი:</legend>
+            <label>სახელი გვარი:</label>
+            <input type="text">
+
+            <label>თარიღი:</label>
+            <input type="datetime-local">
+
+            <label>პაროლი:</label>
+            <input type="password">
+
+            <label>გაიმეორე პაროლი:</label>
+            <input type="password">
+
+            <label>კომენტარი:</label>
+            <textarea rows="5"></textarea>
+
+            <label>ფერი:</label>
+            <input type="color">
+
+            <label>გვერდის შეფასება 10 ბალიანი სისტემით:</label>
+            <input type="number">
+                    
+            <input type="submit" value="დააკლიკე">
+            
+        </fieldset>
+    </form>
+</div>
 
    </main>
 
    <footer>
+
     <section class="sacont">
         <div><p class="geo-rel"> <b>საკონტაქტო ინფორმაცია</b></p></div>
     </section>

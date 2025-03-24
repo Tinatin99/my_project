@@ -153,3 +153,74 @@ const nav = document.querySelector('.navigation');
 burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
 });
+
+
+/* 18,03,2024 ჩვენს შესახებ გვერდის  რეგისტრაციის ფორმა */
+
+
+    document.querySelector("form").addEventListener("submit", function (event) {
+        let isValid = true;
+        let inputs = document.querySelectorAll("input[type='text'], input[type='email'], input[type='date']");
+
+        inputs.forEach(input => {
+            if (input.value.trim() === "") {
+                isValid = false;
+                input.style.border = "2px solid red";
+            } else {
+                input.style.border = "1px solid #ccc";
+            }
+        });
+
+        let email = document.getElementById("email");
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email.value)) {
+            isValid = false;
+            email.style.border = "2px solid red";
+        } else {
+            email.style.border = "1px solid #ccc";
+        }
+
+        if (!isValid) {
+            event.preventDefault(); // ფორმას არ უშვებს, სანამ ყველაფერი სწორად არ იქნება
+            alert("გთხოვთ, სწორად შეავსოთ ყველა ველი!");
+        }
+    });
+
+// 18,12,2024 კონტაქტები
+    // document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    //     event.preventDefault();
+    //     alert('ფორმა წარმატებით გაიგზავნა!');
+    // });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const button = document.getElementById("myButton");
+        
+        if (!button) return;
+        
+        function updateButtonState() {
+            const width = window.innerWidth;
+            
+            if (width > 1200) {
+                // Large screens
+                button.disabled = false;
+                button.textContent = "Desktop Mode";
+            } else if (width > 768) {
+                // Tablet
+                button.disabled = false;
+                button.textContent = "Tablet Mode";
+            } else if (width > 480) {
+                // Mobile
+                button.disabled = false;
+                button.textContent = "Mobile Mode";
+            } else {
+                // Extra small screens
+                button.disabled = false;
+                button.textContent = "Small Screen Mode";
+            }
+        }
+        
+        window.addEventListener("resize", updateButtonState);
+        updateButtonState(); // Initial call
+    });
+    
