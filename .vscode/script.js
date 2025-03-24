@@ -187,40 +187,39 @@ burger.addEventListener('click', () => {
     });
 
 // 18,12,2024 კონტაქტები
-    // document.getElementById('registrationForm').addEventListener('submit', function(event) {
-    //     event.preventDefault();
-    //     alert('ფორმა წარმატებით გაიგზავნა!');
-    // });
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('ფორმა წარმატებით გაიგზავნა!');
+    });
 
 
     document.addEventListener("DOMContentLoaded", function () {
-        const button = document.getElementById("myButton");
-        
-        if (!button) return;
-        
-        function updateButtonState() {
-            const width = window.innerWidth;
-            
-            if (width > 1200) {
-                // Large screens
-                button.disabled = false;
-                button.textContent = "Desktop Mode";
-            } else if (width > 768) {
-                // Tablet
-                button.disabled = false;
-                button.textContent = "Tablet Mode";
-            } else if (width > 480) {
-                // Mobile
-                button.disabled = false;
-                button.textContent = "Mobile Mode";
-            } else {
-                // Extra small screens
-                button.disabled = false;
-                button.textContent = "Small Screen Mode";
-            }
-        }
-        
-        window.addEventListener("resize", updateButtonState);
-        updateButtonState(); // Initial call
-    });
+    const button = document.getElementById("myButton");
     
+    if (!button) return;
+    
+    function updateButtonState() {
+        const width = window.innerWidth;
+        
+        if (width > 1200) {
+            // Large screens
+            button.disabled = false;
+            button.textContent = "Desktop Mode";
+        } else if (width > 768) {
+            // Tablet
+            button.disabled = false;
+            button.textContent = "Tablet Mode";
+        } else if (width > 480) {
+            // Mobile
+            button.disabled = false;
+            button.textContent = "Mobile Mode";
+        } else {
+            // Extra small screens
+            button.disabled = false;
+            button.textContent = "Small Screen Mode";
+        }
+    }
+    
+    window.addEventListener("resize", updateButtonState);
+    updateButtonState(); // Initial call
+});
