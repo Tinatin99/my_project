@@ -697,10 +697,12 @@ h2{
   margin: 0 auto;
   padding: 10px;
   border: 2px solid palegreen;
+  margin-top: 25px;
   border-radius: 15px;
   margin-right: 30px;
   margin-left: 30px;
   padding: 20px;
+  transform: rotate(3deg);
  }
 
 
@@ -903,16 +905,16 @@ h2{
   width: 60%;
   text-align: center;
   padding: 20px;
-  background-color: #6200ea;
-  color: white;
+  background-color: white;
+  color: black;
   font-size:30PX;
 }
 #intro{
   margin: 0 auto;
   margin-top: 90px;
   border-radius: 10px;
- /* background-color: #f8f9fa; */
- /* font-family:initial; */
+  background-color: #f8f9fa; 
+  font-family:initial;
 }
 
 
@@ -1135,19 +1137,19 @@ some other entities supported by html
   background: #b3e5fc;
   border-radius: 5px;
 } */
-input, button {
+/* input, button {
   display: block;
   width: 100%;
   margin-top: 10px;
   padding: 10px;
   border: none;
   border-radius: 5px;
-}
-button {
+} */
+/* button {
   background: #0288d1;
   color: white;
   cursor: pointer;
-}
+} */
 /* .input{
   color: #000000;
   
@@ -1334,11 +1336,20 @@ input[type="submit"]:hover {
   color: black;
 }
 
+input::placeholder{
+  color:gray;
+}
 
 input[type="reset"]:hover {
   background-color: white;
   color: black;
 }
+
+/* როცა მხ. ტექსტს მინდა მივწვდე */
+/* .input_text::placeholder{
+  color:gray;
+} */
+
 h3 {
   text-align: center;
   color:black;
@@ -1348,3 +1359,41 @@ h3 {
   display: flex;
 } 
 /*  რეგისტრაციის ფორმები დავასრულე */
+
+/* footer */
+#btn{
+  width: 5%;
+}
+
+.physicists{
+  background-color: white;
+}
+
+/* 23.12.2024 
+ცხრილები https://www.w3schools.com/html/html_tables.asp */
+
+
+/* div-ებზე ფორმის და სტილის მინიჭება. https://www.w3schools.com/cssref/css3_pr_transform.php */
+
+
+/* CSS-ის Global ცვლადები */
+/* HTML თავარი ფესვია, ანუ მთავრი ფესვია, მასში ცვლადის სახელს ვუთითებთ. სახელებს ჩვენ ვარქმევთ. შემოგვაქვს var( --primery-size) ცვლადი ან var( --primary-color)  */
+
+
+/* ან div-ს მივანიჭებ class="root_div */
+ /* :root{
+  --primary-color: pink;
+  --primery-size:16px;
+} 
+div{
+  color: var(--primery-size);
+  font-size: var(--primery-size);
+  
+  } 
+
+  .root_div{
+    color: var(--primery-size);
+    width: 300px;
+    height: 200px;
+    font-size: var(--primery-size);
+  } */
