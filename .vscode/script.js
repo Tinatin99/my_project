@@ -7,28 +7,27 @@ function openPDF() {
  }
 
 
+სლაიდი ფიზიკოსების გვერდზე
 
-// სლაიდი ფიზიკოსების გვერდზე
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
 
-// let currentSlide = 0;
-// const slides = document.querySelectorAll(".slide");
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[index].classList.add("active");
+}
 
-// function showSlide(index) {
-//   slides.forEach(slide => slide.classList.remove("active"));
-//   slides[index].classList.add("active");
-// }
+function prevSlide() {
+  currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+  showSlide(currentSlide);
+}
 
-// function prevSlide() {
-//   currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
-//   showSlide(currentSlide);
-// }
+function nextSlide() {
+  currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+  showSlide(currentSlide);
+}
 
-// function nextSlide() {
-//   currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
-//   showSlide(currentSlide);
-// }
-
-// showSlide(currentSlide);
+showSlide(currentSlide);
 
 
 
@@ -40,18 +39,47 @@ function openPDF() {
 
 
 
-// მთავარი გვერდის ყუთების ჯავასკრიპტი
+// სიახლეების გვერდის ყუთების ჯავასკრიპტი
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  const toggleText = document.querySelectorAll(".container__toggle");
+// document.addEventListener("DOMContentLoaded", function() {
+//   const toggleText = document.querySelectorAll(".container__toggle");
 
-  toggleText.forEach(button => {
-      button.addEventListener("click", function() {
-          const text = this.previousElementSibling;
-          text.classList.toggle("expanded");
-      });
-  });
+//   toggleText.forEach(button => {
+//       button.addEventListener("click", function() {
+//           const text = this.previousElementSibling;
+//           text.classList.toggle("expanded");
+//       });
+//   });
+// });
+document.addEventListener("DOMContentLoaded", () => {
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".slider__image");
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    document.querySelector(".slider__button--next").addEventListener("click", nextSlide);
+    document.querySelector(".slider__button--prev").addEventListener("click", prevSlide);
+    
+    // Auto-slide every 5 seconds
+    setInterval(nextSlide, 5000);
+
+    // Initial display
+    showSlide(currentIndex);
 });
 
 
@@ -122,26 +150,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
  //სლაიდერის ფუნქციონირება
 
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
+// let currentSlide = 0;
+// const slides = document.querySelectorAll('.slide');
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${(i - index) * 100}%)`;
-    });
-}
+// function showSlide(index) {
+//     slides.forEach((slide, i) => {
+//         slide.style.transform = `translateX(${(i - index) * 100}%)`;
+//     });
+// }
 
-function prevSlide() {
-    currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
-    showSlide(currentSlide);
-}
+// function prevSlide() {
+//     currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+//     showSlide(currentSlide);
+// }
 
-function nextSlide() {
-    currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
-    showSlide(currentSlide);
-}
+// function nextSlide() {
+//     currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+//     showSlide(currentSlide);
+// }
 
-showSlide(currentSlide);
+// showSlide(currentSlide);
 
  
 
@@ -223,3 +251,7 @@ burger.addEventListener('click', () => {
     window.addEventListener("resize", updateButtonState);
     updateButtonState(); // Initial call
 });
+
+
+// სლაიდი
+

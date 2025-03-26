@@ -200,10 +200,11 @@ align-items: center; მუშაობს მხოლოდ ესენი �
 } 
 
 
-/* მთავარი გვერდის რესფონსივი ყუთების */
- @media (min-width: 320px) {
+/* სიახლეების გვერდის რესფონსივი ყუთების */
+ /* @media (min-width: 320px) {
     .container {
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .container__box {
@@ -215,7 +216,7 @@ align-items: center; მუშაობს მხოლოდ ესენი �
     .test-card {
         width: 100%;
     }
-}
+} */
 
 
 

@@ -47,8 +47,10 @@
 <!-- რამდენად მნიშვნელოვანია ფიზიკის ცოდნა ადამიანის ცხოვრებაში? -->
 <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
 
+<link rel="stylesheet" href="styles/style.css">
 
-        <title>ფიზტერია</title>
+
+        <title>მთავარი / ფიზტერია</title>
 
 
         <!-- გადასახედი და დასაზუსტებელი -->
@@ -96,8 +98,8 @@ Autoprefixer არის PostCSS მოდული, რომელიც ა�
                 
                 <li class="nav_li"><a href="physicists.html" target="_blank"><strong>ფიზიკოსები</strong></a></li>
 
-
-                <li class="nav_li"><a href="naw.html" target="_blank"><strong>სიახლეები</strong></a></li>
+<!-- 
+                <li class="nav_li"><a href="naw.html" target="_blank"><strong>სიახლეები</strong></a></li> -->
 
                                 
                 <li class="nav_li"><a href="about.html" target="_blank"><strong>ჩვენს</strong> <br> <strong>შესახებს</strong></a></li>
@@ -115,7 +117,31 @@ Autoprefixer არის PostCSS მოდული, რომელიც ა�
     </header>
 
 
-    <main class="td">
+    <main id="home" class="home">
+
+
+        <section class="home1">
+      
+            <div id="slider" class="slider" >
+                <div class="slides" >
+                    <img  src="/images/Solvay_conference_1927.jpg" class="slide active">
+                    <img src="/images/solveris_konferencia.jpg" class="slide">
+
+                    <img  src="/images/sun.jpeg" class="slide active">
+                    <img src="/images/objects.png" class="slide">
+
+                    <img  src="/images/img9.jpg" class="slide active">
+                    <img src="/images/img10.jpg" class="slide">
+
+                    <img  src="/images/img11.jpg" class="slide active">
+                    <img src="/images/img12.jpg" class="slide">
+                    </div>
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+      
+        </section>
+
 
         <!-- <section>
             <div class="bg_image1">
@@ -127,7 +153,8 @@ Autoprefixer არის PostCSS მოდული, რომელიც ა�
 
         <!-- autoprefixer -->
 
-            <div>
+            <div id="home2" class="home2">
+                <h3><strong>შეისწავლე ფიზიკა: ენერგია, მოძრაობა და ბუნების კანონები</strong></h3>
                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/_SDRHrCsmT0?si=aQcc56INq0ewlYPB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
       

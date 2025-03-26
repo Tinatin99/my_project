@@ -16,15 +16,15 @@ header{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    background-color: rgb(235, 192, 255);
-    /* background-color:#f4f4f4;     */
-    font-size: 25x;
+    background-color: rgb(228, 508, 299);
+  
+    font-size: 23px;
     color:black;
     position: fixed;
     width: 100%;
     top: 0;
     left:0 ;  
-    padding: 10px 20px; 
+    padding: 10px 15px; 
     z-index: 1;
     position: relative;
  }
@@ -45,7 +45,7 @@ a{
       position: absolute;
       bottom: 0;
       left: 0;
-      background-color:purple ;
+      background-color:rgb(34, 0, 128) ;
       display: block;
       /* transition: width 2s linear 1s; */
     }
@@ -126,14 +126,18 @@ a{
 
    h1{
     font-size: 24px;
-    color: #0073e6;
+    color: black;
+    background-color: rgb(228, 508, 299);
    }
 
    footer{
     margin-top: 100px;
     width: 100%;
     height: 200px;
-    border-radius: 45px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(228, 508, 299);
     /* background-color: rgb(86, 48, 255); */
   }
   
@@ -154,11 +158,19 @@ a{
     margin-top: 80px;
     margin-left: 10px;
     margin-bottom: 45px; 
+   
     
  }
 
+#if{
+display: inline-block;
 
+}
 
+/* #about1{
+  width: 80%;
+  margin: 0 auto;
+} */
  .contact{
     display: block;
     margin-bottom: 15px;
@@ -197,20 +209,20 @@ a{
 } */
 /* contact.html */
 
-/* .bg_image2{
-  background-image:url('https://upload.wikimedia.org/wikipedia/commons/c/ca/1911_Solvay_conference.jpg');
-  height:600px;
-  width: 80%;  
+
+.bg_image2{
+  background-image:url('https://upload.wikimedia.org/wikipedia/ka/6/64/%E1%83%9B%E1%83%96%E1%83%98%E1%83%A1_%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%90.png');
+  height:500px;
+  width: 100%;
   margin: 0 auto;
   background-color: rgb(218, 255, 196);
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover; 
-  margin-top: 84px;
+  /* margin-top: 40px; */
   position: relative;
-  padding: 12px; 
-} */
-
+  padding: 12px;  
+}
 
 
 /* BEM   მოდიფაიერი მეთოდოლოგია */
@@ -223,6 +235,21 @@ a{
 #physteria{
   display: flex;
 
+
+}
+
+
+/* BEM   მოდიფაიერი მეთოდოლოგია */
+/* მთავარი გვერდი */
+
+.physicsbody {
+  font-family: 'BPG Irubaqidze', sans-serif;
+  background-color: #f8f9fa; 
+}
+#physteria{
+display: flex;
+flex-direction: column;
+width: 40%;
 }
 
 .container {
@@ -288,12 +315,32 @@ a{
 }
   
 
+.td{
+  gap: 25px;
+  padding: 30px;
+  width: 80%;
+  border:5px  solid rgb(183, 0, 255);
+  background-color: black;
+  display: block;
+  margin: 0 auto;
+}
+
+ .phisic-card {  
+  gap: 20px; 
+  max-width:80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: beige;
+  border-radius: 15px;
+}
+
+
 
 img{
   float: left;
-  /* margin: 20px; */
-  width: 30px;
-  /* gap: 20px; */
+  margin: 20px;
+  width: 35%;
+  gap: 10px;
 }
 .img1{
   width:25px ;
@@ -304,7 +351,10 @@ img{
 
  #bg_image{
   display: block;
-  margin-top:200px;
+  margin-top:250px;
+  border-radius:15px ;
+
+  
 } 
 
 .bg_image3{
@@ -343,19 +393,31 @@ img{
   background-color: #f4f4f4;
   padding: 20px;
 } */
-.test-list {
-  /* display:flex;
-  flex-wrap: wrap; */
-  list-style: none;
-  padding: 0;
-}
-.test-list li {
+#testtwo{
+  display: flex;
+  margin-top: 40px;  
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   background: white;
   margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.test-list {
+  display:flex;
+  justify-content:center ;
+  list-style: none;
+  padding: 0;
+}
+/* .test-list li {
+  background: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
 .test-list a {
   text-decoration: none;
   font-size: 16px;
@@ -364,7 +426,7 @@ img{
 
 .test-container {
   display: flex;
-  gap: 30px; 
+  gap: 40px; 
 }
 
 .test-box {
@@ -763,26 +825,6 @@ h2{
  }
 
  
-.td{
-  gap: 25px;
-  padding: 30px;
-  width: 80%;
-  border:5px  solid rgb(183, 0, 255);
-  background-color: black;
-  display: block;
-  margin: 0 auto;
-}
-
- .phisic-card {
-  display: flex; /* ელემენტები გვერდიგვერდ */
-  align-items: center; /* ცენტრში განლაგება */
-  gap: 20px; /* სივრცე სურათსა და ტექსტს შორის */
-  max-width:800px; /* სექციის სიგანე */
-  margin: 20px auto; /* ცენტრში გასწორება */
-  padding: 20px;
-  background-color: beige;
-  
-}
 
 .geo-rel {
   position: relative;
@@ -797,11 +839,13 @@ h2{
 
 
  .geo-text {
-  max-width: 500px; /* ტექსტის მაქსიმალური სიგანე */
-  font-size: 16px;
+  max-width: 80%; /* ტექსტის მაქსიმალური სიგანე */
+  padding: 40px;
+  font-size: 18px;
   line-height: 1.6;
   text-align: justify;
-} 
+  margin: 0 auto;
+  } 
 
 .geo-text  {
   color: blue;
@@ -832,11 +876,10 @@ h2{
 /* sworia, slaideri ar muSaobs mxolod */
 
 .slider {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
-    margin-top: 70px;
     position: relative;
-}
+ }
 
 .slides {
     display: flex;
@@ -847,6 +890,13 @@ h2{
     min-width: 100%;
     transition: transform 0.5s ease-in-out;
 }
+
+.home2{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
 
 .prev{
   position: absolute;
@@ -928,7 +978,9 @@ h2{
  display: block;
  justify-content: center;
  align-items: center;
- margin-top: 90px;
+ margin-top: 30px;
+display: block;
+display: flex;
 }
 /* ფიზიკოსების სექცია */
 .scientists {
@@ -1121,7 +1173,7 @@ some other entities supported by html
 
 
 }
-18.12.2025 
+/* 18.12.2025  */
 
 .container {
   display: grid;
@@ -1179,9 +1231,11 @@ some other entities supported by html
  }
 h3{
   color: #000000;
+  margin-top: 80px;
+  font-size: 34px;
 }
  .box_input{
-  margin-top: 35px;
+  margin-top: 30px;
   margin-bottom: 15px;
  }
 
@@ -1353,7 +1407,7 @@ input[type="reset"]:hover {
 h3 {
   text-align: center;
   color:black;
-  font-size: 24px;
+  font-size: 40px;
 }
 .curvey5{
   display: flex;
@@ -1397,3 +1451,15 @@ div{
     height: 200px;
     font-size: var(--primery-size);
   } */
+
+
+  /* 25.12.2024 Max Width */
+
+  .box{
+    max-width: 420px;
+    width: 100%;
+    height: 300px;
+    background-color: white#5ee7ff;
+  }
+
+  git-sce.com
