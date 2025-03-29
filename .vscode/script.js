@@ -398,84 +398,90 @@ boxes.forEach((box) => {
 // ბრაუზერიდან ინფორმაციის წამოღება
 
 
-function showThis(){
-    console.log(this)
-}
-showThis();
-
-
-
-let currentPage = 1
+let currentPage =1
 let totalPages
 
-
-function getUsers(page){
-    fetch('https://reqres.in/api/users?page='+page,{
+function getUsers(page ){
+    fetch('https://reqres.in/api/users?page=' +page, {
         method:'GET'
     })
-    .then(function(response){
+
+    .then (function(response){
         if(response.status !== 200){
             throw response.status
         }
         return response.json()
-    })
-    .then(function(responseData){
-        // let containerr = document.getElementById('containerr')
-        let fragment = document.createDocumentFragment("ul")
-        // let ul = document.getElementById("ul_list")
-       
-
-        totalPages = responseData.total_pages
-        console.log(responseData);
-           
-            responseData.data.forEach(function(item){
-                let li = document.createElement('li')
-                li.textContent =item.email
-                let image = document.createElement('img')
-                image.src = item.avatar
-                fragment.appendChild(li)
-                fragment.appendChild(image)
-            })
-
-            document.getElementById('ul_list').innerHTML = " "
-            document.getElementById('ul_list').appendChild(fragment)
-
-            containerr.appendChild(ul)
-           
 
     })
-    
-    .catch(function(){
-        let containerr = document.getElementById('containerr')
+
+    .then (function(responseData){
+        let fragment =document.createDocumentFragment()
+        totalPages=responseData.total_pages
+         
+        responseData.data.forEach(function(item){
+            let li= document.createElement('li')
+            li.textContent=item.first_name + " " + item.last_name ;
+            let image =document.createElement('img')
+            image.src=item.avatar
+            let divliimage=document.createElement('div')
+            divliimage.appendChild(li)
+            divliimage.appendChild(image)
+            fragment.appendChild(divliimage)
+
+        })
+
+        document.getElementById('ul_list').innerHTML = "";
+       document.getElementById('ul_list').appendChild(fragment)
+
+    })
+
+  . catch (function(){
+    let conteiner= document.getElementById('conteiner')
         let p = document.createElement('p')
-        p.textContent = 'server error 404'
-        containerr.appendChild(p)
-    })
+        p.textContent='error'
+        conteiner.appendChild(p)
 
 
+  }) 
 }
 
 
 
-    document.getElementById('loadprev').addEventListener('click',function(){
-    if(currentPage == 1){
-        return
+
+  document.getElementById('loadprev').addEventListener('click',function(){
+   if(currentPage == 1){
+      return 
     }
-
     currentPage -=1
-    getUsers(currentPage)
-    // currentPage =currentPage -1
+    getUsers (currentPage)
 
-})
 
-document.getElementById('loadnext').addEventListener('click', function(){
-    if(currentPage == totalPages){
-        return
+  })
+
+  
+  document.getElementById('loadnext').addEventListener('click',function(){
+   if  ( currentPage == totalPages){
+      return 
     }
     currentPage +=1
-    getUsers(currentPage)
+    getUsers (currentPage)
+
+
+  })
+
+  getUsers(currentPage)
+  
+
+// acoreioni
+
+let accordion = document.querySelectorAll('.accordion-conteiner')
+accordion.forEach( item => {
+  item.addEventListener('click',function(){
+     this.classList.toggle('active')
+
+
+
+  })
 
 })
-
-getUsers(currentPage)
 

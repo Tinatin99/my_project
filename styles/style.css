@@ -17,12 +17,14 @@
 } */
 
 
-header{
-  background-color: antiquewhite;
+header{  
   background-color: rgb(228, 508, 299);  
   font-size: 22px;
   color:black;
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   top: 0;
   left:0 ;  
@@ -35,30 +37,25 @@ header{
   width: 60px;
   height: 60px;
 }
- .header-wrapper{
-  display: flex;
-  justify-content: space-between;
-  width: 100px;
+
+.navigation ul {
+  display:  flex;
+  }
+
+.nav_li{
+  margin-left: 50px;  
+ }
+
+.headerA{
+  text-decoration: none;
+
 }
 
-Ol{
-  display: flex;
-}
-li{
-  margin-right: 30px;
+.headerA:hover{
+ font-size: 40px;
+
 }
 
-.burger{
-  position: relative;
-  display: none;
-}
-.fa-solid,  .fa-bars{
-  position: absolute;
-  top: 20px;
-  right: 10px;
-}
-
- 
 
 
 
@@ -123,13 +120,13 @@ a{
     background-color: rgb(228, 508, 299);
    }
 
-   footer{
+   footer{    
     margin-top: 100px;
     width: 100%; 
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgb(228, 508, 299);
+    padding: 25px;
+   
+   background-color:white;
     /* background-color: rgb(86, 48, 255); */
   }
   
@@ -174,10 +171,16 @@ width: 80%;
   margin: 0 auto;
 } */
  #contact{
-    display: flex;   
+    display: flex; 
+    background-color: rgb(228, 508, 299); 
+    justify-content: center; 
+    font-size: 22px;
+    padding: 20px;
+    display: flex;
     margin-bottom: 15px;
     color: rgb(86, 48, 225);
     margin-top: 70px;
+    border-radius: 30px;
  }
  
  .chat_icon{
@@ -188,6 +191,9 @@ width: 80%;
   right: 60px;
   z-index: -1; 
 }
+
+
+
 
  /* მთავარი გვერდი, სლაიდერი */
 
@@ -236,37 +242,6 @@ width: 80%;
   text-align: center;
 }
 
- /* .dot { 
-
-.dot {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: white;
-  background-color: rgb(1, 1, 1);
-  margin: 5px;
-  opacity: 40%;
-
-  opacity: 40%; 
-}
-.dot.active {
-
-  background-color: white;
-  background-color: rgb(228, 225, 234);
-}
-
-.dots {
-  display: flex;
-  position: absolute;
-  z-index: 100;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 5%;
-  cursor: pointer;
-} */
-/* } */
-
-
 .errorText{
   color: #f72222;
 }
@@ -278,6 +253,7 @@ width: 80%;
 
 
 /* footer */
+
 .fa-facebook{
   color: blue;
   font-size: 40px;
@@ -287,19 +263,27 @@ width: 80%;
   color:red;
   font-size: 40px;
 }
+
 .fa-twitter{
   color: rgb(0, 179, 255);
   font-size: 40px;
 }
-.fa-facebook{
+
+.fa-linkedin{
   color: #007BFF;
   font-size: 40px;
 }
-#sacont{
+
+
+#fa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ascot{
   display: block;
   margin: 0 auto;
-  
-}
+  }
 
 
 
@@ -322,30 +306,17 @@ width: 80%;
 
 .video1{
   margin-top:40px ;
+  margin: 0 auto;
 }
 
 .home{
   margin: 0 auto;
   margin-top: 40px;
-  font-size: 24px;
+  font-size:30px;
+  margin-bottom: 40px;
 }
 
-/* about.html */
 
-/* .bg_image1{
-  background-image:url('https://upload.wikimedia.org/wikipedia/ka/7/7e/Portal_Physics_Banner_ka.png');
-  height:220px;
-  width: 80%; 
-  margin: 0 auto;
-  background-color: rgb(218, 255, 196);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover; 
-  margin-top: 84px;
-  position: relative;
-  padding: 12px;  
-} */
-/* contact.html */
 
 
 .bg_image2{
@@ -369,6 +340,7 @@ width: 80%;
 .physicsbody {
   font-family: 'BPG Irubaqidze', sans-serif;
   background-color: #f8f9fa; 
+  max-width: 100%;
 }
 #physteria{
   display: flex;
@@ -490,78 +462,7 @@ border-radius: 20px;
   padding: 45px;
 }
 
-/* .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 5px;
-  padding: 5px;
-  box-shadow: 15px 10px;
-}
-#news{
-  font-family: 'BPG Irubaqidze', sans-serif;
-  background-color: #f8f9fa; 
-}
-.container__box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 35%;
-  gap: 15px;
-  gap: 10px;
- }
 
-.container__box--primary {
-  flex: 1 1 35%;
-  display: inline-block;
-  }
-
-.container__box--secondary {
-  flex: 1 1 45%;
-} */
-/* 
-.container__item {
-  background: #f4f4f4;
-  padding: 15px;
-  border-radius: 20px;
-  border: 5px solid purple;
-} */
-
-
-/* .container__item {
-  display: flex;
-  flex-direction: column;
-  flex-basis: calc(40% - 10px);
-  box-sizing: border-box;
-  border: 5px solid purple;
-  background: #f4f4f4;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  box-shadow: 0 20px 25px powderblue;
-}
-.container__image {
-  max-width: 150px;
-  width: 100%;
-  height: auto;
-  float: left;
-  padding: 20px;
-
-}
-
-.container__text {
-  font-size: 16px;
-  line-height: 1.5;
-  }
-.container__title{
-  display: flex;
-  background-color: #f4f4f4;
-  width: 60%;
-  height: 30px;
-  padding:15px;
-  margin: 0 auto;
-  border-radius: 8px;
-  border: 5px solid purple;
-  text-align:center;  
-} */
 
 /* ფსევდო კლასები */
 
@@ -579,13 +480,13 @@ border-radius: 20px;
 }
   
 #td{
-  max-width: 900px;
+  max-width:700px;
   display: flex;
   width: 100%;
   justify-content: center;
   margin-bottom: 50px;
   margin-left: 50px;
-  gap: 200px;
+  gap: 50px;
   margin: 0 auto;
 }
 #td1{
@@ -616,18 +517,7 @@ border-radius: 20px;
   margin: 10px;
   word-wrap: break-word; /* Break long words to fit inside the box */
 }
-/* #td{
-  margin-top: 200px;
-  marg
-  
-  gap: 25px;
-  padding: 30px;
-  width: 80%;
-  border:5px  solid rgb(183, 0, 255);
-  background-color: black;
-  display: block;
-  margin: 0 auto;
-}  */
+
 
  .phisic-card {  
   gap: 20px; 
@@ -675,9 +565,11 @@ img{
   margin-bottom: 35px;
 }
 .bg_image4{
-  background-image:url('https://scontent.ftbs7-1.fna.fbcdn.net/v/t39.30808-6/214532542_4029671400471598_6678748425135507492_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeH5NBh64l0gcdm6SoiqphZ7uqmRqmdC9Vm6qZGqZ0L1WbvhfOEg3TttnST35Mgynf_HlL9q56Ipww0g6e2J4lCu&_nc_ohc=J7R4QM-qky8Q7kNvgGpyd4u&_nc_oc=Adlpjgaf4_Zy_R6r8pyIR7O_Syp_sQPjJdRH8PucOHuky53jmMkSJ2mIGYugKcnZkr4&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=Qj38I5bKUWsJ8rLv6tL4wg&oh=00_AYGnWleGUGzU24PvskFhTnUtFgf8BU6NSVj4AdGYI5qPVw&oe=67E34BD5');
-  height:500px;
-  width: 90%;
+  background-image:url('https://scontent.ftbs10-1.fna.fbcdn.net/v/t39.30808-6/214532542_4029671400471598_6678748425135507492_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeH5NBh64l0gcdm6SoiqphZ7uqmRqmdC9Vm6qZGqZ0L1WbvhfOEg3TttnST35Mgynf_HlL9q56Ipww0g6e2J4lCu&_nc_ohc=7VtyoutDpgkQ7kNvgH0OpwM&_nc_oc=AdnmlX275PA45RU_Ck9c2SEjwHEB9wnBqnvUWYlDtI4scj-tTRNswq63GcZ1c-hGpg4&_nc_zt=23&_nc_ht=scontent.ftbs10-1.fna&_nc_gid=7BNAq6Pgqcuf5ttg_qZ0HA&oh=00_AYGBJleCdIKKenQnU5jYN0Kqg5xQDb5G0XFtJYiBntlUfA&oe=67EE4855');
+  margin-top: 80px;
+    height:500px;
+  max-width:75%;
+  width: 100%;
   margin: 0 auto;
   background-color: rgb(218, 255, 196);
   background-position: center;
@@ -714,13 +606,7 @@ img{
   list-style: none;
   padding: 0;
 }
-/* .test-list li {
-  background: white;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
+
 .test-list a {
   text-decoration: none;
   font-size: 16px;
@@ -743,19 +629,11 @@ img{
 
 /*before ელემენტამდე
 after ელემენტის შემდეგ  */
-/* ?????????????????????????????????????????? */
 
 
 
 
- /* h2::before{
-  content:url(/images/smyle.jpg);
-  width:20px;
-} 
- .test16::before{
-  content:url();    
-  width: 10px;
-}  */
+
 
 
 
@@ -765,11 +643,7 @@ h2::before{
   font-size: 25px;
   margin: 0 auto;
 }
-/* .test::after{
-  content:url(/images/smiley.png);
-  display: inline-block;
-  width: 30px;
-}  */
+
 h3::after{
   content:url();
   color: rgb(183, 0, 255);
@@ -782,209 +656,6 @@ h3::after{
 
 
 
-
-
-/* 
-?????? */
-
-/* h4::after{
-  content:"" ;
-  width: 4px;
-  background-color: palegreen;
-  display:inline-block;
-} */
-/*after ელემენტის შემდეგ  */
-/* .test16::after{
-  content:url(smiley.gif);
-  width: 10px;
-}  */
-
-
-/* .test15::before{
-  content: "test";
-  color: #6200ea;
-  font-size: 18px;
-} */
-
-/* ul დაუნომრავი სია ან ol დანომრილი სია ან ბულეთები */
-/* მარკერი marker */
-/* ?????????????????????????? */
-/* ::marker{
-  color: aqua;
-  font-size: 35px;
-} */
-
-
-
-
-/* selection მოვნისნავთ და ფერი უკეთდება */
-/* ?????????????????????????? */
-/* 
-::selection{
-  color: blueviolet;
-  background-color: chartreuse;
-} */
-
-
- 
-/* CSS pseudo-elements 
-show answer
-hide answer
-როგორ გავწერო სტილებში
-
-
-
-contain  feConvolveMatrixსიგანე და სიმაღლე სურათი იწელება 
-
-
-img{
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-}
-
-object-fit:cover; არ გაიწერება, აუცილებელია სიმაღლის გაწერა heigth  დაზუმული
-
- img{
-  width: 200px;
-  height: 300px;
-  object-fit: contain;
-} 
-object-fit:contain; ბუნებრივი ზომები  */
-
-
-
-/* .fa-brands{
-  background-color: blue;
-  ???????????????????????????????????????????? siganem shape-image-threshold: ;
-}
- */
-
-
-/* 25.11.2024 ლექცია 
-
-   სურათი ტექსტსში  ჩასმული, მარჯვნივ ან მარცხნივ. 
-  .img{
-   width: 120px;
-   height: 80px;
-   float: right;
-   margin: 8px;
-   display: flex;
-   justify-content: space-around;
-   align-items: end;
-  } 
-
- .wrapper{
-  background-color: aqua;
-  width: 60px;
-  height: 60px;
-} */
-
-
-/* 27.11.2024 ლექცია
-
-აბსოლუტი მუსაობს რელატივთან ერთად, 
-
-div.relative{
-  position: relative; თუ რელატივს არ გავუწერთ, მაშინ აბსოლუტი ბრაუზერიდან აიღებს ზომებს.
-
-  width: 400px;
-  height:  200px;
-  border: 7px solid purple;
-}
-
-
-
-div.absolute{
-  position: absolute;
-  top: ;
-  right: ;
-  width: ;
-  height: ;
-  border: 5px solid red;
-   border-radius: 8px;
- } */ 
-
-
-/* სურატზე ტექსტის განთავსება შუაში რომ მოვათავსოთ.burger 
-image text
-ვთქვათ გვაქვს რაღაც ყუთი container
-.container{
-  position: relative;
-}
-.conter{
-  position:absolute;
-  top: 50px;
-  left: 50%;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  transform: translate(-50%,-50%);
-}
-img{
-  width: 100%;
-  height: auto;
-  opacity: 0.3;
-} */
-
-/* ფსევდო კლასებს იმიტომ ვიყენებთ, რომ ცალკ-ცალკე კლასებინარ გავუწეროთ. აქედან გამომდინარე უნდა გავწეროთ მთავარ ყუთს ან მშობელს.burger 
-/* 
-
-
-
-
-
-
-
-
-
-
-/* 04,12,2024
-css psevdo-elements     ფსევდო ელემენტები
- პირველი ხაზი იყოს განსხვავებული,ფერის, ზომის, შრიფტის
- მაგალითად, ტექსტი
- p, ასევე გავუწერ კლასს. */
-
- /* p::first-line{
-  color: #ff0000;
-  font-variant: small-caps;
-  font-size: 30px;
-  font-weight: 700;
- } */
- /* პირველი ასობგერა */
-
- /* p::first-letter{
-  color: aqua;
-  font-size: 36px;
- } */
-
- /* რამოდენიმე- პირველიასობგერა და ხაზიიყოს განსხვავებული იწერება ერთად. ორივე შედეგიერთად გაიწერება */
-
-
- /* p::first-line{
-  color: #ff0000;
-  font-variant: small-caps;
-  font-size: 30px;
-  font-weight: 700;
- }
- p::first-letter{
-  color: aqua;
-  font-size: 36px;
- } */
-
-
-/* ::before ელემენტამდე */
-
-/* h1::before{
-  content:url(smiley.gif);
-  width:20px;
-  background-color: #6200ea;
-} */
-/* h3::after{
-  content:url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmpjczl1NDRsNjlucWY0eWRianVpdjZkOWswbDZhYmJibGpueW41cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3OpJMkI3B6aWIXbVz4/giphy.gif);
-  background-color: aqua;
-  width:20px;
-} */
 
 
 
@@ -1089,21 +760,25 @@ h2{
   box-shadow: 5px 10px rgb(48, 207, 255);
   display: inline-block;
   background-color: #f4f4f4;
-  width:35%;
+  width:38%;
    margin: 0 auto;
-  padding: 10px;
+  
   border: 2px solid palegreen;
   margin-top: 25px;
   border-radius: 15px;
   margin-right: 10px;
   margin-left: 10px;
-  padding: 0px;
+  padding: 10px;
   transform: rotate(-10deg);
  }
 
- .contact1{
+ #contact1{
+  display: flex;
   margin: 0 auto;
- }
+  width: 50%;
+  margin-top: 80px;
+  border-radius: 40px;
+   }
 
 /* :hover pseudo class*/
 
@@ -1137,13 +812,10 @@ h2{
 .geo-rel {
   position: relative;
   float: left;
-  width: 200px; /* სურათის კონტეინერის სიგანე */
+  width: 300px; /* სურათის კონტეინერის სიგანე */
 }
 
-/* .float {
-  width: 100%; სურათი სრულად შეავსებს კონტეინერს
-  height: auto;
-}  */
+
 
 
 #h4{
@@ -1154,13 +826,13 @@ h2{
   max-width:80%;   /* ტექსტის მაქსიმალური სიგანე */
   width: 100%;
   padding: 5px;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.3;
   text-align: justify;
   margin: 0 auto;
   } 
 
-.geo-text  {
+.geo-text{
   color: blue;
   text-decoration: none;
   font-weight: bold;
@@ -1186,50 +858,6 @@ h2{
   float: left;
   background-color: beige;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* სლაიდი / ფიზიკოსების გვერდზე */
-
-/* sworia, slaideri ar muSaobs mxolod */
-
-/* სლაიდერის ძირითადი სტილები */
-/* სლაიდერის ძირითადი სტილები */
-/* სლაიდერის სტილები */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1431,21 +1059,7 @@ some other entities supported by html
   padding: 15PX;
   box-shadow:20px 20px 15px rgb(86, 48, 225);
 }
-/* #survey1{ 
-  display: inline-block;
-   justify-content: center;
-   align-items: center;
-   width:60% ; 
-   margin-top:10px;
-   /* background-color: #f4f4f4; */
-   /* color: #000000;
-   border: 5px solid rgb(169, 112, 216);
-   border-radius: 15px;
-   gap: 25px;
-   margin-left: 10px;
-   padding: 5px;
-   box-shadow:20px 20px 15px rgb(190, 48, 225); */
-/* }  */
+
 #survey2{ 
   display:inline-block;
   width:40%;
@@ -1504,11 +1118,7 @@ some other entities supported by html
  width: 100%;
  
  }
-/* h3{
-  color: #000000;
-  margin-top: 40px;
-  font-size: 24px;
-} */
+
 #if2{
   font-size: 24px;
   color: black;

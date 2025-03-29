@@ -1,12 +1,3 @@
- /
-
-
-
-
-/* flex-direction: colum;  სვეტად ალაგებს
-align-items: center; მუშაობს მხოლოდ ესენი ერთად. მობილურის რეზოლუციაზე */ 
-
-
 
 
    @media(max-width:420px){
@@ -15,7 +6,8 @@ align-items: center; მუშაობს მხოლოდ ესენი �
         display: block;
     }
     .navigation{
-        display: none;    }
+        display: none;   
+     }
     
 }
 
@@ -26,31 +18,43 @@ align-items: center; მუშაობს მხოლოდ ესენი �
 
 
 
+.arrow-left{
+    left:150px;
+    margin-top: -60px;
+    z-index: -1;
+    cursor: pointer;
+
+}
+.arrow-right{
+    margin-top: -60px;
+    right: 150px;
+    z-index: -1;
+}
 
 
+#slider{
+    width: 90%;
+    height: 30vh;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 105px;
+    border-radius: 20px;
+    z-index: -1;
+}
 
+.closeButton{
+    margin-left: 550px;
+}
+
+.footersize{
+    font-size: 15px !important;
+    padding-top: -50px;
+}
 
   /* 04,12,2024
-
   იმ რეზოლუციაზე რაზეც ბურგერი ჩნდება, ნავიგაციიას დამალვა უნდა გავუწეროთ  */
 
-
-  @media(max-width:650px){
-    .container_box{
-        background-color: azure;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 50px;
-      
-    } 
-    
-    .burger{
-           display: block;
-        }
-    .navigation{
-            display: none;  
-        }   
-      }     
+   
       
        @media (max-width: 768px) {
         .scientists {
@@ -90,128 +94,11 @@ align-items: center; მუშაობს მხოლოდ ესენი �
         grid-template-columns: repeat(1, 1fr); /
     }
 } 
-
-
-/* სიახლეების გვერდის რესფონსივი ყუთების */
-
- /* @media (min-width: 320px) {
-    .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .container__box {
-        flex: 1;
-    }
-}
-
-@media (max-width: 600px) {
-    .test-card {
-        width: 100%;
-    }
-} */
-
-
-
-/* ფიზიკოსების   გვერდი 
- რესპონსიული სტილები 
- სრულად*/
-
-/* @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navigation ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav_li {
-        margin: 30px 0;
-    }
-     .burger {
-        display: block;
-    }
-
-    .navigation {
-        display: none;
-    }
-
-    .navigation.active{
-        display: block;
-    }  
-}  */
-  /* ჰედერი */
-  @media (max-width: 768px) {
-    header {
-        display: block;
-        margin-right: 30px;
-    }
-
-    .navigation {
-        display: none;
-    }
-    .activeNavigation{
-        display: block;
-    }
-    .navigation {
-        flex-direction: column;
-        background-color: blueviolet;
-        position: absolute;
-        left: 50px;
-        top: 70px;
-        width: 200px;
-        height: 200px;
-    }
-     .burger {
-        display: block;
-    }
-
-  
-    .navigation.active{
-        display: block;
-    }  
-} 
-/* მედია მოთხოვნები (რესპონსიულობა)
-ფიზიკოსების ბიოგრაფიები ფოტოებით */
-
-
-
-@media (max-width: 768px) {
-    .scientists__grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .scientists__title {
-        font-size: 1.8em;
-    }
-
-    .main__section.intro {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 480px) {
-    .scientists__grid {
-        grid-template-columns: 1fr;
-    }
-
-    .scientists__title {
-        font-size: 1.5em;
-    }
-
-    .main__section.intro {
-        font-size: 1em;
-    }
-}
-
-
-/* 18,03,2024 ჩვენს შესახებ გვერდის  რეგისტრაციის ფორმა */
+ 
+/* სიახლეების გვერდი */
 @media screen and (max-width: 480px) {
     .survey {
-        flex-direction: column;
+        flex-direction: colum;
     }
     form {
         width: 100%;
@@ -256,6 +143,7 @@ align-items: center; მუშაობს მხოლოდ ესენი �
                 grid-template-columns: 1fr;
             }
         }
+
 /* რესფონსივი responsive- პატარა ეკრანებისთვის */
 
 /* Responsive adjustments for smaller screens */
@@ -264,6 +152,14 @@ align-items: center; მუშაობს მხოლოდ ესენი �
       width: 95%;  /* Adjust the container width for smaller screens */
     }
   }
+
+
+
+
+
+
+
+
 
 
   /* სიახლეების გვერდი */
@@ -293,6 +189,14 @@ align-items: center; მუშაობს მხოლოდ ესენი �
     }
   }
 
+
+
+
+
+
+
+
+
   /* /* ფიზიკოსები ყუთები */
 
 
@@ -319,3 +223,36 @@ align-items: center; მუშაობს მხოლოდ ესენი �
         width: 100%; /* On small screens, each box will take full width */
     }
 } 
+
+/* მედია მოთხოვნები (რესპონსიულობა)
+ფიზიკოსების ბიოგრაფიები ფოტოებით */
+
+
+
+@media (max-width: 768px) {
+    .scientists__grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .scientists__title {
+        font-size: 1.8em;
+    }
+
+    .main__section.intro {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .scientists__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .scientists__title {
+        font-size: 1.5em;
+    }
+
+    .main__section.intro {
+        font-size: 1em;
+    }
+}
