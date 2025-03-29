@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+
     <link rel="stylesheet" href="https://phet.colorado.edu/ka/simulations/filter?subjects=physics&type=html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,53 +29,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
+<!-- დასერჩვის ოპტიმიზაცია, ხშირად იყოს ძებნადი, ამოვიდეს ძებნის სიაში -->
+    <meta name="description" content="Educational">   <!--აღწერა-->
 
-    <meta name="description" content="Educational">
+    <meta name="keywords" content="physic,test,Isaac Newton,albert Einstein">   <!--მნიშვნელოვანი სიტყვები-->
 
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="JTinatin Davitadze">  <!--ვინ შექმნა ეს საიტი-->
 
-    <meta name="author" content="JTinatin Davitadze">
 
     <!--  facebook meta tags -->
 
-    <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+    <meta property="og:url"                content="https://tinatin99.github.io/my_project/" />
 
-    <meta property="og:type"               content="article" />
+    <meta property="og:type"               content="educational" />
 
-    <meta property="og:title"              content="When Great Minds Don’t Think Alike" />
+    <meta property="og:title"              content="PhysTeria" />
 
-    <meta property="og:description"        content="How much does culture influence creative thinking?" />
+    <meta property="og:description"        content="How important is the knowledge of physics to a person's life?" />
 
-    <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+<!-- რამდენად მნიშვნელოვანია ფიზიკის ცოდნა ადამიანის ცხოვრებაში? -->
+
+<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+
+<link rel="stylesheet" href="./css/bootstrap-grid.css">
+<link rel="stylesheet" href="./css/bootstrap-reboot.css">
+<link rel="stylesheet" href="./css/bootstrap-utilities.css">
+<link rel="stylesheet" href="./css/bootstrap.css">
 
 
-        <title>ფიზტერია</title>
+
+
+        <title>მთავარი / ფიზტერია</title>
 
 
         <!-- გადასახედი და დასაზუსტებელი -->
 
         <!-- https://responsivetesttool.com/ -->
+
          <!-- https://validator.w3.org/#validate_by_input -->
+
           <!-- google transfonter -->
+
           <!-- webkit     webfonts -->
+
            <!-- autoprefix -->
+
             <!-- minify.css -->
+
               <!--unminify.css -->
+
+
+              <!-- Autoprefixer CSS online
+Autoprefixer is a PostCSS plugin which parses your CSS and adds vendor prefixes 
+Autoprefixer CSS ონლაინ
+Autoprefixer არის PostCSS მოდული, რომელიც აანალიზებს თქვენს CSS-ს და ამატებს გამყიდველის პრეფიქსებს. პრობლემურ ტეგებს ამოწმებს და ამატებს თუ არასრულად გვაქვს გაწერილი, რადგან შემდგომში საიტი იყოს ყველა ბრაუზერისთვი წაკითხვადი.
+-->
+
+<!-- HTML Forms -->
               
 
    
 </head>
-<body class="physicsbody">
+<body class="physicsbody" id="physicsbody">
   
 
-    <header>
-    
-        <a class="logo" href="index.html"><img class="logo_image"  src="/images/img2.png" alt="physic" title="physic"></a>
+    <header >
+        <div class="header-wraper">
+
+        <a  href="index.html"><img class="logo_image"  src="/images/img2.png" alt="physic" title="ფიზიკა"></a>
         
         <h1> <strong> ფიზტერია </strong> </h1>
         
-        <nav class="navigation">
-            <ul>
+        <nav class="navigation" id="navigation">
+            <ol>
 
                 <li class="nav_li"><a href="index.html" target="_blank"><strong>მთავარი</strong></a></li>  
                 
@@ -81,33 +109,134 @@
                 <li class="nav_li"><a href="physicists.html" target="_blank"><strong>ფიზიკოსები</strong></a></li>
 
 
-                <li class="nav_li"><a href="naw.html" target="_blank"><strong>სიახლეები</strong></a></li>
+                <li class="nav_li"><a href="news.html" target="_blank"><strong>სიახლეები</strong></a></li> 
 
                                 
                 <li class="nav_li"><a href="about.html" target="_blank"><strong>ჩვენს</strong> <br> <strong>შესახებს</strong></a></li>
 
                 
                 <li class="nav_li"><a href="contact.html" target="_blank"><strong>საკონტაქტო</strong><br><strong>ინფორმაცია</strong></a></li>
-            </ul>
+            </ol>
         </nav>
 
 
         <div class="burger">
             <i class="fa-solid fa-bars"></i>
         </div>
+        
+        </div>
 
     </header>
-<main>
 
-   
-</main>
-    
-    <section id="physteria">
 
-        <div class="container">
+    <main id="new" class="new">
+        
 
-                
-<!-- 
+       
+        <style>
+            #home {
+              position: relative;
+              width: 80%;  /* ან შეცვალეთ თქვენი საჭიროების მიხედვით */
+              margin: auto;
+            }
+        
+            .slider-container {
+              max-width: 800px;
+              height: 100%;
+              width: 100%;
+              overflow: hidden;
+              position: relative;
+              margin: 0 auto;
+              margin-top: 40px;
+              margin-bottom: 100px;
+            }
+        
+            .slides {
+              display: flex;
+              transition: transform 0.5s ease;
+            }
+        
+            .slide {
+              min-width: 100%;
+              width: 100%;
+              box-sizing: border-box;
+            }
+            #sliderh3{
+                font-size: 45px;
+                margin-top: 120px;
+                color: blueviolet;
+                text-shadow: 1px 1px purple;
+            }
+        
+            .nav-button {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              background: blueviolet;
+              color: white;
+              font-size: 24px;
+              border: none;
+              cursor: pointer;
+              padding: 10px;
+              border-radius: 10px;
+
+            }
+        
+            .prev {
+              left: 10px;
+              border-radius: 10px;
+            }
+        
+            .next {
+              right: 10px;
+              border border-radius: 10px;
+            }
+          </style>
+      
+        
+        <main id="home" class="home">
+            <h3 id="sliderh3">გამოჩენილი ფიზიკოსები</h3>
+          <div class="slider-container">
+            <div class="slides"> 
+              <div class="slide"><img src="/images/1280px-1911_Solvay_conference.jpg" alt="Slide 1"></div>
+              <div class="slide"><img src="images/Solvay_conference_1927.jpg" alt="Slide 2"></div>
+              <div class="slide"><img src="images/fizikosebi.jpg" alt="Slide 3"></div>
+              <div class="slide"><img src="/images/img9.jpg" alt="Slide 4"></div>
+              <div class="slide"><img src="/images/img10.jpg" alt="Slide 5"></div>
+              <div class="slide"><img src="/images/images.jpg" alt="Slide 6"></div>
+            </div>
+            <button class="nav-button prev">&#10094;</button>
+            <button class="nav-button next">&#10095;</button>
+          </div>
+        </main>
+        
+        <script>
+          const slides = document.querySelector('.slides');
+          const slideCount = document.querySelectorAll('.slide').length;
+          let currentIndex = 0;
+        
+          const nextButton = document.querySelector('.next');
+          const prevButton = document.querySelector('.prev');
+        
+          function updateSlider() {
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+          }
+        
+          nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slideCount;
+            updateSlider();
+          });
+        
+          prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+            updateSlider();
+          });
+        </script>
+       
+
+
+
+     <!-- 
          BEM ბლოკი ელემენტი მოდიფაიერი           
          BEM სტრუქტურა:
          BEM მეთოდოლოგია -->
@@ -115,122 +244,177 @@
 
   <!-- კონტეინერის ყუთი კონტეინერი ყუთი-პირველადინივთი -->
 
- <!-- ვალიდატორში შეცდომა -->
-                <div class="container__box container__box--primary">
-                    <div class="container__item">
-                        <img class="container__image" src="images/solveris konferencia.jpg" alt="სოლვეის კონფერენცია">
-                        <p class="container__text"><strong>რჩეული სტატია</strong>  <br> <br>  <strong>სოლვეის კონფერენცია </strong>(Conseil Solvay) იყო ლეგენდარული პირველი მოწვევის მსოფლიოს უდიდეს ფიზიკოს მეცნიერთა ყრილობა 1911 წელს ორგანიზებული სოლვეის ფიზიკისა და ქიმიის საერთაშორისო ინსტიტუტების მიერ. ინსტიტუტები მდებარეობს ბრიუსელში და დაფუძნებეულია ბელგიელი ინდუსტრიალისტი ერნესტ სოლვეის მიერ 1912 წელს.  <br><br> 1911 წლის წარმატების შემდეგ სოლვეის კონფერენციები ეძღვნება უმნიშვნელოვანეს ღია პრობლემებს ფიზიკასა და ქიმიაში. ღონისძიება ყოველ სამ წელიწადს ტარდება. 23-ე სოლვეის კონფერენცია ჩატარდა ბრიუსელში 2005 წლის 1-3 დეკემბერს თემაზე: "სივრცისა და დროის კვანტური სტრუქტურა".  
-                        ყველაზე განთქმული ამ კონფერენციათაგან იყო 1927 წლის ოქტომბერში ჩატარებული მეხუთე მოწვევა თემაზე: ელექტრონები და ფოტონები, სადაც მსოფლიოს ყველაზე ღვაწლმოსილი ფიზიკოსები შეიკრიბნენ რათა განეხილათ ახლად ჩამოყალიბებული კვანტური თეორია. წამყვანი ფიგურები იყვნენ ალბერტ აინშტაინი და ნილს ბორი. 29 დამსწრე მეცნიერიდან 17 მოგვიანებით ნობელის პრემიის ლაურეატი გახდა. </p>
-                    </div>
-                    <div class="container__item">
-                        <img class="container__image" src="/images/Albert_Einstein_Head.jpg" alt="Albert Einstein">
-                        <p class="container__text">(1879-1955), ფიზიკოსი-თეორეტიკოსი, XX საუკუნის უდიდესი მეცნიერი. წამოაყენა ფარდობითობის თეორია და ასევე დიდი წვლილი აქვს შეტანილი კვანტური მექანიკის, სტატისტიკური მექანიკისა და კოსმოლოგიის განვითარებაში. 1921 წელს მიენიჭა ნობელის პრემია ფიზიკაში 1905 წელს ფოტოელექტრონული ეფექტის მისეული განსაზღვრებისთვის და ასევე თეორიულ ფიზიკაში მის მიერ შეტანილი წვლილისთვის. <br> <br>
+  <div id="td" class="td">
 
-                         დაიბადა ულმში, ბადენ-ვიურტემბერგი, გერმანია. მისი მშობლები არა-დენომინაციური ებრაელები იყვნენ. პატარა ალბერტი დაწყებით სკოლაში საგნებს ძნელად ითვისებდა, შესაძლოა დისლექსიისა და საერთო სიმორცხვის გამო, ან კიდევ მისი ტვინის არაორდინალური, იშვიათი სტრუქტურის გამო (რაც მისი სიკვდილის შემდეგ დადგინდა). ზოგიერთი მკვლევარის მტკიცებით მას ასევე შესაძლოა მსუბუქი ფორმის აუტიზმიც ჰქონოდა, თუმცა მეცნიერის სიკვდილის შემდგომ ამ ვარაუდის დადგენა შეუძლებელია.br  <br> <br></p>
-                    </div>
-                    <div class="container__item">
-                        <img class="container__image" src="images/Dvali.jpg" alt="გია დვალი">
-                        <p class="container__text">გიორგი (გია) როლანდის ძე დვალი დაიბადა 1964 წლის 30 მაისს, თბილისში. დაამთავრა თბილისის 55-ე საშუალო სკოლა და სწავლა განაგრძო თბილისის სახელმწიფო უნივერსიტეტის ფიზიკის ფაკულტეტზე. 1985 წელს დაიცვა დიპლომი ზურაბ ბერეჟიანის ხელმძღვანელობით. 1985-92 წლებში მუშაობდა საქართველოს მეცნიერებათა აკადემიის ე. ანდრონიკაშვილის სახელობის ფიზიკის ინსტიტუტში. 1992-93 წლებში იყო თეორიული ფიზიკის საერთაშორისო ცენტრის (ICTP, ტრიესტი, იტალია), ხოლო 1993-95 წლებში — პიზის უნივერსიტეტის პოსტდოქტორანტი, 1995-97 წლებში — ბირთვული კვლევის ევროპული ცენტრის (CERN) მკვლევარი, 1997-98 წლებში – ICTP-ს პროფესორი, 1998 წლიდან — ნიუ-იორკის უნივერსიტეტის პროფესორი. დვალის კვლევის სფეროა ელემენტარული ნაწილაკების თეორია, კოსმოლოგია, კვანტური გრავიტაცია, ადრეული სამყაროს ევოლუცია. განსაკუთრებით მნიშვნელოვანი შედეგები, რომლებიც დვალმა მიიღო კოლეგებთან ერთად (ნ. არკანი-ჰამედი, ირანი, ს. დიმოპოულოსი, საბერძნეთი), ეხება სამყაროს ფარული განზომილებების თეორიას (1998). <br><br>
 
-                        ამ თეორიის თანახმად, სუბმილიმეტრულ მანძილებზე საჭირო ხდება ნიუტონის მსოფლიო მიზიდულობის კანონის შეცვლა, რადგან სხეულთა შორის მოქმედი მიზიდულობის ძალის დამოკიდებულება მათ შორის მანძილზე ხდება უფრო ძლიერი (და ფარული განზომილებების რაოდენობაზე დამოკიდებული), ვიდრე ნაწინასწარმეტყველებია ნიუტონის თეორიით. ამჟამად მიმდინარეობს ამ ჰიპოთეზის ექსპერიმენტული შემოწმება. <br><br>
-                        
-                        დვალს მიღებული აქვს დ. და ლ. პაკარდების (1999), ა. სლოუნის (2000), ნიუ-იორკის მერის (2001) ჯილდოები მეცნიერებასა და ტექნოლოგიაში მიღწეული წარმატებისათვის. 2007 მიიღო ნიუ-იორკის უნივერსიტეტის „ვერცხლის პროფესორის“ წოდება, ხოლო 2008 წელს მიენიჭა ჰუმბოლდტის პრემია, რომელიც ნობელის პრემიის ანალოგიურია. მონაწილეობს დიდი ჰადრონული კოლაიდერის ექსპერიმენტში. იწინასწარმეტყველა, რომ ამ ექსპერიმენტში შესაძლებელია მიკროსკოპული შავი ხვრელების წარმოქმნა და გააანალიზა ამ მოვლენის შესაძლო დაკვირვებითი შედეგები. 2010 წლიდან არის მაქს პლანკის ინსტიტუტის (მიუნხენი, გერმანია) დირექტორი. დვალი ეწევა აქტიურ პედაგოგიურ მოღვაწეობას. <br><br></p></div>
-                        <div class="container__item">
-                            <img class="container__image" src="/images/mzebudoba.jpg" alt="Albert Einstein">
-                            <p class="container__text"> არსებობს ზამთრისა და ზაფხულის მზებუდობა. მსოფლიო დროის მიხედვით, ჩრდილოეთ ნახევარსფეროში ეს მოვლენა 21 ან 22 დეკემბერს ხდება, ხოლო ზაფხულში – 20 ან 21 ივნისს. სამხრეთ ნახევარსფეროში – პირიქით, დეკემბრის მზებუდობა ზაფხულისაა, ხოლო ივნისის – ზამთრისა. <br>  <br>  ზამთრის მზებუდობისას ყველაზე მოკლე დღეა წელიწადში, შესაბამის ნახევარსფეროში. ზაფხულის მზებუდობას კი წელიწადის ყველაზე გრძელი დღეა და მოკლე ღამე.  ტრადიციულად, ზამთრის მზებუდობა ასტრონომიული ზამთრის დასაწყისად ითვლება, ხოლო ზაფხულის მზებუდობა – ასტრონომიული ზაფხულის დასაწყისად. <br> <br>
+    <div class="container__box container__box--primary">
 
-                    რამდენიმე დღის განმავლობაში, მზებუდობას და შემდეგ, მზე ჰორიზონტის მიმართ დახრილობას თითქმის არ იცვლის, მისი შუადღის სიმაღლეები უცვლელია, სწორედ აქედან გაჩნდა თვით სახელი – მზებუდობა (დგომა). <br><br> არსებობს მომენტები, როცა დღისა და ღამის ხანგრძლივობა ერთნაირია – 20 მარტი და 22 სექტემბერი (ბუნიაობა). ამ დროს დღისით, ნახევარსფეროები მთლიანად არის განათებული, დღისა და ღამის გამყოფი ზოლი – ტერმინატორი, ზუსტად პულუსებზე გადის.  <br> <br></p></div>
-                </div>
-                </div>
+
+      <div class="container__item">
+
+          <img class="container__image" src="/images/Solvay_conference 1911.jpg" alt="Solvay conference 1927">
+          <p class="container__text"><strong>რჩეული სტატია</strong>  <br> <br>  <strong>სოლვეის კონფერენცია </strong>(Conseil Solvay) იყო ლეგენდარული პირველი მოწვევის მსოფლიოს უდიდეს ფიზიკოს მეცნიერთა ყრილობა 1911 წელს ორგანიზებული სოლვეის ფიზიკისა და ქიმიის საერთაშორისო ინსტიტუტების მიერ. <br><br> 1911 წლის წარმატების შემდეგ სოლვეის კონფერენციები ეძღვნება უმნიშვნელოვანეს ღია პრობლემებს ფიზიკასა და ქიმიაში. <br><br> ყველაზე განთქმული ამ კონფერენციათაგან იყო 1927 წლის ოქტომბერში ჩატარებული მეხუთე მოწვევა თემაზე: ელექტრონები და ფოტონები...</p>
+      </div>
+      </div>
+
+
+      <div class="container__box1 container__box--primary">
+      <div class="container__item1">
+          <img class="container__image" src="/images/Albert_Einstein_Head.jpg" alt="Albert Einstein">
+          <p class="container__text">ალბერტ აინშტაინი (გერმ. Albert Einstein; დ. 14 მარტი, 1879, ულმი, გერმანია — გ. 18 აპრილი, 1955, პრინსტონი, აშშ) — ფიზიკოს-თეორეტიკოსი, საყოველთაოდ მიჩნეულია XX საუკუნის უდიდეს მეცნიერად. მან წამოაყენა ფარდობითობის თეორია და ასევე დიდი წვლილი აქვს შეტანილი კვანტური მექანიკის, სტატისტიკური მექანიკისა და კოსმოლოგიის განვითარებაში. 1921 წელს მიენიჭა ნობელის პრემია ფიზიკაში 1905 წელს ფოტოელექტრონული ეფექტის მისეული განსაზღვრებისთვის და ასევე თეორიულ ფიზიკაში მის მიერ შეტანილი წვლილისთვის.     
+          </p>
+      </div>
+      </div>
+</div>
+  
+  
+    <div class="container container--quotes" id="container--quotes">
+
+      <div class="container__box container__box--secondary">
+
+        <h2 class="container__title"> <strong>გენიალური "ფიზიკოსები" ამბობდნენ :</strong></h2>
+  
+        <div class="container__item container__item--quote">
+          <p class="container__text">1. "სამუშაო - ძალინ კარგი რამ არის, თუმცა ყველაზე კარგები, მაინც - მეგობრები არიან". - ჯეიმზ კლარკ მაქსველი</p>
+        </div>
+
+        <div class="container__item container__item--quote">
+          <p class="container__text">2. "ფიზიკოსი ცდილობს, რთული საგნები მარტივად აქციოს, ხოლო პოეტი კი - მარტივის საგნები რთულად". - ლევ ლანდაუ</p>
+        </div>
+
+        <div class="container__item container__item--quote">
+          <p class="container__text">3. "არც ერთ მეცნიერებას გააჩნია იმდენი არგუმენტები, რამდენიც ბიბლიის სწავლებას". - სერ ისააკ ნიუტონი</p>
+        </div>
+
+        <!-- <div class="container__item container__item--quote">
+          <p class="container__text">4. "ფანტაზია უფრო მნიშნელოვანია, ვიდრე ცოდნა. ფანტაზია უსაზღვროა!" - ალბერტ აინშტაინი</p>
+        </div>
+
+        <div class="container__item container__item--quote">
+          <p class="container__text">5. "თუკი აკადემიკოსი გარდაცვალებიდან ათი წლის შემდეგაც ახსოვთ, მაშინ გამოდის, რომ ის - მეცნიერების კლასიკოსი ყოფილა". - პეტრე კაპიცა</p>
+        </div> -->
+
+      
+<!-- 
+        <div class="container__item container__item--quote">
+          <p class="container__text">6. "ღმერთმა სამყაროს შექმნის დროს ლამაზი მათემატიკით ისარგებლა". - პოლ ედრიენ მორის დირაკი</p>
+        </div>
+
+        <div class="container__item container__item--quote">
+          <p class="container__text">7. "რამდენად დიდია ღმერთი და რამდენად მციერე ჩვენი ცოდნა..." - ანდრეი მარი ამპერი</p>
+        </div>
+
+        <div class="container__item container__item--quote">
+          <p class="container__text">8. "მე არ მჯერა უვიცი ინდივიდების კოლექტიური სიბრძნის". - მაქს ბორნი</p>
+        </div>
+
+        <div class="container__item container__item--quote">
+          <p class="container__text">9. "ბუნების კანონების შეცნობა - თავად ღმერთის შეცნობაა!" - ჯეიმზ პრესკოტ ჯოული</p>
+        </div>
+
+        <div class="container__item container__item--quote">
+          <p class="container__text">10. "ახალი თეორია ბატონობას იწყებს მხოლოდ მაშინ, როდესაც კვდებიან ძველი თეორიის მხარდამჭერები". - მაქს პლანკი</p>
+        </div> -->
+
+      </div>
+   
+
+      <div class="container__box container__box--secondary">
+
+        <h4 class="container__title"> <strong>თემატური მასალა:</strong></h4>
+  
+        <ol id="news2">
+          <li class="container__item container__item--quote"> </li>  
+          <iframe class="container__text" width="160" height="115" src="https://www.youtube.com/embed/g_PgXhibQM8?si=h3hQaSu_5q2cOp2h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
        
+          <li class="container__item container__item--quote"> </li>  
+         <iframe   class="container__text"width="160" height="115" src="https://www.youtube.com/embed/H53LKs4xwWI?si=kp3fOvS7vnTgPqaX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <!-- კონტეინერის კონტეინერი-ციტატები -->
+          <!-- <li class="container__item container__item--quote"> </li>  
+          <iframe  container__text width="160" height="115" src="https://www.youtube.com/embed/DV79WLLubgE?si=-cpCK208z365Ynz5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+          <!-- <li class="container__item container__item--quote"> </li>  
+          <iframe class="container__text" width="160" height="115" src="https://www.youtube.com/embed/g_PgXhibQM8?si=h3hQaSu_5q2cOp2h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <li class="container__item container__item--quote"> </li>  
+          <iframe class="container__text" width="160" height="115" src="https://www.youtube.com/embed/g_PgXhibQM8?si=h3hQaSu_5q2cOp2h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <li class="container__item container__item--quote"> </li>  
+          <iframe class="container__text" width="160" height="115" src="https://www.youtube.com/embed/g_PgXhibQM8?si=h3hQaSu_5q2cOp2h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <li class="container__item container__item--quote"> </li>  
+          <iframe class="container__text" width="160" height="115" src="https://www.youtube.com/embed/g_PgXhibQM8?si=h3hQaSu_5q2cOp2h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+       </ol>
 
 
-            <div class="container container--quotes">
-                <div class="container__box container__box--secondary">
-                    <h2 class="container__title"> <strong>გენიალური "ფიზიკოსები" ამბობდნენ :</strong></h2>
-                    <div class="container__item">
-                        <p class="container__text"> 1."სამუშაო - ძალინ კარგი რამ არის, ასევე - წიგნებიც, თუმცა ყველაზე კარგები, მაინც - მეგობრები არიან". - ჯეიმზ კლარკ მაქსველი (დიდი შოტლანდიელი ფიზიკოსი)</p> </div>
-                    <div class="container__item">
-                        <p class="container__text">2. "ფიზიკოსი ცდილობს, რთული  საგნები მარტივად აქციოს, ხოლო პოეტი კი - მარტივის საგნები  რთულად". - ლევ ლანდაუ (ებრაელი წარმომავლობის მქონე ნობელიანტი საბჭოთა ფიზიკოს თეორიტიკოსი)</p></div>
-                    <div class="container__item">
-                        <p class="container__text">3. " არც ერთ მეცნიერებას გააჩნია იმდენი არგუმენტები, რამდენიც ბიბლიის სწავლებას". - სერ ისააკ ნიუტონი (  გენიალური ინგლისელი ფიზიკოსი და "მიზიდულობის კანონის" ავტორი) </p></div>
-                    <div class="container__item">
-                        <p class="container__text">4. "ფანტაზია უფრო მნიშნელოვანია, ვიდრე ცოდნა. ცოდნას საზღვრები აქვს, ფანტაზია კი თავისი უსაზღვრობით ქმნის ევოლუციას" - ალბერტ აინშტაინი (ებრაელი წარმომავლობის მქონე გენიალური ამერიკელი ფიზიკოს-თეორიტიკოსი და "ფარდობითობის თეორიის" ავტორი.)</p></div>
-                    <div class="container__item">
-                        <p class="container__text">5. "თუკი აკადემიკოსი გარდაცვალებიდან ათი წლის შემდეგაც ახსოვთ, მაშინ გამოდის, რომ ის - მეცნიერების კლასიკოსი ყოფილა".- პეტრე კაპიცა ( გამოჩენილირუსი მეცნიერი და ნობელიანტი)</p> </div>
-                    <div class="container__item">
-                        <p class="container__text">6. "ღმერთმა სამყაროს შექმნის დროს ლამაზი მათემატიკით ისარგებლა".  პოლ ედრიენ მორის დირაკი ( დიდი ინგლისელი ფიზიკოსი და " კვანტური მექანიკის" ერთე-ერთი ფუძემდებელი.)</p></div>
-                    <div class="container__item">
-                        <p class="container__text">7. " რამდენად დიდია ღმერთი და რამდენად მციერე ჩვენი ცოდნა..." - ანდრეი მარი ამპერი ( გენიალური ფრანგი ფიზიკოსი და "ელექტრომაგნიტიზმის" ფუძემდებელი და აღმომჩენი.)</p></div>
-                    <div class="container__item">
-                        <p class="container__text">8. " მე არ მჯერა უვიცი ინდივიდების კოლექტიური სიბრძნის" მაქს ბორნი (ებრაელი წარმომავლობის  მქონე გენიალური ინგლისელი ფიზიკოსი და "კვანტური მექანიკის" ერთ-ერთი ფუძემდებელი.)</p></div>
-                    <div class="container__item">
-                        <p class="container__text">9. " ბუნების კანონების შეცნობა - თავად ღმერთის შეცნობაა!" -ჯეიმზ პრესკოტ ჯოული (გენიალური ინგლისელი ფიზიკოსი.) </p></div>
-                    <div class="container__item">
-                        <p class="container__text">10. "ახალი თეორია ბატონობას იწყებს მხოლოდ მაშინ, როდესაც კვდებიან ძველი თეორიის მხარდამჭერები" - მაქს პლანკი  (გენიალური გერმანელი ფიზიკოს-თეორიტიკოსი და ნობელიანტი.)</p></div>
+      </div>
 
-                    </div>
-                </div>
-            </section>
+    </div>
 
-            <div class="container">
-                <section id="survey">
-                    <h3><b>გამოკითხვა</b></h3>
-                    <p>აირჩიეთ თქვენთვის საინტერესო თემა:</p>
-                    <form id="surveyForm">
-                        <label><input type="radio" name="topic" value="anomalous"> ანომალური მოვლენები</label>
-                        <label><input type="radio" name="topic" value="physical"> ფიზიკური მოვლენები</label>
-                        <label><input type="radio" name="topic" value="school"> ფიზიკის სასკოლო მასალა</label>
-                        <label><input type="radio" name="topic" value="video"> ვიდეო გაკვეთილები</label>
-                    </form>
-                </section>
-        
-                <section id="registration">
-                    <h3>სარეგისტრაციო ფორმა</h3>
-                    <form>
-                        <input type="text" placeholder="სახელი">
-                        <input type="text" placeholder="გვარი">
-                        <input type="password" placeholder="პაროლი">
-                        <input type="email" placeholder="ელ. ფოსტა">
-                        <button type="submit">გაგზავნა</button>
-                    </form>
-                </section>
-        
-                <section id="survey1">
-                    <h3>დაინტერესებული პირი</h3>
-                    <form>
-                        <input type="text" placeholder="სახელი და გვარი">
-                        <input type="datetime-local">
-                        <input type="password" placeholder="პაროლი">
-                        <input type="password" placeholder="გაიმეორე პაროლი">
-                        <textarea placeholder="კომენტარი"></textarea>
-                        <button type="submit">დააკლიკე</button>
-                    </form>
-                </section>
-        
-                <section id="survey2">
-                    <h3>სარეგისტრაციო ფორმა</h3>
-                    <form>
-                        <input type="text" placeholder="სახელი">
-                        <input type="text" placeholder="გვარი">
-                        <input type="password" placeholder="პაროლი">
-                        <input type="email" placeholder="ელ. ფოსტა">
-                        <select>
-                            <option>568</option>
-                            <option>571</option>
-                            <option>574</option>
-                            <option>592</option>
-                            <option>597</option>
-                            <option>579</option>
-                        </select>
-                        <input type="text" placeholder="ტელეფონის ნომერი">
-                        <button type="submit">დააკლიკე</button>
-                    </form>
-                </section>
+
+
+  </div>
+  
+
+<!-- ფსევდო ელემენტები (პირველი ხაზი განსხვავებულიიყოს, ან ასობგერა, შევუცვალოთ ფორმა, ზომა ან ყველაფერი ერთად შეგვიძლია გავწეროთ ფსევდოკლასებით)-->
+
+
+<section>
+        <div class="wraper-body">
+          <div class="accordion">
+            
+            <div class="accordion-container">
+              <h2 id="fontColor" class="fontColor font">ხშირად დასმული კითხვები</h2>
+              <h3 class="accordion-title fontColor fontSize">
+                როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?
+              </h3>
+              <p class="accordion-description fontColor">
+                I ეტაპი - პირველ ეტაპზე საჭიროა, შეავსო სასურველი კურსისთვის
+                განკუთვნილი სარეგისტრაციო ფორმა, რომელიც განთავსებულია კურსის
+                შიდა გვერდზე. კურსზე რეგისტრაციის დასრულების შემდეგ დაიწყება
+                შემოსული განცხადებების გადარჩევა.
+              </p>
+              <div class="line"></div>
             </div>
-<footer>
+           
+            <div class="accordion-container">
+              <h3 class="accordion-title fontColor fontSize">
+                შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?
+              </h3>
+              <p class="accordion-description fontColor">
+                TBC X USAID ტექნოლოგიური განათლებისთვის პროგრამაში თითოეულ
+                კანდიდატს აქვს მხოლოდ ერთი კურსის გავლის შესაძლებლობა. გარდა
+                Information Security და Python კურსებისა, სადაც Basic დონის
+                გავლის შემდეგ შესაძლებელია სწავლის გაგრძელება Advance დონეზე.
+              </p>
+              <div class="line"></div>
+            </div>
+          
+            <div class="accordion-container last">
+              <h3 class="accordion-title fontColor fontSize">
+                რა ღირს სწავლა პროგრამის ფარგლებში?
+              </h3>
+              <p class="accordion-description fontColor">
+                პროგრამის ფარგლებში კურსებზე სწავლა სრულიად დაფინანსებულია
+                თიბისი ბანკისა და USAID-ის მიერ.
+              </p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<img class="chat_icon" src="/images/Newtons_cradle.gif" alt="Newtons_cradle">  </section>
+
+     
+        
+   
+       <img class="chat_icon" src="/images/Newtons_cradle.gif" alt="Newtons_cradle"> 
+       
+    </main>
+  
+
+
     <footer>
 
         <section class="sacont">
@@ -250,10 +434,9 @@
 
             <li><a class="contact" href="https://www.google.com/maps/search/%E1%83%96%E1%83%94%E1%83%A1%E1%83%A2%E1%83%90%E1%83%A4%E1%83%9D%E1%83%9C%E1%83%98,+%E1%83%AA%E1%83%9D%E1%83%A2%E1%83%9C%E1%83%94+%E1%83%93%E1%83%90%E1%83%93%E1%83%98%E1%83%90%E1%83%9C%E1%83%98%E1%83%A1+%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%90/@42.1140526,43.0311178,15.33z?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D">2nd Public School of Zestapon</a></li>
 
-            <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.0750118064116!2d43.03122104116899!3d42.10586427133743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405cb8c0b6fb52bd%3A0x138fb242c70d3c3c!2s2nd%20Public%20School%20of%20Zestapon!5e0!3m2!1str!2sge!4v1742675164856!5m2!1str!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe></li>
 
            
-        <div class="btn">
+        <!-- <div class="btn">
             <button id="btn1"><i class="fa-brands fa-facebook"></i></button>
             <button id="btn2"><i class="fa-brands fa-youtube"></i></button>
             <button id="btn3"><i class="fa-brands fa-twitter"></i></button>
@@ -264,12 +447,22 @@
             <button id="btn4"><i class="fa fa-close"></i></button>
             <button id="btn5"><i class="fa fa-folder"></i></button>
         </div>
-         
+          -->
         </ul>
 
     </footer>
 
-</footer>
+  
+   
+    <script src="accordion.js"></script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+

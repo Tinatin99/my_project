@@ -5,29 +5,64 @@
 /* ფონტის ლინკი ლათინური */
 
 
- body{
+ /* body{
   background-color: blanchedalmond;
-  /* font-family: Arial, Helvetica, sans-serif; */
- }
+  font-family: Arial, Helvetica, sans-serif;
+ } */
 
+
+ /* body {
+
+  background-color: #f4f4f4;
+} */
 
 
 header{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    background-color: rgb(228, 508, 299);
-  
-    font-size: 23px;
-    color:black;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left:0 ;  
-    padding: 10px 15px; 
-    z-index: 1;
-    position: relative;
+  background-color: antiquewhite;
+  background-color: rgb(228, 508, 299);  
+  font-size: 22px;
+  color:black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left:0 ;  
+  padding: 10px 15px; 
+  z-index: 1;
+   /* position: relative; */
  }
+
+.logo_image{
+  width: 60px;
+  height: 60px;
+}
+ .header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+Ol{
+  display: flex;
+}
+li{
+  margin-right: 30px;
+}
+
+.burger{
+  position: relative;
+  display: none;
+}
+.fa-solid,  .fa-bars{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+ 
+
+
+
+
 
 /* header-ის hoveri */
  /* header - ს დაჰოვერება გავუკეთოთ, კურსორის მიტანისას ცვლილება, a ანქორ ტეგი იქნება რელატივი, ხოლო  ბიფორი და აფტერი აბსოლუტი
@@ -56,11 +91,6 @@ a{
   
 
 
- .logo_image{
-   width:50px;
-   /* margin-left:30px; */
-}
-
 
 
 .Newtones_cradle{
@@ -85,44 +115,7 @@ a{
    text-decoration: none;
    }
    
-   
- .navigation ul{
-  list-style: none;
-  display: flex;
-  padding: 0;   
-  margin: 0;
-   }
-
-
-   .nav-active {
-    display: block;
-}
-
-
-   .burger{
-     width: 80px;
-     height: 50px;
-     color: black;
-     font-size: 30px;
-     position:absolute;
-     margin-left: 40px ;
-     display: none;
-     cursor: pointer;
-   }
-
-
-  .burger i{
-  font-size: 24px;
-  color: #000000;
-  position: relative;
-  display: none;
-} 
-   
-   .nav_li{
-      margin-left: 20px;
-   }
-
-
+  
 
    h1{
     font-size: 24px;
@@ -132,8 +125,7 @@ a{
 
    footer{
     margin-top: 100px;
-    width: 100%;
-    height: 200px;
+    width: 100%; 
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
@@ -154,28 +146,38 @@ a{
       
    }
 
-   iframe{
+   #exp{ 
+  display: flex;
     margin-top: 80px;
-    margin-left: 10px;
-    margin-bottom: 45px; 
+    width: 80%;
+    margin-left: 100px;
+    margin-bottom: 25px; 
+    padding: 40px;
+    padding:0 auto;
+    
    
     
  }
+ .exp{
+  padding: 50px;
+ }
+/* 
+#iframe{
+display: flex;
+flex-wrap: wrap;
+width: 80%;
 
-#if{
-display: inline-block;
-
-}
+} */
 
 /* #about1{
   width: 80%;
   margin: 0 auto;
 } */
- .contact{
-    display: block;
+ #contact{
+    display: flex;   
     margin-bottom: 15px;
-
     color: rgb(86, 48, 225);
+    margin-top: 70px;
  }
  
  .chat_icon{
@@ -187,11 +189,126 @@ display: inline-block;
   z-index: -1; 
 }
 
+ /* მთავარი გვერდი, სლაიდერი */
+
+
+ /* slider */
+ #slider {
+  width: 70%;
+  height: 85vh;
+  position: relative;
+  margin: 0 auto;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(to right, #f72222, #5f3512);
+  border-radius: 20%;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  z-index: 2;
+}
+.arrow-left {
+  left: 200px
+}
+.arrow-right {
+  right: 200px;
+}
+.arrow:hover {
+  border: 3px solid white;
+
+} 
+.slider-title {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  /* transform: translate(-50%, -50%); */
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 3rem;
+  letter-spacing: 0.15rem;
+  color: rgb(189, 163, 163);
+  padding: 20px 70px;
+  text-align: center;
+}
+
+ /* .dot { 
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  background-color: rgb(1, 1, 1);
+  margin: 5px;
+  opacity: 40%;
+
+  opacity: 40%; 
+}
+.dot.active {
+
+  background-color: white;
+  background-color: rgb(228, 225, 234);
+}
+
+.dots {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  cursor: pointer;
+} */
+/* } */
+
+
+.errorText{
+  color: #f72222;
+}
+#emailText{
+  display: block;
+  color: #f72222;
+  font-size: 20px;
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+/* მთავარი გვერდი ვიდეო */
 /* index.html */
+
+.home2{
+  padding: 60px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.video1{
+  margin-top:40px ;
+}
+
+.home{
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: 24px;
+}
+
 /* about.html */
 
 /* .bg_image1{
@@ -242,17 +359,117 @@ display: inline-block;
 /* BEM   მოდიფაიერი მეთოდოლოგია */
 /* მთავარი გვერდი */
 
-.physicsbody {
-  font-family: 'BPG Irubaqidze', sans-serif;
-  background-color: #f8f9fa; 
-}
+
 #physteria{
 display: flex;
 flex-direction: column;
 width: 40%;
 }
 
+
+/* Global Styles */
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container__box {
+  max-width: 350px;
+  width: 100%;
+  padding: 20px;
+   
+  border-radius: 20px;
+  box-shadow: 0 20px 35px rgb(102, 48, 255);
+}
+
+.container__box1 {
+  max-width: 350px;
+  width: 100%;
+  padding: 20px;
+  
+  border-radius: 20px;
+  box-shadow: 0 20px 35px purple;
+}
+.container__box--primary {
+  background-color: #f0f0f0;
+}
+
+.container__box--secondary {
+  background-color: #e0e0e0;
+}
+
+.container__item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container__item1{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.container__image {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 20px;
+}
+
+.container__text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Quotes Section */
+.container--quotes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#container--quotes{
+  max-width: 80%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  gap: 200px;
+}
+.container__item--quote {
+  width: calc(50% - 10px);
+}
+
+.container__item--quote p {
+  font-style: italic;
+}
+
+#news2{
+display: inline-block;
+margin: 0 auto;
+margin-left: 25%;
+border-radius: 20px;
+
+}
+.news{
+  font-family: 'BPG Irubaqidze', sans-serif;
+  background-color: #f8f9fa; 
+  margin: 0 auto;
+  padding: 25px;
+}
+#news{
+  margin: 0 auto;
+  padding: 45px;
+}
+
+/* .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -260,31 +477,53 @@ width: 40%;
   padding: 5px;
   box-shadow: 15px 10px;
 }
-
+#news{
+  font-family: 'BPG Irubaqidze', sans-serif;
+  background-color: #f8f9fa; 
+}
 .container__box {
-  display: flex;  
-  flex-direction:column;
+  display: flex;
+  flex-wrap: wrap;
+  width: 35%;
   gap: 15px;
+  gap: 10px;
  }
 
 .container__box--primary {
-  flex: 1 1 60%;
+  flex: 1 1 35%;
+  display: inline-block;
   }
 
 .container__box--secondary {
   flex: 1 1 45%;
-}
-
+} */
+/* 
 .container__item {
   background: #f4f4f4;
   padding: 15px;
   border-radius: 20px;
   border: 5px solid purple;
-}
+} */
 
+
+/* .container__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(40% - 10px);
+  box-sizing: border-box;
+  border: 5px solid purple;
+  background: #f4f4f4;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px powderblue;
+}
 .container__image {
-  max-width: 100%;
+  max-width: 150px;
+  width: 100%;
   height: auto;
+  float: left;
+  padding: 20px;
+
 }
 
 .container__text {
@@ -292,6 +531,7 @@ width: 40%;
   line-height: 1.5;
   }
 .container__title{
+  display: flex;
   background-color: #f4f4f4;
   width: 60%;
   height: 30px;
@@ -300,11 +540,14 @@ width: 40%;
   border-radius: 8px;
   border: 5px solid purple;
   text-align:center;  
-}
+} */
 
 /* ფსევდო კლასები */
+
+
+
 .container__text::first-line{
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   font-weight: 700;
 }
@@ -314,8 +557,47 @@ width: 40%;
   font-weight:1000;
 }
   
+#td{
+  max-width: 900px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  gap: 200px;
+  margin: 0 auto;
+}
+#td1{
+ 
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  gap: 200px;
+}
 
-.td{
+#td1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.box {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin: 10px;
+  word-wrap: break-word; /* Break long words to fit inside the box */
+}
+/* #td{
+  margin-top: 200px;
+  marg
+  
   gap: 25px;
   padding: 30px;
   width: 80%;
@@ -323,7 +605,7 @@ width: 40%;
   background-color: black;
   display: block;
   margin: 0 auto;
-}
+}  */
 
  .phisic-card {  
   gap: 20px; 
@@ -337,9 +619,8 @@ width: 40%;
 
 
 img{
-  float: left;
-  margin: 20px;
-  width: 35%;
+  float: left;  
+  width: 40%;
   gap: 10px;
 }
 .img1{
@@ -396,9 +677,9 @@ img{
 #testtwo{
   display: flex;
   margin-top: 40px;  
-  width: 100%;
+  width: 80%;
   max-width: 100%;
-  margin: 0 auto;
+
   background: white;
   margin: 10px 0;
   padding: 10px;
@@ -426,6 +707,7 @@ img{
 
 .test-container {
   display: flex;
+  width: 80%;
   gap: 40px; 
 }
 
@@ -456,9 +738,10 @@ after ელემენტის შემდეგ  */
 
 
 h2::before{
-  content:"სრულად  ";
+  content:"... ";
   color: rgb(183, 0, 255);
   font-size: 25px;
+  margin: 0 auto;
 }
 /* .test::after{
   content:url(/images/smiley.png);
@@ -703,6 +986,9 @@ url(https://validator.w3.org/) */
 responsive checker გუგლში ვწერთ გითაბის ლინკი, რეზოლუციებზე გაწერა
 https://responsivetesttool.com/
 სწორია*/
+
+
+
 .bg_image2::before{
   content:url("") ;
   width: 100%;
@@ -732,6 +1018,7 @@ https://responsivetesttool.com/
 x  ღერზზე გამოწეული  y   ღერზზე გამოწეული  ერის შეცვლა*/
 h2{
   text-shadow: 1px 1px #000000;
+  margin: 0 auto;
   
 }
 
@@ -741,9 +1028,10 @@ h2{
 
 /* ფიზიკოსების გვერდი დივები */
 .containerbox {
-  display: flex;
   flex-wrap: wrap;
-  gap: 30px; 
+  gap: 20px; 
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -761,55 +1049,53 @@ h2{
   border: 2px solid palegreen;
   margin-top: 25px;
   border-radius: 15px;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 5px;
+  margin-left: 10px;
   padding: 20px;
-  transform: rotate(3deg);
+  transform: rotate(4deg);
+ }
+#contbox{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px;
+}
+
+ .box1{
+  display: flex;
+  flex-direction:column; 
+  gap: 15px;
+  box-shadow: 5px 10px rgb(48, 207, 255);
+  display: inline-block;
+  background-color: #f4f4f4;
+  width:35%;
+   margin: 0 auto;
+  padding: 10px;
+  border: 2px solid palegreen;
+  margin-top: 25px;
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 0px;
+  transform: rotate(-10deg);
  }
 
+ .contact1{
+  margin: 0 auto;
+ }
 
 /* :hover pseudo class*/
-/* condact კონტაქტების გვერდის ღილაკი */
+
+
+
+
+
+/* contact კონტაქტების გვერდის ღილაკი */
 
 /* სწორია */
 
 
- /* #prev{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: blue;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 10px;
-  cursor: pointer;
 
-}
- #next:hover{
-  background-color: aqua;
-  font-size: 20px;
-}
-
-
-#prev:hover{
-  background-color: aqua;
-  font-size: 20px;
-}
-#next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: blue;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 10px;
-  cursor: pointer;
-
-} */
-
-
+/* ??????????????????????????????? */
 
 
 
@@ -828,6 +1114,7 @@ h2{
 
 .geo-rel {
   position: relative;
+  float: left;
   width: 200px; /* სურათის კონტეინერის სიგანე */
 }
 
@@ -837,18 +1124,38 @@ h2{
 }  */
 
 
-
+#h4{
+  margin: 0 auto;
+  font-size: 16px;
+}
  .geo-text {
-  max-width: 80%; /* ტექსტის მაქსიმალური სიგანე */
-  padding: 40px;
-  font-size: 18px;
-  line-height: 1.6;
+  max-width:800px; /* ტექსტის მაქსიმალური სიგანე */
+    width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 1.3;
   text-align: justify;
   margin: 0 auto;
   } 
 
 .geo-text  {
-  color: blue;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.geo-text1 {
+  max-width:800px; /* ტექსტის მაქსიმალური სიგანე */
+    width: 100%;
+  padding: 5px;
+  font-size: 17px;
+  line-height: 1.3;
+  text-align: justify;
+  margin: 0 auto;
+  } 
+
+.geo-text1  {
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
@@ -875,69 +1182,32 @@ h2{
 
 /* sworia, slaideri ar muSaobs mxolod */
 
-.slider {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
- }
-
-.slides {
-    display: flex;
-    overflow: hidden;
-    }
-
-.slide {
-    min-width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.home2{
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-}
+/* სლაიდერის ძირითადი სტილები */
+/* სლაიდერის ძირითადი სტილები */
+/* სლაიდერის სტილები */
 
 
-.prev{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: blue;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 10px;
-  cursor: pointer;
-}
-.next{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: blue;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 10px;
-  cursor: pointer;
-}
- .next:hover{
-  background-color: aqua;
-  font-size: 20px;
-}
 
 
-.prev:hover{
-  background-color: aqua;
-  font-size: 20px;
-}
 
-.prev {
-    left: 0;
-}
 
-.next {
-    right: 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -974,8 +1244,11 @@ h2{
 
 #chrciali{
  background-color: #f4f4f4;
- color: #000000;
+ color: black;
  display: block;
+ font-size: 30px;
+ margin-top: 120px;
+ margin-bottom: 50px;
  justify-content: center;
  align-items: center;
  margin-top: 30px;
@@ -1122,12 +1395,12 @@ some other entities supported by html
 სარეგისტრაციო ფორმა ატრიბუტები */
 
 #survey{ 
- display: inline-block;
+  display:inline-block;
+  width:35%;
+   margin-bottom: 10px;
   justify-content: center;
   align-items: center;
-  width:50% ; 
   margin-top:10px;
-  /* background-color: #f4f4f4; */
   color: #000000;
   border: 5px solid rgb(122, 112, 216);
   border-radius: 15px;
@@ -1152,10 +1425,11 @@ some other entities supported by html
    box-shadow:20px 20px 15px rgb(190, 48, 225); */
 /* }  */
 #survey2{ 
-  display: inline-block;
+  display:inline-block;
+  width:40%;
+    margin-bottom: 10px;
    justify-content: center;
    align-items: center;
-   width:50%px; ; 
    margin-top:10px;
    /* background-color: #f4f4f4; */
    color: #000000;
@@ -1166,14 +1440,12 @@ some other entities supported by html
    padding: 15PX;
    box-shadow:20px 20px 15px rgb(225, 48, 48);
 }
-#survey, #survey2{
-  display:inline-block;
-  width: 30%;
-  margin-bottom: 25px;
 
 
-}
 /* 18.12.2025  */
+
+
+
 
 .container {
   display: grid;
@@ -1184,35 +1456,14 @@ some other entities supported by html
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-/* section {
-  padding: 20px;
-  background: #b3e5fc;
-  border-radius: 5px;
-} */
-/* input, button {
-  display: block;
-  width: 100%;
-  margin-top: 10px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-} */
-/* button {
-  background: #0288d1;
-  color: white;
-  cursor: pointer;
-} */
-/* .input{
-  color: #000000;
-  
-} */
+
+
+
+
 .geo-abs{
   font-family: 'BPG Irubaqidze';
 }
-/* .input_element:focus{
-  outline: none;
 
-} */
 
 
 /* მოეხსნას ხაზები */
@@ -1227,29 +1478,30 @@ some other entities supported by html
  border: none;
  border-bottom:1px dotted #6200ea;
  margin-top: 20px;
+ max-width: 220px;
+ width: 100%;
  
  }
-h3{
+/* h3{
   color: #000000;
-  margin-top: 80px;
-  font-size: 34px;
+  margin-top: 40px;
+  font-size: 24px;
+} */
+#if2{
+  font-size: 24px;
+  color: black;
+  margin: 0 auto;
 }
  .box_input{
-  margin-top: 30px;
+  max-width: 200px;
+  width: 100%;
+  margin-top: 10px;
   margin-bottom: 15px;
  }
 
 
  /* 18,03,2024 */
- form {
-  /* background: white; */
-  padding: 5px;
-  border-radius: 15px;
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-  width: 350px;
-  /* margin-left: 45px;
-  margin-top: 25px; */
-}
+
 fieldset {
   border: 4px solid #007BFF;
   border-radius: 8px;
@@ -1313,17 +1565,22 @@ input[type="submit"]:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 
 form {
+  border-radius: 15px;
   flex: 1;
-  min-width: 45%;
-  padding: 20px;
-  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 15px;
   background: linear-gradient(to right, white, #5ee7ff);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
   color: black;
   
 }
@@ -1405,9 +1662,12 @@ input[type="reset"]:hover {
 } */
 
 h3 {
+  margin-top: 120px;
   text-align: center;
-  color:black;
-  font-size: 40px;
+  text-shadow: 0 5px 5px rgb(47, 255, 245);
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 .curvey5{
   display: flex;
@@ -1462,4 +1722,95 @@ div{
     background-color: white#5ee7ff;
   }
 
-  git-sce.com
+  /* git-sce.com */
+
+
+
+  #if1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .ifi1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #freedom{
+    width: 900px;
+    height:400px;
+    margin: 0 auto;
+  }
+
+
+
+
+   /* accordion */
+ .accordion {
+  height: 600px;
+  max-width:1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wraper-body {
+  background-color: #524587;
+  max-width:1000px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.accordion-container {
+  max-width: 870px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.fontColor {
+  color: rgb(244, 244, 244);
+}
+.fontSize {
+  font-size: 20px;
+}
+.accordion-title {
+  position: relative;
+  padding: 25px 0;
+  cursor: pointer;
+}
+.accordion-title::before {
+  content: " +";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 25px;
+}
+
+.accordion h2 {
+  font-size: 27px;
+  padding-top: 60px;
+}
+.last {
+  padding-bottom: 80px;
+}
+.accordion-description {
+  width: 100%;
+  font-size: 16px;
+  height: 0;
+  overflow: hidden;
+}
+.line {
+  width: 100%;
+  height: 1.5px;
+  background-color:purple;
+}
+.accordion-container.active .accordion-description {
+  height: 100px;
+  padding: 10px;
+}
+.accordion-container.active .accordion-title::before {
+  content: "-";
+  font-size: 25px;
+}
+#fontcolor{
+  
+}

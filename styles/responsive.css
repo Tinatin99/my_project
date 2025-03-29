@@ -201,6 +201,7 @@ align-items: center; მუშაობს მხოლოდ ესენი �
 
 
 /* სიახლეების გვერდის რესფონსივი ყუთების */
+
  /* @media (min-width: 320px) {
     .container {
         flex-direction: row;
@@ -224,7 +225,7 @@ align-items: center; მუშაობს მხოლოდ ესენი �
  რესპონსიული სტილები 
  სრულად*/
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -249,8 +250,38 @@ align-items: center; მუშაობს მხოლოდ ესენი �
     .navigation.active{
         display: block;
     }  
-} 
+}  */
+  /* ჰედერი */
+  @media (max-width: 768px) {
+    header {
+        display: block;
+        margin-right: 30px;
+    }
 
+    .navigation {
+        display: none;
+    }
+    .activeNavigation{
+        display: block;
+    }
+    .navigation {
+        flex-direction: column;
+        background-color: blueviolet;
+        position: absolute;
+        left: 50px;
+        top: 70px;
+        width: 200px;
+        height: 200px;
+    }
+     .burger {
+        display: block;
+    }
+
+  
+    .navigation.active{
+        display: block;
+    }  
+} 
 /* მედია მოთხოვნები (რესპონსიულობა)
 ფიზიკოსების ბიოგრაფიები ფოტოებით */
 
@@ -291,7 +322,8 @@ align-items: center; მუშაობს მხოლოდ ესენი �
         flex-direction: column;
     }
     form {
-        width: 90%;
+        width: 100%;
+        max-width: 100px;
         padding: 15px;
     }
     input {
@@ -332,4 +364,55 @@ align-items: center; მუშაობს მხოლოდ ესენი �
                 grid-template-columns: 1fr;
             }
         }
+/* რესფონსივი responsive- პატარა ეკრანებისთვის */
 
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    #home {
+      width: 95%;  /* Adjust the container width for smaller screens */
+    }
+  }
+
+
+  /* სიახლეების გვერდი */
+
+  @media (max-width: 768px) {
+    .container__item {
+      flex-basis: 100%; /* მცირე ეკრანზე ერთ ხაზზე */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container__item1 {
+      flex-basis: 100%; /* მცირე ეკრანზე ერთ ხაზზე */
+    }
+  }
+
+  /* Mobile Responsive  სიახლეების გვერდი, bem მეთოდოლოგია*/
+
+@media screen and (max-width: 768px) {
+    .container__item--quote {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .container__item1--quote {
+      width: 100%;
+    }
+  }
+
+  /* /* ფიზიკოსები ყუთები */
+
+
+
+  @media (min-width: 768px) {
+    .box {
+        width: 45%; /* On larger screens, 2 boxes will be side by side */
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%; /* On small screens, each box will take full width */
+    }
+} 

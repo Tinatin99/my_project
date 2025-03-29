@@ -7,27 +7,8 @@ function openPDF() {
  }
 
 
-სლაიდი ფიზიკოსების გვერდზე
 
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide");
 
-function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove("active"));
-  slides[index].classList.add("active");
-}
-
-function prevSlide() {
-  currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
-  showSlide(currentSlide);
-}
-
-function nextSlide() {
-  currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
-  showSlide(currentSlide);
-}
-
-showSlide(currentSlide);
 
 
 
@@ -52,35 +33,6 @@ showSlide(currentSlide);
 //       });
 //   });
 // });
-document.addEventListener("DOMContentLoaded", () => {
-    let currentIndex = 0;
-    const slides = document.querySelectorAll(".slider__image");
-
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle("active", i === index);
-        });
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(currentIndex);
-    }
-
-    document.querySelector(".slider__button--next").addEventListener("click", nextSlide);
-    document.querySelector(".slider__button--prev").addEventListener("click", prevSlide);
-    
-    // Auto-slide every 5 seconds
-    setInterval(nextSlide, 5000);
-
-    // Initial display
-    showSlide(currentIndex);
-});
 
 
 
@@ -150,38 +102,76 @@ document.addEventListener("DOMContentLoaded", function () {
 
  //სლაიდერის ფუნქციონირება
 
-// let currentSlide = 0;
-// const slides = document.querySelectorAll('.slide');
 
-// function showSlide(index) {
-//     slides.forEach((slide, i) => {
-//         slide.style.transform = `translateX(${(i - index) * 100}%)`;
-//     });
-// }
+ document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".slide");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    let currentIndex = 0;
 
-// function prevSlide() {
-//     currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
-//     showSlide(currentSlide);
-// }
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+    }
 
-// function nextSlide() {
-//     currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
-//     showSlide(currentSlide);
-// }
+    prevBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+        showSlide(currentIndex);
+    });
 
-// showSlide(currentSlide);
+    nextBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+        showSlide(currentIndex);
+    });
+
+    // ✅ ავტომატური გადართვა (3 წამში ერთხელ)
+    setInterval(() => {
+        currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+        showSlide(currentIndex);
+    }, 3000);
+});
+
+
 
  
 
-//ბურგერის გააქტიურება
 
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.navigation');
 
-burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-});
+// // ვასელექთებ ბურგერაიქონს,ნავიგაციას
 
+
+
+// ფონტოუსამი  fontowesame
+
+let navigation = document.getElementById('navigation')
+let burger = document.getElementById('burger')
+
+// აიქონზე დაკლიკებისას addEventListener ნიშნავს დაკლიკებას
+
+burger.addEventListener('click',function(){
+    if(navigation.classList.contains('activeNavigation')){
+        navigation.classList.remove('activeNavigation')
+        burger.innerHTML =' <i class="fa-solid fa-bars"></i>'
+
+    }else{
+        navigation.classList.add('activeNavigation')
+        burger.innerHTML= '<i class="fas fa-times"></i>'
+
+    }
+})
+
+// button
+
+
+
+// let button = dokument.getElementById("button")
+// let bodyId = dokument.getElementById("color")
+// button.addEventListener("click", function(){
+//     bodyId.classList.toggle("active")
+// })
+
+/* <i class="fas fa-bars"></i>  <!-- ბურგერ მენიუს ღილაკი -->
+<i class="fas fa-times"></i> <!-- დახურვის ღილაკი --> */
 
 /* 18,03,2024 ჩვენს შესახებ გვერდის  რეგისტრაციის ფორმა */
 
@@ -254,4 +244,215 @@ burger.addEventListener('click', () => {
 
 
 // სლაიდი
+
+const slides = document.querySelector('.slides');
+const slideCount = document.querySelectorAll('.slide').length;
+let currentIndex = 0;
+
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+
+function updateSlider() {
+  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slideCount;
+  updateSlider();
+});
+
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+  updateSlider();
+});
+
+
+
+
+  
+//   სიახლეების  გვერდი BEM მეთოდოლოგია
+
+
+// Optionally, add some functionality like an interactive quote feature
+document.querySelectorAll('.container__item--quote').forEach((quote, index) => {
+    quote.addEventListener('click', () => {
+      alert(`Quote ${index + 1} clicked!`);
+    });
+  });
+  
+// ფიზიკოსები ყუთებიconst boxes = document.querySelectorAll('.box');
+
+boxes.forEach((box) => {
+    box.addEventListener('mouseover', () => {
+      if (box.scrollHeight > box.clientHeight) {
+        box.style.overflowY = 'auto'; // Enable scrolling if content overflows
+      } else {
+        box.style.overflowY = 'hidden'; // Disable scrolling if not needed
+      }
+    });
+  });
+
+
+
+
+//   26.02.2025
+//   ინფორმაციის წამოღება
+
+
+// function getUsers(){
+//     let request = new XMLHttpRequest()
+//     request.addEventListener('load',render)
+//     request.addEventListener('error',errorRender)
+
+//     request.open('GET','https://reqres.in/api/users?page=1')
+//     request.send()
+
+// }
+
+// function render(){
+//     let response=this.response
+//     let responseData = JSON.parse(response)
+//     console.log(responseData);
+//     let containerr = document.getElementById('containerr')
+//     let ul = document.createElement('ul')
+//     responseData.data.forEach(function(item){
+//         let li = document.createElement('li')
+//         li.textContent =item.email
+//         let image = document.createElement('img')
+//         image.src = item.avatar
+//         ul.appendChild(li)
+//         ul.appendChild(image)
+//         containerr.appendChild(ul)
+
+//     })
+  
+// }
+
+// function errorRender(){
+//     let containerr = document.getElementById('containerr')
+//     let p = document.createElement('p')
+//     p.textContent = 'server error'
+//     containerr.appendChild(p)
+
+// }
+
+// getUsers()
+
+
+
+function getUsers(){
+    fetch("https://reqres.in/api/register",{
+        method:"GET"
+
+    })
+
+
+   .then(function(response){
+    if(response.status !== 200){
+        throw console.error();
+ 
+    }
+    return response.json()
+        
+  
+   })
+   .then(function(responseData){ let containerr = document.getElementById('containerr')
+    let ul = document.createElement('ul')
+    responseData.data.forEach(function(item){
+        let li = document.createElement('li')
+        li.textContent =item.email
+        let image = document.createElement('img')
+        image.src = item.avatar
+        ul.appendChild(li)
+        ul.appendChild(image)
+        
+
+        })
+        containerr.appendChild(ul)
+      
+    
+   })
+
+
+   .catch(function(){
+        let containerr = document.getElementById('containerr')
+        let p = document.createElement('p')
+        p.textContent = 'server error'
+        containerr.appendChild(p)
+
+   })
+
+}
+  
+getUsers()
+
+
+
+// 28.02.2025
+
+let currentPage = 1
+let totalPages
+
+
+function getUsers(page){
+    fetch('https://reqres.in/api/users?page='+page,{
+        method:'GET'
+    })
+    .then(function(response){
+        if(response.status !== 200){
+            throw response.status
+        }
+        return response.json()
+    })
+    .then(function(responseData){
+        // let container = document.getElementById('container')
+        let fragment = document.createDocumentFragment()
+        totalPages = responseData.total_pages
+        console.log(responseData);
+           
+            responseData.data.forEach(function(item){
+                let li = document.createElement('li')
+                li.textContent =item.email
+                let image = document.createElement('img')
+                image.src = item.avatar
+                fragment.appendChild(li) 
+                fragment.appendChild(image)  
+            })
+
+            document.getElementById('ul_list').innerHTML = " "
+            document.getElementById('ul_list').appendChild(fragment)
+           
+
+    })
+    .catch(function(){
+        let container = document.getElementById('container')
+        let p = document.createElement('p')
+        p.textContent = 'server error 404'
+        container.appendChild(p)
+    })
+
+
+}
+
+document.getElementById('loadprev').addEventListener('click',function(){
+    if(currentPage == 1){
+        return
+    }
+
+    currentPage -=1
+    getUsers(currentPage)
+    // currentPage =currentPage -1
+
+})
+
+document.getElementById('loadnext').addEventListener('click', function(){
+    if(currentPage == totalPages){
+        return
+    }
+    currentPage +=1
+    getUsers(currentPage)
+
+})
+
+getUsers(currentPage)
 
