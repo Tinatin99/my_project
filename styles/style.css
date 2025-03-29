@@ -277,8 +277,29 @@ width: 80%;
 }
 
 
+/* footer */
+.fa-facebook{
+  color: blue;
+  font-size: 40px;
+}
 
-
+.fa-youtube{
+  color:red;
+  font-size: 40px;
+}
+.fa-twitter{
+  color: rgb(0, 179, 255);
+  font-size: 40px;
+}
+.fa-facebook{
+  color: #007BFF;
+  font-size: 40px;
+}
+#sacont{
+  display: block;
+  margin: 0 auto;
+  
+}
 
 
 
@@ -1130,7 +1151,7 @@ h2{
   font-size: 16px;
 }
  .geo-text {
-  max-width:100px; /* ტექსტის მაქსიმალური სიგანე */
+  max-width:80%;   /* ტექსტის მაქსიმალური სიგანე */
   width: 100%;
   padding: 5px;
   font-size: 20px;
@@ -1140,7 +1161,7 @@ h2{
   } 
 
 .geo-text  {
-  color: black;
+  color: blue;
   text-decoration: none;
   font-weight: bold;
 }
@@ -1814,4 +1835,8 @@ div{
 }
 #fontcolor{
   
+}
+.li_cont{
+  font-size: 20px;
+  color: #6200ea;
 }

@@ -145,6 +145,7 @@ Autoprefixer არის PostCSS მოდული, რომელიც ა�
               max-width: 800px;
               height: 100%;
               width: 100%;
+              margin: 0 auto;
               overflow: hidden;
               position: relative;
               margin-top: 40px;
@@ -155,7 +156,12 @@ Autoprefixer არის PostCSS მოდული, რომელიც ა�
               display: flex;
               transition: transform 0.5s ease;
             }
-        
+             .slider_img{
+              max-width: 900px;
+              width: 100%;
+              height: 600px;
+
+            }
             .slide {
               min-width:100%;
               width: 100%;
@@ -190,7 +196,7 @@ Autoprefixer არის PostCSS მოდული, რომელიც ა�
         
             .next {
               right: 10px;
-              border border-radius: 10px;
+             border-radius: 10px;
             }
           </style>
       
@@ -199,12 +205,12 @@ Autoprefixer არის PostCSS მოდული, რომელიც ა�
             <h3 id="sliderh3">გამოჩენილი ფიზიკოსები</h3>
           <div class="slider-container">
             <div class="slides"> 
-              <div class="slide"><img src="/images/1280px-1911_Solvay_conference.jpg" alt="Slide 1"></div>
-              <div class="slide"><img src="images/Solvay_conference_1927.jpg" alt="Slide 2"></div>
-              <div class="slide"><img src="images/fizikosebi.jpg" alt="Slide 3"></div>
-              <div class="slide"><img src="/images/img9.jpg" alt="Slide 4"></div>
-              <div class="slide"><img src="/images/img10.jpg" alt="Slide 5"></div>
-              <div class="slide"><img src="/images/images.jpg" alt="Slide 6"></div>
+              <div class="slide"><img src="/images/1280px-1911_Solvay_conference.jpg" class="slider_img" alt="Slide 1"></div>
+              <div class="slide"><img src="images/Solvay_conference_1927.jpg" class="slider_img"  alt="Slide 2"></div>
+              <div class="slide"><img src="images/fizikosebi.jpg" class="slider_img"  alt="Slide 3"></div>
+              <div class="slide"><img src="/images/img9.jpg"class="slider_img"  alt="Slide 4"></div>
+              <div class="slide"><img src="/images/img10.jpg"class="slider_img"  alt="Slide 5"></div>
+              <div class="slide"><img src="/images/images.jpg"class="slider_img"  alt="Slide 6"></div>
             </div>
             <button class="nav-button prev">&#10094;</button>
             <button class="nav-button next">&#10095;</button>
