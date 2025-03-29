@@ -139,8 +139,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // // ვასელექთებ ბურგერაიქონს,ნავიგაციას
 
-
-
+// document.getElementById("burger-menu").addEventListener("click", function() {
+//     const nav = document.getElementById("navigation");
+//     const burger = document.getElementById("burger-menu");
+//     nav.classList.toggle("active");
+//     burger.classList.toggle("active");
+// });
 // ფონტოუსამი  fontowesame
 
 let navigation = document.getElementById('navigation')
@@ -340,55 +344,66 @@ boxes.forEach((box) => {
 
 
 
-function getUsers(){
-    fetch("https://reqres.in/api/register",{
-        method:"GET"
+// function getUsers(){
+//     fetch("https://reqres.in/api/register",{
+//         method:"GET"
 
-    })
+//     })
 
 
-   .then(function(response){
-    if(response.status !== 200){
-        throw console.error();
+//    .then(function(response){
+//     if(response.status !== 200){
+//         throw console.error();
  
-    }
-    return response.json()
+//     }
+//     return response.json()
         
   
-   })
-   .then(function(responseData){ let containerr = document.getElementById('containerr')
-    let ul = document.createElement('ul')
-    responseData.data.forEach(function(item){
-        let li = document.createElement('li')
-        li.textContent =item.email
-        let image = document.createElement('img')
-        image.src = item.avatar
-        ul.appendChild(li)
-        ul.appendChild(image)
+//    })
+//    .then(function(responseData){ let containerr = document.getElementById('containerr')
+//     let ul = document.createElement('ul')
+//     responseData.data.forEach(function(item){
+//         let li = document.createElement('li')
+//         li.textContent =item.email
+//         let image = document.createElement('img')
+//         image.src = item.avatar
+//         ul.appendChild(li)
+//         ul.appendChild(image)
         
 
-        })
-        containerr.appendChild(ul)
+//         })
+//         containerr.appendChild(ul)
       
     
-   })
+//    })
 
 
-   .catch(function(){
-        let containerr = document.getElementById('containerr')
-        let p = document.createElement('p')
-        p.textContent = 'server error'
-        containerr.appendChild(p)
+//    .catch(function(){
+//         let containerr = document.getElementById('containerr')
+//         let p = document.createElement('p')
+//         p.textContent = 'server error'
+//         containerr.appendChild(p)
 
-   })
+//    })
 
-}
+// }
   
-getUsers()
+// getUsers()
 
 
 
 // 28.02.2025
+
+
+// ბრაუზერიდან ინფორმაციის წამოღება
+
+
+function showThis(){
+    console.log(this)
+}
+showThis();
+
+
 
 let currentPage = 1
 let totalPages
@@ -405,8 +420,11 @@ function getUsers(page){
         return response.json()
     })
     .then(function(responseData){
-        // let container = document.getElementById('container')
-        let fragment = document.createDocumentFragment()
+        // let containerr = document.getElementById('containerr')
+        let fragment = document.createDocumentFragment("ul")
+        // let ul = document.getElementById("ul_list")
+       
+
         totalPages = responseData.total_pages
         console.log(responseData);
            
@@ -415,26 +433,31 @@ function getUsers(page){
                 li.textContent =item.email
                 let image = document.createElement('img')
                 image.src = item.avatar
-                fragment.appendChild(li) 
-                fragment.appendChild(image)  
+                fragment.appendChild(li)
+                fragment.appendChild(image)
             })
 
             document.getElementById('ul_list').innerHTML = " "
             document.getElementById('ul_list').appendChild(fragment)
+
+            containerr.appendChild(ul)
            
 
     })
+    
     .catch(function(){
-        let container = document.getElementById('container')
+        let containerr = document.getElementById('containerr')
         let p = document.createElement('p')
         p.textContent = 'server error 404'
-        container.appendChild(p)
+        containerr.appendChild(p)
     })
 
 
 }
 
-document.getElementById('loadprev').addEventListener('click',function(){
+
+
+    document.getElementById('loadprev').addEventListener('click',function(){
     if(currentPage == 1){
         return
     }

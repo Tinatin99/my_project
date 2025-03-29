@@ -416,3 +416,14 @@ align-items: center; მუშაობს მხოლოდ ესენი �
         width: 100%; /* On small screens, each box will take full width */
     }
 } 
+@media (min-width: 428px) {
+    .box {
+        width: 45%; /* On larger screens, 2 boxes will be side by side */
+    }
+}
+
+@media (max-width: 428px) {
+    .box {
+        width: 100%; /* On small screens, each box will take full width */
+    }
+} 

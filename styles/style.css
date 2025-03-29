@@ -589,7 +589,8 @@ border-radius: 20px;
   padding: 20px;
   border: 1px solid #ccc;
   width: 100%;
-  max-width: 600px;
+  max-height: 1000px;
+  height: 100%;
   box-sizing: border-box;
   margin: 10px;
   word-wrap: break-word; /* Break long words to fit inside the box */
@@ -1129,8 +1130,8 @@ h2{
   font-size: 16px;
 }
  .geo-text {
-  max-width:800px; /* ტექსტის მაქსიმალური სიგანე */
-    width: 100%;
+  max-width:100px; /* ტექსტის მაქსიმალური სიგანე */
+  width: 100%;
   padding: 5px;
   font-size: 20px;
   line-height: 1.3;

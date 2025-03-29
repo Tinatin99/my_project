@@ -192,11 +192,11 @@ accordion.forEach(item => {
 // ეს ლექციაზე დაწერილი კოდია 
 
 
-// accordion.forEach(item => {
-//     item.addEventListener('click', function() {
-//         this.classList.toggle('active');
-//     });
-// });
+accordion.forEach(item => {
+    item.addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+});
 
 
 

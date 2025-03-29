@@ -47,8 +47,10 @@
 <!-- რამდენად მნიშვნელოვანია ფიზიკის ცოდნა ადამიანის ცხოვრებაში? -->
 <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
 
-<link rel="stylesheet" href="styles/style.css">
-
+<link rel="stylesheet" href="./css/bootstrap-grid.css">
+<link rel="stylesheet" href="./css/bootstrap-reboot.css">
+<link rel="stylesheet" href="./css/bootstrap-utilities.css">
+<link rel="stylesheet" href="./css/bootstrap.css">
 
         <title>ფიზტერია</title>
 
@@ -84,40 +86,23 @@ Autoprefixer არის PostCSS მოდული, რომელიც ა�
 <body class="physicsbody">
   
 
-
-    <header >
+    <header>
         <div class="header-wraper">
-
-        <a  href="index.html"><img class="logo_image"  src="/images/img2.png" alt="physic" title="ფიზიკა"></a>
-        
-        <h1> <strong> ფიზტერია </strong> </h1>
-        
-        <nav class="navigation" id="navigation">
-            <ol>
-
-                <li class="nav_li"><a href="index.html" target="_blank"><strong>მთავარი</strong></a></li>  
-                
-                
-                <li class="nav_li"><a href="physicists.html" target="_blank"><strong>ფიზიკოსები</strong></a></li>
-
-
-                <li class="nav_li"><a href="news.html" target="_blank"><strong>სიახლეები</strong></a></li> 
-
-                                
-                <li class="nav_li"><a href="about.html" target="_blank"><strong>ჩვენს</strong> <br> <strong>შესახებს</strong></a></li>
-
-                
-                <li class="nav_li"><a href="contact.html" target="_blank"><strong>საკონტაქტო</strong><br><strong>ინფორმაცია</strong></a></li>
-            </ol>
-        </nav>
-
-
-        <div class="burger">
-            <i class="fa-solid fa-bars"></i>
+            <a href="index.html"><img class="logo_image" src="/images/img2.png" alt="physic" title="ფიზიკა"></a>
+            <h1><strong>ფიზტერია</strong></h1>
+            <nav class="navigation" id="navigation">
+                <ul>
+                    <li class="nav_li"><a href="index.html"><strong>მთავარი</strong></a></li>
+                    <li class="nav_li"><a href="physicists.html"><strong>ფიზიკოსები</strong></a></li>
+                    <li class="nav_li"><a href="news.html"><strong>სიახლეები</strong></a></li>
+                    <li class="nav_li"><a href="about.html"><strong>ჩვენს შესახებ</strong></a></li>
+                    <li class="nav_li"><a href="contact.html"><strong>საკონტაქტო ინფორმაცია</strong></a></li>
+                </ul>
+            </nav>
+            <div class="burger" id="burger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-        
-        </div>
-
     </header>
 
 
@@ -134,28 +119,16 @@ Autoprefixer არის PostCSS მოდული, რომელიც ა�
 
 
         <section id="chrciali" class="ciali">
-            <p class="textcover"><h1 id="chrciali"><strong>ჩრდილოეთის ციალი</strong></h1></p>
+            <h1 class="textcover"><strong>ჩრდილოეთის ციალი</strong></h1>
         </section>
-
         <section>
-            <div class="bg_image3">
-               <div>
-                
-               </div>
-                
-            </div>
+            <div class="bg_image3"></div>
         </section>
-
-
-
-        
         <div class="containerr" id="containerr">
             <ul id="ul_list"></ul>
-          </div>
-    
-          <button id="loadprev">prev</button>
-          <button id="loadnext">next</button>
-
+        </div>
+        <button id="loadprev">prev</button>
+        <button id="loadnext">next</button>
      
 
       
@@ -352,7 +325,7 @@ Autoprefixer არის PostCSS მოდული, რომელიც ა�
         </ul>
 
     </footer>
-
+    <script src="script.js"></script>
 
 </body>
 </html>
