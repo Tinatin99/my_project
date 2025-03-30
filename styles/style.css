@@ -38,7 +38,7 @@ header{
   height: 60px;
 }
 
-.navigation ul {
+/* .navigation ul {
   display:  flex;
   }
 
@@ -54,11 +54,92 @@ header{
 .headerA:hover{
  font-size: 40px;
 
+} */
+/* .ul{
+  display: flex;
+  justify-content:space-between ;
+
+}
+header .logo img{
+  margin-left: 20px;
+  width: 60px;
+  height: 50px;
+}
+header .navbar a {
+  color: bisque;
+  margin:20px;
+  font-size: 25px;
+
+}
+.header .navbar a:hover{
+  color:rgb(196, 109, 109);
+  border-bottom: 3px solid rgb(199, 117, 117);
+  padding-bottom: 1px;
+}
+.navbar{
+  opacity: 0.8;
+  padding: 10px;
+} */
+
+.header-wraper{
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+}
+ul{
+  display: flex;
+  
+}
+li{
+  margin-right: 25px;
+}
+.burger{
+  position: relative;
+  display: none;
+}
+.fa-bars, .fa-times{
+  position: absolute;
+  top: 20px;
+  right: 10px;
 }
 
 
 
+/* posts */
+/* .overlay{
+  position:fixed;
+  top:30px;
+  left:30px;
+  width: 50%;
+  height: 50%;
+  background-color: #a8a4a4;
+  opacity: 70%;
+  color: white;
+  text-align: center;
+  display: none;
+}
+.posts{
+  width: 60%;
+  background-color: #7e3838;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.close{
+  position:absolute;
+  top:30px;
+  right: 30px;
+  color: #f72222;
+  cursor: pointer;
+  font-size: 20px;
 
+}
+.overlay.activePost{
+  display: block;
+} */
 
 
 /* header-ის hoveri */
@@ -555,7 +636,7 @@ border-radius: 20px;
   gap: 20px;
 }
 
-.box {
+.box1 {
   background-color: #f2f2f2;
   padding: 20px;
   border: 1px solid #ccc;
@@ -567,6 +648,30 @@ border-radius: 20px;
   word-wrap: break-word; /* Break long words to fit inside the box */
 }
 
+.box {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width:550px;
+  width: 100%;
+  max-height: 1000px;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 10px;
+  word-wrap: break-word; /* Break long words to fit inside the box */
+}
+
+.box2 {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-height: 1000px;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 10px;
+  word-wrap: break-word; /* Break long words to fit inside the box */
+}
 
  .phisic-card {  
   gap: 20px; 
@@ -631,49 +736,102 @@ img{
 }
 
 
-/* ტესტები */
-
-/* .about {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+/* ტესტების სექცია */
+#testtwo {
   padding: 20px;
-} */
-#testtwo{
-  display: flex;
-  margin-top: 40px;  
-  width: 80%;
-  max-width: 100%;
-
-  background: white;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.test-list {
-  display:flex;
-  justify-content:center ;
-  list-style: none;
-  padding: 0;
-}
-
-.test-list a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #0077cc;
 }
 
 .test-container {
   display: flex;
-  width: 80%;
-  gap: 40px; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
-.test-box {
-  flex: 1; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  padding: 10px;
-  background-color: #fff;
+/* ტესტების ბარათები */
+.test {
+  display: flex;
+  align-items: center;
+  background: white;
+  color: black;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+/* მაუსის ეფექტი */
+.test:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* სურათის სტილი */
+.smiley {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* სურათის ეფექტი */
+.smiley:hover {
+  transform: scale(1.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ტექსტი */
+.test a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.test a:hover {
+  text-decoration: underline;
+}
+
+/* fade-in ეფექტი */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* მთავარი ბლოკი */
+#root_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ინფორმაციული ბლოკები */
+.box {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+  transition: transform 0.3s ease;
+}
+
+/* მაუსის ეფექტი */
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -1499,4 +1657,78 @@ div{
 .li_cont{
   font-size: 20px;
   color: #6200ea;
+}
+
+
+/* ინფორმაციის წამოღება ბრაუზერიდან. */
+
+/* .user-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+    border: 1px  4px solid palevioletred;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: 350px;
+  box-shadow: 0px 4px 6px blue;
+  background-color: #f9f9f9;
+}
+.user-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.user-card p {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+} */
+
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.user-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+}
+.user-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+img {
+  width: 100%;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.2);
+}
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #0056b3;
 }

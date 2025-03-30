@@ -221,3 +221,18 @@
         font-size: 1em;
     }
 }
+
+
+/* about - სიახლეების გვერდი */
+
+
+
+
+@media (max-width: 768px) {
+    .test {
+        width: 90%;
+    }
+    .box {
+        width: 90%;
+    }
+}
