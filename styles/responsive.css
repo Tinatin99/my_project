@@ -1,4 +1,4 @@
-
+/* @@ -1,59 +1,59 @@ */
 
    @media(max-width:420px){
     
@@ -18,38 +18,7 @@
 
 
 
-.arrow-left{
-    left:150px;
-    margin-top: -60px;
-    z-index: -1;
-    cursor: pointer;
 
-}
-.arrow-right{
-    margin-top: -60px;
-    right: 150px;
-    z-index: -1;
-}
-
-
-#slider{
-    width: 90%;
-    height: 30vh;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 105px;
-    border-radius: 20px;
-    z-index: -1;
-}
-
-.closeButton{
-    margin-left: 550px;
-}
-
-.footersize{
-    font-size: 15px !important;
-    padding-top: -50px;
-}
 
   /* 04,12,2024
   იმ რეზოლუციაზე რაზეც ბურგერი ჩნდება, ნავიგაციიას დამალვა უნდა გავუწეროთ  */
@@ -71,7 +40,7 @@
         }
     }
 
-    მეორე გვერდის რესპონსივი, ფიზიკოსები */
+    /* მეორე გვერდის რესპონსივი, ფიზიკოსები */ 
     /* მობილური ვერსია */
 
 
