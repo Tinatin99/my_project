@@ -192,7 +192,91 @@ a{
 
 
 
+/* slider */
+#slider {
+  width: 80%;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(to right, #f72222, #5f3512);
+  border-radius: 20%;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  z-index: 2;
+}
+.arrow-left {
+  left: 80px
+}
+.arrow-right {
+  right: 80px;
+}
+.arrow:hover {
+  border: 2px solid white;
+  background-size: 300% 100%;
+}
+/* .slider-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 3rem;
+  letter-spacing: 0.15rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.555);
+  padding: 40px 70px;
+  border-radius: 30px;
+  text-align: center;
+}
+.slider-title:hover {
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.747);
+} */
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 5px;
+  opacity: 40%;
+}
+.dot.active {
+  opacity: 100%;
+}
+.dots {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  cursor: pointer;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
 
+@keyframes fade {
+  from {opacity: 30%} 
+  to {opacity: 1}
+}
+.key {
+  max-width: 70px;
+  opacity: 50%;
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+  z-index: 109;
+}
 
 
 
@@ -1151,7 +1235,7 @@ input[type="submit"]:hover {
 }
 
 /* ახალი ვერსია */
-.container5 {
+/* .container5 {
   color: #000000;
   border: 5px solid rgb(122, 112, 216);
   border-radius: 15px;
@@ -1165,7 +1249,7 @@ input[type="submit"]:hover {
   gap: 20px;
   width: 50%;
   margin: auto;
-}
+} */
 
 form {
   border-radius: 15px;

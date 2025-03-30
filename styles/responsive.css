@@ -1,5 +1,10 @@
 /* @@ -1,59 +1,59 @@ */
 
+
+
+/* 04,12,2024
+  იმ რეზოლუციაზე რაზეც ბურგერი ჩნდება, ნავიგაციიას დამალვა უნდა გავუწეროთ  */
+
    @media(max-width:420px){
     
     .burger{
@@ -20,28 +25,11 @@
 
 
 
-  /* 04,12,2024
-  იმ რეზოლუციაზე რაზეც ბურგერი ჩნდება, ნავიგაციიას დამალვა უნდა გავუწეროთ  */
+  
 
    
-      
-       @media (max-width: 768px) {
-        .scientists {
-            grid-template-columns: 1fr;
-        }
-      }
+  
 
-
-       @media (max-width: 600px) {
-        .phisic-card {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-    }
-
-    /* მეორე გვერდის რესპონსივი, ფიზიკოსები */ 
-    /* მობილური ვერსია */
 
 
 
@@ -64,7 +52,10 @@
     }
 } 
  
+
+
 /* სიახლეების გვერდი */
+
 @media screen and (max-width: 480px) {
     .survey {
         flex-direction: colum;
@@ -96,8 +87,11 @@
     input[type="submit"] {
         padding: 8px;
     }
+    
 
-@media screen and (max-width: 768px) {
+
+
+/* @media screen and (max-width: 768px) {
     .container5 {
         flex-direction: column;
     }
@@ -111,11 +105,13 @@
             .container {
                 grid-template-columns: 1fr;
             }
-        }
+        } */
 
 /* რესფონსივი responsive- პატარა ეკრანებისთვის */
 
 /* Responsive adjustments for smaller screens */
+
+
 @media screen and (max-width: 768px) {
     #home {
       width: 95%;  /* Adjust the container width for smaller screens */
