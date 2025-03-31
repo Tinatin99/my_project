@@ -78,7 +78,7 @@
          
     
     
-    // // ვასელექთებ ბურგერაიქონს,ნავიგაციას
+    // // ვასელექთებ ბურგერ აიქონს,ნავიგაციას
     
    
     
@@ -165,9 +165,7 @@
         updateButtonState(); // Initial call
     });
     
-    
-    // სლაიდი
-    
+   
 
 
 
@@ -215,6 +213,9 @@
     
     
     //   26.02.2025 
+
+
+
     // ბრაუზერიდან ინფორმაციის წამოღება
     
     
@@ -242,16 +243,4 @@
 
 
     
-    // acoreioni
-        
-    let accordion = document.querySelectorAll('.accordion-conteiner')
-    accordion.forEach( item => {
-      item.addEventListener('click',function(){
-         this.classList.toggle('active')
-    
-    
-    
-      })
-    
-    })
-    
+ 

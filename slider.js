@@ -1,34 +1,34 @@
 // @@ -1,2 +1,134 @@
  let data = [
-     {
-         id: 1,
-         imageUrl: 'https://images.bolt.eu/store/2022/2022-07-20/289e90b8-fa1c-4fb9-b90a-6758a016d650.jpeg',
-         // title: '1. Flamingo',
-         url: 'https://www.google.com/search?q=flamingo&sxsrf=ALiCzsYljkbPSNkNuKNn37zWGfgz4Aew9g:1652188105534&source=lnms&tbm=isch&sa=X&ved=2ahUKEwito4epgNX3AhVSSvEDHXIiB2sQ_AUoAXoECAMQAw&biw=1920&bih=969&dpr=1',
-     },
-     {
-         id: 2,
-         imageUrl: 'https://thumbs.dreamstime.com/z/traditional-georgian-sweets-called-churchkhela-churchela-candle-shaped-grape-juice-candy-nuts-inside-traditional-georgian-161801425.jpg',
-         // title: '2. Giraffe',
-         url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0lwHzvnxdwvb7S9D4wHAlqDBJoxRRQZ5re5Et0xmLnExan2nhtXTn9CUxJzF9Wp_RtG0&usqp=CAU'
-     },
+    //  {
+    //      id: 1,
+    //      imageUrl: 'https://ka.wikihttps://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/CollageFisica.jpg/640px-CollageFisica.jpg',
+    //      // title: '1. Flamingo',
+       
+    //  },
+    //  {
+    //      id: 2,
+    //      imageUrl: 'https://ka.wikipedia.org/wiki/%E1%83%A4%E1%83%98%E1%83%96%E1%83%98%E1%83%99%E1%83%90#/media/%E1%83%A4%E1%83%90%E1%83%98%E1%83%9A%E1%83%98:CMB_Timeline300_no_WMAP.jpg',
+    //      // title: '2. Giraffe',
+         
+    //  },
      {
          id: 3,
-         imageUrl: 'https://images.bolt.eu/store/2022/2022-07-20/65c4b4ec-6829-4d24-8c98-9171219e8ab8.jpeg',
+         imageUrl: 'https://bakuradzebeqa.wordpress.com/wp-content/uploads/2012/05/1298149685_1295186884_nature1407ot3hm.jpg',
          // title: '3. Elephant',
-         url: 'https://www.google.com/search?q=elephant&tbm=isch&ved=2ahUKEwig85LVgNX3AhUZgv0HHcikCMIQ2-cCegQIABAA&oq=elephant&gs_lcp=CgNpbWcQAzIHCCMQ7wMQJzIHCCMQ7wMQJzIFCAAQgAQyBAgAEEMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgARQ2A9YuRRg4h1oAHAAeACAAZ4CiAGIBZIBBTAuMi4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=JWR6YuDMPJmE9u8PyMmikAw&bih=969&biw=1920'
+        
      },
      {
          id: 4,
-         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO3qVvhp-R6h7fon6se5p53lJNXTNrnVZyTIfUth8xhSirtinFVoypfTP11noeF29E3Tc&usqp=CAU',
+         imageUrl: 'https://monica.on.ge/2021/03/25/e253c6b42131435a73fee95ec86f5aaa.jpg',
          // title: '4. Crowned Crane',
-         url: 'https://www.google.com/search?q=crowned+crane&hl=en&sxsrf=ALiCzsZnbFDyz6pgK7rb45KuI7I_g2f1lQ:1652188368850&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjU4M6mgdX3AhVbQvEDHYQHDTkQ_AUoAXoECAIQAw&biw=1920&bih=969&dpr=1'
+        
      },
      {
          id: 5,
-         imageUrl: 'https://www.dolceconfections.com/wp-content/uploads/2020/03/Mixed-Dreid-Fruit.jpg',
+         imageUrl: 'https://cdn.kastatic.org/ka-perseus-images/54d7f06b50a03aecbf724c6727d4d266f58a1444.jpg',
          // title: '5. Mandarin duck',
-         url: 'https://www.google.com/search?q=Mandarin+duck&sxsrf=ALiCzsYalOgGWVkNRzipbE5oN3aQ0EFoiA:1652188480823&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiwi4HcgdX3AhWvQvEDHSgxDv0Q_AUoAXoECAIQAw&biw=1920&bih=969&dpr=1'
+       
      },
  ];
  

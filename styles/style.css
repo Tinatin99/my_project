@@ -24,7 +24,7 @@ header{
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   top: 0;
   left:0 ;  
@@ -38,74 +38,23 @@ header{
   height: 60px;
 }
 
-/* .navigation ul {
+.navigation ul {
   display:  flex;
   }
-
-.nav_li{
-  margin-left: 50px;  
- }
-
-.headerA{
-  text-decoration: none;
-
+  .burger {
+    display: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: black;
 }
 
-.headerA:hover{
- font-size: 40px;
+/* X-ად გადაკეთება */
+.burger.toggle i {
+    content: "\f00d"; /* FontAwesome X (fas fa-times) */
+}
 
-} */
-/* .ul{
-  display: flex;
-  justify-content:space-between ;
 
-}
-header .logo img{
-  margin-left: 20px;
-  width: 60px;
-  height: 50px;
-}
-header .navbar a {
-  color: bisque;
-  margin:20px;
-  font-size: 25px;
 
-}
-.header .navbar a:hover{
-  color:rgb(196, 109, 109);
-  border-bottom: 3px solid rgb(199, 117, 117);
-  padding-bottom: 1px;
-}
-.navbar{
-  opacity: 0.8;
-  padding: 10px;
-} */
-
-.header-wraper{
-  display: flex;
-  justify-content: space-around;
-  width: 1000px;
-}
-.logo{
-  width: 50px;
-  height: 50px;
-}
-ul{
-  display: flex;
-  
-}
-li{
-  margin-right: 25px;
-}
-.burger{
-  position: relative;
-  display: none;
-}
-.fa-bars, .fa-times{
-  position: absolute;
-  top: 20px;
-  right: 10px;
-}
 
 
 
@@ -240,6 +189,17 @@ a{
   align-items: center;
  
  }
+ #contact1 {
+  position: relative;
+  max-width: 800px;
+  width: 50%;
+  height: 0;
+  padding-bottom: 25.25%; /* 16:9 aspect ratio */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
 
  #contact{
     display: flex; 
@@ -374,15 +334,7 @@ a{
 /* სწორია */
 
 
-footer{    
-  margin-top: 100px;
-  width: 100%; 
-  margin: 0 auto;
-  padding: 25px;
- 
- background-color:white;
-  /* background-color: rgb(86, 48, 255); */
-}
+
 .fa-facebook{
   color: blue;
   font-size: 40px;
@@ -426,8 +378,9 @@ footer{
 /* index.html */
 
 .home2{
-  padding: 60px;
-  width: 80%;
+  padding: 40px;
+  max-width: 1600px;
+  width: 90%;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -436,6 +389,8 @@ footer{
 .video1{
   margin-top:40px ;
   margin: 0 auto;
+  width: 80%;
+  display: flex;
 }
 
 .home{
@@ -496,7 +451,12 @@ width: 40%;
   flex-wrap: wrap;
   gap: 20px;
 }
-
+.container1{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
 .container__box {
   max-width: 480px;
   width: 100%;
@@ -574,6 +534,7 @@ width: 40%;
   font-style: italic;
 }
 
+
 #news2{
 display: inline-block;
 margin: 0 auto;
@@ -581,17 +542,22 @@ margin-left: 25%;
 border-radius: 20px;
 
 }
-.news{
+#news{
   font-family: 'BPG Irubaqidze', sans-serif;
   background-color: #f8f9fa; 
   margin: 0 auto;
+  font-size: 22px;
   padding: 25px;
-}
-#news{
   margin: 0 auto;
-  padding: 45px;
+  
 }
 
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
 
 /* ფსევდო კლასები */
@@ -609,7 +575,7 @@ border-radius: 20px;
   font-weight:1000;
 }
   
-#td{
+/* #td{
   max-width:900px;
   display: flex;
   width: 100%;
@@ -618,6 +584,40 @@ border-radius: 20px;
   margin-left: 50px;
   gap: 50px;
   margin: 0 auto;
+} */
+
+#td {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 8px 12px rgba(255, 48, 48, 0.5);
+  background-color: #f4f4f4;
+  border: 3px solid palegreen;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+  width: calc(25% - 30px);
+  min-width: 250px;
+  text-align: center;
+  transform: rotate(-10deg);
+}
+
+.box1:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 15px rgba(48, 207, 255, 0.7);
 }
 #td1{
  
@@ -636,17 +636,6 @@ border-radius: 20px;
   gap: 20px;
 }
 
-.box1 {
-  background-color: #f2f2f2;
-  padding: 20px;
-  border: 1px solid #ccc;
-  width: 100%;
-  max-height: 1000px;
-  height: 100%;
-  box-sizing: border-box;
-  margin: 10px;
-  word-wrap: break-word; /* Break long words to fit inside the box */
-}
 
 .box {
   background-color: #f2f2f2;
@@ -674,21 +663,22 @@ border-radius: 20px;
 }
 
  .phisic-card {  
-  gap: 20px; 
+  gap: 10px; 
   max-width:80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   background-color: beige;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 
 
-img{
-  float: left;  
+/* img{
+  
   width: 40%;
   gap: 10px;
-}
+} */
 .img1{
   width:25px ;
 }
@@ -707,7 +697,7 @@ img{
 .bg_image3{
   background-image:url('https://charlius.com/wp-content/uploads/2022/04/cropped-mwskyglow_moore_2500.jpg');
   min-height: 450px;
-  max-width:1700px ;
+  max-width:1600px ;
   height:100%;
   width: 100%;  
   margin: 0 auto;
@@ -719,6 +709,7 @@ img{
   position: relative;
   padding: 12px;  
   margin-bottom: 35px;
+  border-radius: 20px;
 }
 .bg_image4{
   background-image:url('https://scontent.ftbs10-1.fna.fbcdn.net/v/t39.30808-6/214532542_4029671400471598_6678748425135507492_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeH5NBh64l0gcdm6SoiqphZ7uqmRqmdC9Vm6qZGqZ0L1WbvhfOEg3TttnST35Mgynf_HlL9q56Ipww0g6e2J4lCu&_nc_ohc=7VtyoutDpgkQ7kNvgH0OpwM&_nc_oc=AdnmlX275PA45RU_Ck9c2SEjwHEB9wnBqnvUWYlDtI4scj-tTRNswq63GcZ1c-hGpg4&_nc_zt=23&_nc_ht=scontent.ftbs10-1.fna&_nc_gid=7BNAq6Pgqcuf5ttg_qZ0HA&oh=00_AYGBJleCdIKKenQnU5jYN0Kqg5xQDb5G0XFtJYiBntlUfA&oe=67EE4855');
@@ -733,6 +724,7 @@ img{
   background-size:cover; 
   position: relative;
   padding: 12px;  
+  border-radius: 20px;
 }
 
 
@@ -746,6 +738,7 @@ img{
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  display: none;
 }
 
 /* ტესტების ბარათები */
@@ -761,6 +754,7 @@ img{
   width: 300px;
   opacity: 0;
   animation: fadeIn 0.8s ease-in-out forwards;
+ 
 }
 
 /* მაუსის ეფექტი */
@@ -961,48 +955,6 @@ h2{
   flex-wrap: wrap;
   margin: 100px;
 }
-
- .box1{
-  display: flex;
-  flex-direction:column; 
-  gap: 15px;
-  box-shadow: 5px 10px rgb(48, 207, 255);
-  display: inline-block;
-  background-color: #f4f4f4;
-  width:38%;
-   margin: 0 auto;
-  
-  border: 2px solid palegreen;
-  margin-top: 25px;
-  border-radius: 15px;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding: 10px;
-  transform: rotate(-10deg);
- }
-
- #contact1{
-  display: flex;
-  margin: 0 auto;
-  width: 50%;
-  margin-top: 80px;
-  border-radius: 40px;
-   }
-
-/* :hover pseudo class*/
-
-
-
-
-
-/* contact კონტაქტების გვერდის ღილაკი */
-
-/* სწორია */
-
-
-
-/* ??????????????????????????????? */
-
 
 
 
@@ -1654,43 +1606,76 @@ div{
 #fontcolor{
   
 }
-.li_cont{
+/* .li_cont{
   font-size: 20px;
   color: #6200ea;
+} */
+
+footer {
+  margin-top: 100px;
+  width: 100%; 
+  padding: 15px; 
+  background-color: rgb(228, 508, 299);
 }
 
+.sacont {
+  text-align: center;
+  padding: 10px;
+  background: #f4f4f4;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);  
+  margin: 50px auto;
+}
 
-/* ინფორმაციის წამოღება ბრაუზერიდან. */
-
-/* .user-card {
+.li_cont {
+  list-style: none;
+  padding: 0;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-    border: 1px  4px solid palevioletred;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 10px;
-  width: 350px;
-  box-shadow: 0px 4px 6px blue;
-  background-color: #f9f9f9;
+  gap: 10px;
 }
-.user-card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-.user-card p {
-  font-size: 14px;
-  color: #333;
+
+.contact {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
   font-weight: bold;
 }
-.error {
-  color: red;
-  text-align: center;
-  font-weight: bold;
-} */
+
+.contact:hover {
+  color: #0056b3;
+}
+
+.social-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-box .social-link {
+  font-size: 30px;
+  color: #555;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-box .social-link:hover {
+  transform: scale(1.2); /* აიქონის ზრდა */
+  color: #007bff; /* ფერის შეცვლა ჰოვერზე */
+}
+
+.social-box .social-link i {
+  margin: 0 10px;
+}
+
+
+
 
 
 #container {
@@ -1712,8 +1697,9 @@ div{
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 img {
+  max-width: 110px;
   width: 100%;
-  border-radius: 50%;
+  margin-left:15px;
   transition: transform 0.3s ease;
 }
 img:hover {
@@ -1732,3 +1718,7 @@ button {
 button:hover {
   background: #0056b3;
 }
+/* .index{
+  max-width: 450px;
+  width: 100%;
+} */
