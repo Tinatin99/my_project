@@ -29,8 +29,7 @@ header{
   left:0 ;  
   padding: 10px 15px; 
   z-index: 1;
-   /* position: relative; */
- }
+   }
 
 .logo_image{
   width: 60px;
@@ -42,6 +41,7 @@ ul{
   
 }
 li{
+  font-size: 25px;
   margin-right: 55px;
 }
 .burger{
@@ -50,12 +50,6 @@ li{
   width: 40px;
   height: 30px;
 }
-.fa-bars, .fa-times{
-  position: absolute;
-  top: 20px;
-  right: 10px;
-}
-
 
 
 
@@ -982,8 +976,9 @@ h2{
   width: 300px; /* სურათის კონტეინერის სიგანე */
 }
 
-
-
+#box2{
+ font-size: 16px;
+}
 
 #h4{
   margin: 0 auto;

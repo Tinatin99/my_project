@@ -9,7 +9,14 @@
 
 /* მობილურის ნავიგაციის სტილი */
 
-
+@media (max-width: 320px) {
+  .burger{
+    display: block;
+  }
+  .navigation{
+   display:  none;
+}
+}
 
 
 
@@ -29,6 +36,7 @@
     .box1 {
       width: 100%;
     }
+
   }
 
 
