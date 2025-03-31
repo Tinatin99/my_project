@@ -8,42 +8,13 @@
  /* მობილურზე ნავიგაცია ვერტიკალური გახდეს */
 
 /* მობილურის ნავიგაციის სტილი */
-@media screen and (max-width: 768px) {
-    .burger {
-        display: block;
-    }
 
-    .navbar {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background: rgb(228, 228, 228);
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: height 0.3s ease;
-    }
 
-    .navbar.active {
-        height: auto;
-        padding: 20px 0;
-    }
 
-    .ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
 
-    .nav_li {
-        padding: 15px 0;
-        font-size: 18px;
-    }
-}
+
+
+
 
 
 /* მთავარი გვერდი, ყუთები */

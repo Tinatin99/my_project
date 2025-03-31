@@ -16,7 +16,6 @@
   background-color: #f4f4f4;
 } */
 
-
 header{  
   background-color: rgb(228, 508, 299);  
   font-size: 22px;
@@ -38,28 +37,35 @@ header{
   height: 60px;
 }
 
-.navigation ul {
-  display:  flex;
-  }
-  .burger {
-    display: none;
-    cursor: pointer;
-    font-size: 28px;
-    color: black;
+ul{
+  display: flex;
+  
+}
+li{
+  margin-right: 55px;
+}
+.burger{
+  position: relative;
+  display: none;
+  width: 40px;
+  height: 30px;
+}
+.fa-bars, .fa-times{
+  position: absolute;
+  top: 20px;
+  right: 10px;
 }
 
-/* X-ად გადაკეთება */
-.burger.toggle i {
-    content: "\f00d"; /* FontAwesome X (fas fa-times) */
-}
 
 
 
 
 
 
-/* posts */
-/* .overlay{
+
+
+/* posts */ 
+ .overlay{
   position:fixed;
   top:30px;
   left:30px;
@@ -88,7 +94,7 @@ header{
 }
 .overlay.activePost{
   display: block;
-} */
+}
 
 
 /* header-ის hoveri */
