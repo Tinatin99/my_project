@@ -1,17 +1,17 @@
 // @@ -1,2 +1,134 @@
  let data = [
-    //  {
-    //      id: 1,
-    //      imageUrl: 'https://ka.wikihttps://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/CollageFisica.jpg/640px-CollageFisica.jpg',
-    //      // title: '1. Flamingo',
+     {
+         id: 1,
+         imageUrl: 'https://gofreeai.com/asset/image/article/md/science-gofreeai.com-sfyggi.webp',
+         // title: '1. Flamingo',
        
-    //  },
-    //  {
-    //      id: 2,
-    //      imageUrl: 'https://ka.wikipedia.org/wiki/%E1%83%A4%E1%83%98%E1%83%96%E1%83%98%E1%83%99%E1%83%90#/media/%E1%83%A4%E1%83%90%E1%83%98%E1%83%9A%E1%83%98:CMB_Timeline300_no_WMAP.jpg',
-    //      // title: '2. Giraffe',
+     },
+     {
+         id: 2,
+         imageUrl: 'https://gofreeai.com/asset/image/article/md/physics-gofreeai.com-sfyfnp.webp',
+         // title: '2. Giraffe',
          
-    //  },
+     },
      {
          id: 3,
          imageUrl: 'https://bakuradzebeqa.wordpress.com/wp-content/uploads/2012/05/1298149685_1295186884_nature1407ot3hm.jpg',
@@ -30,6 +30,36 @@
          // title: '5. Mandarin duck',
        
      },
+     {
+        id: 6,
+        imageUrl: '//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/CollageFisica.jpg/500px-CollageFisica.jpg',
+        // title: '1. Flamingo',
+      
+    },
+    {
+        id: 7,
+        imageUrl: '//upload.wikimedia.org/wikipedia/commons/2/22/Archimedes-screw_one-screw-threads_with-ball_3D-view_animated_small.gif',
+        // title: '2. Giraffe',
+        
+    },
+    {
+        id: 8,
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Triple_expansion_engine_animation.gif',
+        // title: '3. Elephant',
+       
+    },
+    {
+        id: 9,
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Magnet_4.jpg',
+        // title: '4. Crowned Crane',
+       
+    },
+    {
+        id: 10,
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Niels_Bohr_Albert_Einstein_by_Ehrenfest.jpg/800px-Niels_Bohr_Albert_Einstein_by_Ehrenfest.jpg',
+        // title: '5. Mandarin duck',
+      
+    },
  ];
  
  let arrowLeft = document.getElementById ('arrow-left');

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* @import url("//cdn.web-fonts.ge/fonts/alk-life/css/alk-life.min.css"); */
 /* ფონტის ლინკი ქართული */
 
@@ -21,9 +28,14 @@ header{
   font-size: 22px;
   color:black;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   top: 0;
   left:0 ;  
@@ -37,6 +49,8 @@ header{
 }
 
 ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   
 }
@@ -50,7 +64,6 @@ li{
   width: 40px;
   height: 30px;
 }
-
 
 
 
@@ -167,11 +180,15 @@ a{
 
    #exp{ 
     display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 80px;
     width: 80%;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 40px;
     margin-left: 175px;
     }
@@ -184,9 +201,15 @@ a{
   text-shadow:0 3px 15px #6200ea;
   color:#6200ea;
   margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
  
  }
  #contact1 {
@@ -202,9 +225,13 @@ a{
 
 
  #contact{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
     background-color: rgb(228, 508, 299); 
-    justify-content: center; 
+    -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+            justify-content: center; 
     font-size: 22px;
     padding: 20px;
     display: flex;
@@ -243,9 +270,13 @@ a{
 .arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 50px;
   height: 50px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f72222), to(#5f3512));
+  background-image: -o-linear-gradient(left, #f72222, #5f3512);
   background-image: linear-gradient(to right, #f72222, #5f3512);
   border-radius: 20%;
   color: white;
@@ -293,17 +324,28 @@ a{
   opacity: 100%;
 }
 .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   z-index: 100;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: 5%;
   cursor: pointer;
 }
 .fade {
-  animation-name: fade;
-  animation-duration: 5s;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 30%} 
+  to {opacity: 1}
 }
 
 @keyframes fade {
@@ -357,9 +399,15 @@ a{
 
 
 #fa{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #ascot{
   display: block;
@@ -390,6 +438,8 @@ a{
   margin-top:40px ;
   margin: 0 auto;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -428,6 +478,8 @@ a{
   width: 100%;
 }
 #physteria{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
 
@@ -439,22 +491,35 @@ a{
 
 
 #physteria{
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: column;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 width: 40%;
 }
 
 
 /* Global Styles */
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
 }
 .container1{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 5px;
 }
 .container__box {
@@ -463,7 +528,8 @@ width: 40%;
   padding: 20px;
    
   border-radius: 20px;
-  box-shadow: 0 40px 55px rgb(102, 48, 255);
+  -webkit-box-shadow: 0 40px 55px rgb(102, 48, 255);
+          box-shadow: 0 40px 55px rgb(102, 48, 255);
 }
 
 .container__box1 {
@@ -472,7 +538,8 @@ width: 40%;
   padding: 20px;
   
   border-radius: 20px;
-  box-shadow: 0 30px 45px purple;
+  -webkit-box-shadow: 0 30px 45px purple;
+          box-shadow: 0 30px 45px purple;
 }
 .container__box--primary {
   background-color: #f0f0f0;
@@ -512,16 +579,23 @@ width: 40%;
 
 /* Quotes Section */
 .container--quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
 }
 
 #container--quotes{
   max-width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 50px;
   margin-left: 200px;
   gap: 200px;
@@ -546,8 +620,8 @@ border-radius: 20px;
   font-family: 'BPG Irubaqidze', sans-serif;
   background-color: #f8f9fa; 
   margin: 0 auto;
-  font-size: 22px;
-  padding: 25px;
+  font-size: 26px;
+  padding: 15px;
   margin: 0 auto;
   
 }
@@ -587,65 +661,175 @@ html, body {
 } */
 
 #td {
-  max-width: 1200px;
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
   margin: 0 auto;
   padding: 20px;
 }
 
 .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
-  box-shadow: 8px 12px rgba(255, 48, 48, 0.5);
+  -webkit-box-shadow: 8px 12px rgba(255, 48, 48, 0.5);
+          box-shadow: 8px 12px rgba(255, 48, 48, 0.5);
   background-color: #f4f4f4;
   border: 3px solid palegreen;
   border-radius: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-  transform: rotate(0deg);
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: calc(25% - 30px);
   min-width: 250px;
   text-align: center;
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 .box1:hover {
-  transform: scale(1.05);
-  box-shadow: 10px 15px rgba(48, 207, 255, 0.7);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 10px 15px rgba(48, 207, 255, 0.7);
+          box-shadow: 15px 25px rgba(48, 207, 255, 0.7);
 }
+
+
+
+#td3 {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.box3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -webkit-box-shadow: 8px 12px rgba(155, 255, 48, 0.5);
+          box-shadow: 8px 12px rgba(96, 255, 48, 0.5);
+  background-color: #f4f4f4;
+  border: 3px solid rgb(236, 152, 251);
+  border-radius: 20px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: calc(25% - 30px);
+  min-width: 250px;
+  text-align: center;
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.box3:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 10px 15px rgba(255, 248, 48, 0.7);
+          box-shadow: 10px 15px rgba(255, 231, 48, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #td1{
+ 
+  display: -webkit-box;
+ 
+  display: -ms-flexbox;
  
   display: flex;
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 50px;
   margin-left: 50px;
   gap: 200px;
 }
 
 #td1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 20px;
 }
 
 
-.box {
+#box {
   background-color: #f2f2f2;
   padding: 20px;
   border: 1px solid #ccc;
-  max-width:550px;
+  max-width:850px;
   width: 100%;
-  max-height: 1000px;
-  height: 100%;
-  box-sizing: border-box;
+  max-height: 400px;
+-webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 10px;
   word-wrap: break-word; /* Break long words to fit inside the box */
 }
@@ -655,9 +839,8 @@ html, body {
   padding: 20px;
   border: 1px solid #ccc;
   width: 100%;
-  max-height: 1000px;
-  height: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 10px;
   word-wrap: break-word; /* Break long words to fit inside the box */
 }
@@ -734,33 +917,51 @@ html, body {
 }
 
 .test-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 15px;
   display: none;
 }
 
 /* ტესტების ბარათები */
 .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: white;
   color: black;
   padding: 12px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
   width: 300px;
   opacity: 0;
-  animation: fadeIn 0.8s ease-in-out forwards;
+  -webkit-animation: fadeIn 0.8s ease-in-out forwards;
+          animation: fadeIn 0.8s ease-in-out forwards;
  
 }
 
 /* მაუსის ეფექტი */
 .test:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* სურათის სტილი */
@@ -768,13 +969,20 @@ html, body {
   width: 40px;
   height: 40px;
   margin-right: 10px;
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
 }
 
 /* სურათის ეფექტი */
 .smiley:hover {
-  transform: scale(1.3);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* ტექსტი */
@@ -789,22 +997,41 @@ html, body {
 }
 
 /* fade-in ეფექტი */
-@keyframes fadeIn {
+@-webkit-keyframes fadeIn {
   from {
       opacity: 0;
-      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
   }
   to {
       opacity: 1;
-      transform: translateY(0);
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
   }
 }
 
 /* მთავარი ბლოკი */
 #root_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
   padding: 20px;
 }
@@ -815,17 +1042,26 @@ html, body {
   color: black;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 320px;
   opacity: 0;
-  animation: fadeIn 0.8s ease-in-out forwards;
+  -webkit-animation: fadeIn 0.8s ease-in-out forwards;
+          animation: fadeIn 0.8s ease-in-out forwards;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 /* მაუსის ეფექტი */
 .box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -924,18 +1160,29 @@ h2{
 
 /* ფიზიკოსების გვერდი დივები */
 .containerbox {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px; 
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 
 .box{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction:column; 
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column; 
   gap: 15px;
-  box-shadow: 5px 10px rgb(102, 48, 255);
+  -webkit-box-shadow: 5px 10px rgb(102, 48, 255);
+          box-shadow: 5px 10px rgb(102, 48, 255);
   display: inline-block;
   background-color: #f4f4f4;
   width:30%;
@@ -948,11 +1195,16 @@ h2{
   margin-right: 5px;
   margin-left: 10px;
   padding: 20px;
-  transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotate(4deg);
  }
 #contbox{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 100px;
 }
 
@@ -1031,9 +1283,15 @@ h2{
 
 .main__section--intro {
   display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 60%;
   text-align: center;
   padding: 20px;
@@ -1058,9 +1316,15 @@ h2{
   font-size: 50px;
   margin-bottom: 100px; 
   margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-shadow:0 3px 15px #6200ea;
   color:#6200ea;
   
@@ -1080,6 +1344,7 @@ h2{
 
 /* ბარათების გალერეა */
 .scientists__grid {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -1092,13 +1357,21 @@ h2{
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  -o-transition: transform 0.3s, box-shadow 0.3s;
   transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .scientists__card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* სურათის სტილი */
@@ -1109,22 +1382,32 @@ h2{
 }
 
 /* ტექსტი ბარათში */
-.scientists__info {
+/* .scientists__info {
   margin-top: 10px;
   font-size: 1.2em;
   font-weight: bold;
   color: aliceblue;
+  } */
+  .scientists__info {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
   }
-
 
 
 .scientists__card {
   position: relative;
   background-color: #6200ea;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  overflow: visible;
   /* სხვა სტილები */
 }
 
-.scientists__bio {
+/* .scientists__bio {
   display: none;
   position: absolute;
   bottom: 0;
@@ -1133,22 +1416,38 @@ h2{
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
   font-size: 14px;
   border-radius: 0 0 10px 10px;
-}
+} */
 
 
+
+/* .scientists__bio {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+} */
 
 .scientists__bio {
-  transition: opacity 0.3s ease;
+  position: absolute;
+  top:0;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
   opacity: 0;
-  /* სხვა სტილები */
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10px;
 }
-
 .scientists__card:hover .scientists__bio {
   opacity: 1;
+  pointer-events: auto;
 }
 
 
@@ -1210,8 +1509,12 @@ some other entities supported by html
   max-width:400px ;
   width:100%;
    margin-bottom: 10px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top:100px;
   color: #000000;
   border: 5px solid rgb(122, 112, 216);
@@ -1219,7 +1522,8 @@ some other entities supported by html
   gap: 25px;
   margin-left:300px;
   padding: 15px;
-  box-shadow:20px 20px 15px rgb(86, 48, 225);
+  -webkit-box-shadow:20px 20px 15px rgb(86, 48, 225);
+          box-shadow:20px 20px 15px rgb(86, 48, 225);
 }
 
 #survey2{ 
@@ -1227,15 +1531,20 @@ some other entities supported by html
     max-width: 400px;
    width:100%;
    margin-bottom: 30px;
-   justify-content: center;
-   align-items: center;   
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;   
    color: #000000;
    border: 5px solid rgb(216, 112, 135);
    border-radius: 15px;
    gap: 25px;
    margin-left: 140px;
    padding: 5px;
-   box-shadow:20px 20px 15px rgb(225, 48, 48);
+   -webkit-box-shadow:20px 20px 15px rgb(225, 48, 48);
+           box-shadow:20px 20px 15px rgb(225, 48, 48);
 }
 
 
@@ -1245,13 +1554,16 @@ some other entities supported by html
 
 
 .container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -1318,12 +1630,15 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 input:focus {
   border-color: #007BFF;
   outline: none;
-  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+          box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
 }
 input[type="submit"] {
   background-color: #007BFF;
@@ -1333,6 +1648,8 @@ input[type="submit"] {
   margin-top: 15px;
   border: none;
   padding: 10px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 input[type="submit"]:hover {
@@ -1364,16 +1681,24 @@ input[type="submit"]:hover {
 
 form {
   border-radius: 15px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
   padding: 10px;
   margin-bottom: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#5ee7ff));
+  background: -o-linear-gradient(left, white, #5ee7ff);
   background: linear-gradient(to right, white, #5ee7ff);
-  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
   color: black;
   
 }
@@ -1423,6 +1748,8 @@ input[type="submit"] {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -1432,12 +1759,30 @@ input[type="reset"] {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 input[type="submit"]:hover {
   background-color: white;
   color: black;
+}
+
+input::-webkit-input-placeholder{
+  color:gray;
+}
+
+input::-moz-placeholder{
+  color:gray;
+}
+
+input:-ms-input-placeholder{
+  color:gray;
+}
+
+input::-ms-input-placeholder{
+  color:gray;
 }
 
 input::placeholder{
@@ -1463,6 +1808,8 @@ h3 {
   margin-bottom: 50px;
 }
 .curvey5{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 } 
 /*  რეგისტრაციის ფორმები დავასრულე */
@@ -1520,8 +1867,12 @@ div{
 
 
   #if1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 50px;
   }
   .ifi1{
@@ -1573,7 +1924,9 @@ div{
   content: " +";
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 20px;
   font-size: 25px;
 }
@@ -1624,25 +1977,39 @@ footer {
   padding: 10px;
   background: #f4f4f4;
   border-radius: 20px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);  
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);  
   margin: 50px auto;
 }
 
 .li_cont {
   list-style: none;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 
 .contact {
   text-decoration: none;
   color: #007bff;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -1653,9 +2020,15 @@ footer {
 }
 
 .social-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   margin-top: 20px;
 }
@@ -1663,11 +2036,17 @@ footer {
 .social-box .social-link {
   font-size: 30px;
   color: #555;
+  -webkit-transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease, color 0.3s ease;
   transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .social-box .social-link:hover {
-  transform: scale(1.2); /* აიქონის ზრდა */
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2); /* აიქონის ზრდა */
   color: #007bff; /* ფერის შეცვლა ჰოვერზე */
 }
 
@@ -1680,31 +2059,50 @@ footer {
 
 
 #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
 }
 .user-card {
   background: white;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
   width: 200px;
 }
 .user-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 img {
   max-width: 110px;
   width: 100%;
   margin-left:15px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 img:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 button {
   background: #007bff;
@@ -1714,6 +2112,8 @@ button {
   margin: 10px;
   border-radius: 5px;
   cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
   transition: background 0.3s ease;
 }
 button:hover {

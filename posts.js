@@ -96,17 +96,17 @@
 
 // დებაგინგი
 
-debugger
-for (let i = 0; i < 2; i++) {
-    console.log("ამჟამინდელი i:", i);
+// debugger
+// for (let i = 0; i < 2; i++) {
+//     console.log("ამჟამინდელი i:", i);
  
-}
+// }
 
-function calculate(a, b) {
-    let result = a + b;
-    return result;
-}
+// function calculate(a, b) {
+//     let result = a + b;
+//     return result;
+// }
 
-let answer = calculate(5, "10"); 
+// let answer = calculate(5, "10"); 
 
-console.log("შედეგი:", answer);
+// console.log("შედეგი:", answer);

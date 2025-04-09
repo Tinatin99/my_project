@@ -40,40 +40,120 @@
     
     // ფიზიკოსების გვერდი
     
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const cards = document.querySelectorAll(".scientists__card");
+    
+    //     cards.forEach(card => {
+    //         card.addEventListener("mouseenter", function () {
+    //             this.style.backgroundColor = "#ddd";
+    //         });
+    
+    //         card.addEventListener("mouseleave", function () {
+    //             this.style.backgroundColor = "white";
+    //         });
+    //     });
+    // });
+    
+    
+    
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const cards = document.querySelectorAll(".scientists__card");
+    
+    //     cards.forEach(card => {
+    //         const bio = card.querySelector(".scientists__bio");
+    
+    //         card.addEventListener("mouseenter", function () {
+    //             bio.style.display = "block";
+    //         });
+    
+    //         card.addEventListener("mouseleave", function () {
+    //             bio.style.display = "none";
+    //         });
+    //     });
+    // });
+    
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const cards = document.querySelectorAll(".scientists__card");
+    
+    //     cards.forEach(card => {
+    //         const bio = card.querySelector(".scientists__bio");
+    //         const info = card.querySelector(".scientists__info");
+    
+    //         // კურსორის მიტანისას – opacity გამოჩნდეს (CSS უკვე გაწერია)
+    //         card.addEventListener("mouseenter", () => {
+    //             bio.style.opacity = "1";
+    //         });
+    
+    //         card.addEventListener("mouseleave", () => {
+    //             bio.style.opacity = "0";
+    //         });
+    
+    //         // დაჭერისას გადამისამართება ბმულზე
+    //         card.addEventListener("click", () => {
+    //             const name = info.textContent.trim();
+    
+    //             let url = "#";
+    //             if (name.includes("არქიმედე")) {
+    //                 url = "https://ka.wikipedia.org/wiki/არქიმედე";
+    //             } else if (name.includes("ნიუტონი")) {
+    //                 url = "https://ka.wikipedia.org/wiki/ისააკ_ნიუტონი";
+    //             } else if (name.includes("აინშტაინი")) {
+    //                 url = "https://ka.wikipedia.org/wiki/ალბერტ_აინშტაინი";
+    //             } else if (name.includes("გალილეი")) {
+    //                 url = "https://ka.wikipedia.org/wiki/გალილეო_გალილეი";
+    //             }
+    
+    //             window.open(url, "_blank");
+    //         });
+    //     });
+    // });
+    
+
     document.addEventListener("DOMContentLoaded", function () {
         const cards = document.querySelectorAll(".scientists__card");
-    
+      
         cards.forEach(card => {
-            card.addEventListener("mouseenter", function () {
-                this.style.backgroundColor = "#ddd";
-            });
-    
-            card.addEventListener("mouseleave", function () {
-                this.style.backgroundColor = "white";
-            });
+          const info = card.querySelector(".scientists__info");
+          const name = info.textContent.trim();
+      
+          card.addEventListener("click", () => {
+            let url = "#";
+      
+            if (name.includes("არქიმედე")) {
+              url = "https://ka.wikipedia.org/wiki/არქიმედე";
+            } else if (name.includes("ნიუტონი")) {
+              url = "https://ka.wikipedia.org/wiki/ისააკ_ნიუტონი";
+            } else if (name.includes("აინშტაინი")) {
+              url = "https://ka.wikipedia.org/wiki/ალბერტ_აინშტაინი";
+            } else if (name.includes("გალილეი")) {
+              url = "https://ka.wikipedia.org/wiki/გალილეო_გალილეი";
+            }
+      
+            window.open(url, "_blank");
+          });
         });
-    });
-    
-    
-    
-    document.addEventListener("DOMContentLoaded", function () {
-        const cards = document.querySelectorAll(".scientists__card");
-    
-        cards.forEach(card => {
-            const bio = card.querySelector(".scientists__bio");
-    
-            card.addEventListener("mouseenter", function () {
-                bio.style.display = "block";
-            });
-    
-            card.addEventListener("mouseleave", function () {
-                bio.style.display = "none";
-            });
+      });
+
+
+      const links = {
+        "არქიმედე": "/pages/archimedes.html",
+        "ისააკ ნიუტონი": "/pages/newton.html",
+        "ალბერტ აინშტაინი": "/pages/einstein.html",
+        "გალილეი გალილეო": "/pages/galileo.html"
+      };
+      
+      cards.forEach(card => {
+        const name = card.querySelector(".scientists__info").textContent.trim();
+      
+        card.addEventListener("click", () => {
+          const url = links[name];
+          if (url) {
+            window.location.href = url; // ან თუ გინდა ახალ ფანჯარაში: window.open(url, "_blank");
+          }
         });
-    });
-    
-    
-        
+      });
+      
+      
     
          
     
