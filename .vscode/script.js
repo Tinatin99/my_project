@@ -40,74 +40,7 @@
     
     // ფიზიკოსების გვერდი
     
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     const cards = document.querySelectorAll(".scientists__card");
-    
-    //     cards.forEach(card => {
-    //         card.addEventListener("mouseenter", function () {
-    //             this.style.backgroundColor = "#ddd";
-    //         });
-    
-    //         card.addEventListener("mouseleave", function () {
-    //             this.style.backgroundColor = "white";
-    //         });
-    //     });
-    // });
-    
-    
-    
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     const cards = document.querySelectorAll(".scientists__card");
-    
-    //     cards.forEach(card => {
-    //         const bio = card.querySelector(".scientists__bio");
-    
-    //         card.addEventListener("mouseenter", function () {
-    //             bio.style.display = "block";
-    //         });
-    
-    //         card.addEventListener("mouseleave", function () {
-    //             bio.style.display = "none";
-    //         });
-    //     });
-    // });
-    
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     const cards = document.querySelectorAll(".scientists__card");
-    
-    //     cards.forEach(card => {
-    //         const bio = card.querySelector(".scientists__bio");
-    //         const info = card.querySelector(".scientists__info");
-    
-    //         // კურსორის მიტანისას – opacity გამოჩნდეს (CSS უკვე გაწერია)
-    //         card.addEventListener("mouseenter", () => {
-    //             bio.style.opacity = "1";
-    //         });
-    
-    //         card.addEventListener("mouseleave", () => {
-    //             bio.style.opacity = "0";
-    //         });
-    
-    //         // დაჭერისას გადამისამართება ბმულზე
-    //         card.addEventListener("click", () => {
-    //             const name = info.textContent.trim();
-    
-    //             let url = "#";
-    //             if (name.includes("არქიმედე")) {
-    //                 url = "https://ka.wikipedia.org/wiki/არქიმედე";
-    //             } else if (name.includes("ნიუტონი")) {
-    //                 url = "https://ka.wikipedia.org/wiki/ისააკ_ნიუტონი";
-    //             } else if (name.includes("აინშტაინი")) {
-    //                 url = "https://ka.wikipedia.org/wiki/ალბერტ_აინშტაინი";
-    //             } else if (name.includes("გალილეი")) {
-    //                 url = "https://ka.wikipedia.org/wiki/გალილეო_გალილეი";
-    //             }
-    
-    //             window.open(url, "_blank");
-    //         });
-    //     });
-    // });
-    
+
 
     document.addEventListener("DOMContentLoaded", function () {
         const cards = document.querySelectorAll(".scientists__card");
@@ -153,8 +86,22 @@
         });
       });
       
-      
+      // document.getElementById("show-more").addEventListener("click", function () {
+      //   const hiddenCards = document.querySelectorAll(".scientist-card.hidden");
+      //   hiddenCards.forEach(card => {
+      //     card.classList.remove("hidden");
+      //   });
+      //   this.style.display = "none";
+      // });
     
+
+      document.getElementById('showMore').addEventListener('click', function() {
+        var hiddenCards = document.querySelectorAll('.scientists__card.hidden');
+        hiddenCards.forEach(function(card) {
+            card.style.display = 'block';
+        });
+        this.style.display = 'none'; // ღილაკის დამალვა
+    });
          
     
     

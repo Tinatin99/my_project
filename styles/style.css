@@ -48,6 +48,7 @@ header{
   height: 60px;
 }
 
+
 ul{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +64,10 @@ li{
   display: none;
   width: 40px;
   height: 30px;
+  font-size: 28px;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 
@@ -1336,6 +1341,10 @@ h2{
   padding: 40px 20px;
 }
 
+.hidden {
+  display: none;
+}
+
 .scientists__title {
   font-size: 2em;
   color: #333;
@@ -1397,8 +1406,9 @@ h2{
 
 
 .scientists__card {
-  position: relative;
-  background-color: #6200ea;
+  /* position: relative;
+  background-color: #6100ea; */
+  background-color: #a45eff;
   display: flex;
   flex-direction: row;
   align-items: center;

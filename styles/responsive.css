@@ -9,7 +9,7 @@
 
 /* მობილურის ნავიგაციის სტილი */
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   .burger{
     display: block;
   }
@@ -49,6 +49,61 @@
   .burger.open i {
     transform: rotate(90deg);
   }
+} */
+
+
+
+@media (max-width: 420px) {
+  .navigation {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navigation.show {
+    display: flex;
+    max-height: 500px;
+    padding: 10px 20px;
+  }
+
+  .burger {
+    display: block;
+    font-size: 26px;
+    z-index: 1100;
+    position: relative;
+  }
+
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  width: 100%;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+}
 }
 
 
