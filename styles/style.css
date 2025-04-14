@@ -2161,3 +2161,21 @@ button:hover {
 .font-bold{
   font-size: 30px;
 }
+.bmuli{
+  color: white;
+}
+#bmuli{
+  color: white;
+}
+
+.max-w-10xl{
+  margin-top:80px;
+}
+.bmuli1{
+  color: blue;
+}
+.rounded-xl{
+  width: 350px;
+  height: 150px;
+  margin:0 auto
+}
