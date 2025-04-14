@@ -23,6 +23,11 @@
   background-color: #f4f4f4;
 } */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 header{  
   background-color: rgb(228, 508, 299);  
   font-size: 22px;
@@ -486,9 +491,8 @@ a{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
-
 }
+
 
 
 /* BEM   მოდიფაიერი მეთოდოლოგია */
@@ -1995,6 +1999,7 @@ footer {
 .li_cont {
   list-style: none;
   padding: 0;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2005,7 +2010,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .contact {
@@ -2120,7 +2125,7 @@ button {
   border: none;
   padding: 10px 20px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 5px; 
   cursor: pointer;
   -webkit-transition: background 0.3s ease;
   -o-transition: background 0.3s ease;
@@ -2132,4 +2137,27 @@ button:hover {
 /* .index{
   max-width: 450px;
   width: 100%;
-} */
+ */
+
+/* ფიზიკა და ყოველდღიურობა */
+.max-w-7xl{
+  margin-top: 120px;
+}
+.mb-2{
+  font-size: 21px;
+}
+.font-bold{
+  font-size: 30px;
+}
+.font-semibold{
+  font-size: 24px;
+}
+
+.mt-2{
+  font-size: 20px;
+  gap: 10px;
+}
+
+.font-bold{
+  font-size: 30px;
+}

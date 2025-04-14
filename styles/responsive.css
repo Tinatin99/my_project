@@ -359,3 +359,11 @@
         width: 90%;
     }
 }
+
+/* ფიზიკა და ყოველდღიურობა */
+@media (max-width: 768px) {
+  .section1, #sectionphys {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
