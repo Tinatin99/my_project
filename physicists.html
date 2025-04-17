@@ -389,7 +389,17 @@
         </div>
          
     
-                <button id="show-more">მეტის ნახვა</button>
+        <button id="loadMoreBtn">იხილეთ მეტი ფიზიკოსები</button>
+        <script>
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const hiddenCards = document.querySelectorAll('.scientist-card.hidden');
+        
+            loadMoreBtn.addEventListener('click', () => {
+                hiddenCards.forEach(card => card.classList.remove('hidden'));
+                loadMoreBtn.style.display = 'none'; // hide the button once all cards are shown
+            });
+        </script>
+        
                 </div>
           </section>
 

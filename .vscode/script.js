@@ -189,7 +189,40 @@
         updateButtonState(); // Initial call
     });
     
-   
+  
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const button = document.getElementById("myButton");
+    //     const hiddenSection = document.getElementById("bio-more");
+
+    //     if (!button || !hiddenSection) return;
+
+    //     function updateButtonState() {
+    //         const width = window.innerWidth;
+
+    //         if (width > 1200) {
+    //             button.disabled = false;
+    //             button.textContent = "Desktop Mode";
+    //         } else if (width > 768) {
+    //             button.disabled = false;
+    //             button.textContent = "Tablet Mode";
+    //         } else if (width > 480) {
+    //             button.disabled = false;
+    //             button.textContent = "Mobile Mode";
+    //         } else {
+    //             button.disabled = false;
+    //             button.textContent = "Small Screen Mode";
+    //         }
+    //     }
+
+    //     button.addEventListener("click", () => {
+    //         hiddenSection.classList.toggle("hidden");
+    //     });
+
+    //     window.addEventListener("resize", updateButtonState);
+    //     updateButtonState(); // Initial
+    // });
+
+
 
 
 

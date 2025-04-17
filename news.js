@@ -18,3 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+  const button = document.getElementById("toggle-button");
+  const moreSection = document.getElementById("bio-more");
+
+  button.addEventListener("click", () => {
+    moreSection.classList.toggle("hidden");
+    if (moreSection.classList.contains("hidden")) {
+      button.textContent = "მეტის ნახვა";
+    } else {
+      button.textContent = "ნაკლები";
+    }
+  });
