@@ -6,22 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: "Arial", sans-serif;
+      font-family: 'BPG Irubaqidze';
       background: white;
       padding: 40px;
-      color: #000;
-      max-width: 1200px;
+      color: black;
+      max-width: 90%;
       margin: auto;
     }
     h1 {
-      font-size: 32px;
+      
+      font-size: 45px;
       text-align: center;
       margin-bottom: 40px;
+      color: #f0f8ff;
     }
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(3, 1fr); /* 3 სვეტი */
+      gap: 40px;
+      justify-items: center;
     }
     .card {
       background: #f0f8ff;
@@ -30,8 +33,14 @@
       padding: 20px;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
     h2 {
+      font-family: 'BPG Irubaqidze';
       font-size: 20px;
       color: #003366;
       margin-bottom: 10px;
@@ -44,6 +53,11 @@
       margin-bottom: 15px;
       font-size: 14px;
     }
+    body {
+      background-image: url('/images/foni.png');
+      background-size: cover;
+      background-position: center;
+    }
     .card img {
       width: 100%;
       max-width: 250px;
@@ -52,66 +66,190 @@
       border: 2px solid #003366;
       margin-top: 10px;
     }
+    .details {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: left;
+    color: #003366;
+  }
+
+  .details strong {
+    display: block;
+    margin-top: 8px;
+    color: #1E3A8A;
+  }
+
+   
+
+    
+    
   </style>
 </head>
 <body>
   <h1>ფიზიკა ყოველდღიურ ცხოვრებაში</h1>
   <div class="grid-container">
 
+    <!-- 1. სამზარეულო და სითბო -->
     <div class="card">
       <h2>🔬 სამზარეულო და სითბო</h2>
       <div class="bubble">სითბოს გადაცემა სამზარეულოში — კონდუქცია, კონვექცია და რადიაცია.</div>
-      <img src="./images/kitchen.jpg" alt="სამზარეულო">
+      <img src="https://mastsavlebeli.ge/wp-content/uploads/2022/04/4.jpg" class="rounded-xl mb-4" alt="სამზარეულო">
+      <p class="mb-2 text-gray-800">სითბოს გადაცემა ხდება საკვების მზადებისას, რაც ფიზიკის ერთ-ერთი მთავარი მიმართულებაა — თერმოდინამიკა.</p>
+      <ul class="list-disc list-inside text-green-600 mb-2">
+        <li>✅ საკვების სწრაფი მომზადება</li>
+        <li>✅ ენერგიის ეფექტური გამოყენება</li>
+      </ul>
+      <ul class="list-disc list-inside text-red-600 mb-2">
+        <li>❌ ზედმეტი სითბო ზიანს აყენებს ვიტამინებს</li>
+        <li>❌ მაღალი ტემპერატურა ენერგიის ხარჯვაა</li>
+      </ul>
+      <p class="font-semibold text-gray-700">🔍 მნიშვნელობა:</p>
+      <p class="text-gray-700">სამზარეულო გვაჩვენებს, როგორ იყენებს ადამიანი სითბოს ყოველდღიურობაში და როგორ იქცევა ფიზიკური კანონები რეალურ ცხოვრებაში. ეს გვაძლევს უნარს, უკეთ ვმართოთ დრო, ენერგია და უსაფრთხოება.</p>
     </div>
 
+    <!-- 2. ატრაქციონები -->
     <div class="card">
       <h2>🎡 ატრაქციონები და ცენტრიდანული ძალა</h2>
       <div class="bubble">ცენტრიდანული ძალა ატრაქციონებზე მოქმედებს, რაც გვეხმარება მოძრაობის გაგებაში.</div>
-      <img src="./images/centrifugal.jpg" alt="ცენტრიდანული ძალა">
+      <img src="https://bestonamusementrides.ru/wp-content/uploads/2025/03/Attraktsion-sedmoye-nebo-banner-1024x373.webp" class="rounded-xl mb-4" alt="ცენტრიდანული ძალა">
+      <p class="mb-2 text-gray-800">მოძრაობის დროს სხეულზე მოქმედებს ცენტრიდანული ძალა, რაც გვინარჩუნებს წონასწორობას სწრაფ ატრაქციონებზე.</p>
+      <ul class="list-disc list-inside text-green-600 mb-2">
+        <li>✅ აჩენს ადრენალინს და მხიარულებას</li>
+        <li>✅ გვასწავლის ძალთა ბალანსს</li>
+      </ul>
+      <ul class="list-disc list-inside text-red-600 mb-2">
+        <li>❌ შესაძლებელია თავბრუსხვევა და დაკარგვა წონასწორობის</li>
+        <li>❌ მაღალი სიჩქარე შეიძლება სახიფათო იყოს</li>
+      </ul>
+      <p class="font-semibold text-gray-700">🔍 მნიშვნელობა:</p>
+      <p class="text-gray-700">ატრაქციონებზე მოძრაობა რეალურია ფიზიკის კანონების საფუძველზე, რაც ადამიანის რეაქციებზე მოქმედებს.</p>
     </div>
 
+    <!-- 3. აორთქლება -->
     <div class="card">
       <h2>🧺 გაშრობა და აორთქლება</h2>
       <div class="bubble">ფიზიკა ხსნის, როგორ აორთქლდება წყალი და როგორ მოქმედებს ტემპერატურა.</div>
-      <img src="./images/evaporation.jpg" alt="აორთქლება">
+      <img src="https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A6ad1aeda33e41b368983b2315e1cf22d1c67d729bf1639402b45de45%2BIMAGE_TINY%2BIMAGE_TINY.1" class="rounded-xl mb-4" alt="აორთქლება">
+      <p class="mb-2 text-gray-800">როდესაც ტანსაცმელი სველია, თბილი ჰაერი აორთქლებს წყალს ზედაპირიდან.</p>
+      <ul class="list-disc list-inside text-green-600 mb-2">
+        <li>✅ ტანსაცმლის ბუნებრივი გაშრობა</li>
+        <li>✅ ენერგიის დაზოგვა საშრობებთან შედარებით</li>
+      </ul>
+      <ul class="list-disc list-inside text-red-600 mb-2">
+        <li>❌ წვიმიანი ამინდი აფერხებს გაშრობას</li>
+        <li>❌ ტენიანობა ახანგრძლივებს პროცესს</li>
+      </ul>
+      <p class="font-semibold text-gray-700">🔍 მნიშვნელობა:</p>
+      <p class="text-gray-700">გაშრობა აჩვენებს, როგორ ურთიერთობენ თერმოდინამიკა და გარემო ერთმანეთს ყოველდღიურობაში.</p>
     </div>
 
+    <!-- 4. მოძრაობა და ძალა -->
     <div class="card">
       <h2>🚗 მოძრაობა და ძალა</h2>
       <div class="bubble">ნიუტონის მეორე კანონი: F = ma ყოველდღიურ ცხოვრებაში.</div>
-      <img src="./images/motion.jpg" alt="ძალა და მოძრაობა">
+      <img src="https://mastsavlebeli.ge/wp-content/uploads/2019/05/1-2.jpg" class="rounded-xl mb-4" alt="ძალა და მოძრაობა">
+      <p class="mb-2 text-gray-800">ავტომობილის დაჩქარება დამოკიდებულია მის მასასა და ძრავის მიერ გამოწვეული ძალის სიდიდეზე.</p>
+      <ul class="list-disc list-inside text-green-600 mb-2">
+        <li>✅ მოძრაობის უკეთ გაკონტროლება</li>
+        <li>✅ ტრანსპორტის ოპტიმიზაცია</li>
+      </ul>
+      <ul class="list-disc list-inside text-red-600 mb-2">
+        <li>❌ შეჯახებისას მოქმედებს დიდი ინერცია</li>
+        <li>❌ მაღალი სიჩქარე ზრდის ავარიის რისკს</li>
+      </ul>
+      <p class="font-semibold text-gray-700">🔍 მნიშვნელობა:</p>
+      <p class="text-gray-700">ძალა და მოძრაობა ფიზიკის ძირითადი კანონებია, რომლებიც ადამიანის ყოველდღიურობას განსაზღვრავს.</p>
     </div>
 
+    <!-- 5. ელვა და მეხი -->
     <div class="card">
       <h2>⚡ ელვა და მეხი</h2>
       <div class="bubble">ელექტრული მუხტი და ატმოსფერული მოვლენების ფიზიკა.</div>
-      <img src="./images/lightning.jpg" alt="ელვა">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Denver_Lightning.jpg" class="rounded-xl mb-4" alt="ელვა და მეხი">
+      <p class="mb-2 text-gray-800">ელვა წარმოიქმნება ღრუბლებში მუხტის დაგროვების შედეგად, რასაც მოჰყვება მეხის ხმა.</p>
+      <ul class="list-disc list-inside text-green-600 mb-2">
+        <li>✅ ატმოსფერული პროცესების გაცნობა</li>
+        <li>✅ ბუნების ძალების გაცნობიერება</li>
+      </ul>
+      <ul class="list-disc list-inside text-red-600 mb-2">
+        <li>❌ შესაძლოა სახიფათო იყოს ადამიანისთვის</li>
+        <li>❌ ზიანს აყენებს ელექტრონიკას</li>
+      </ul>
+      <p class="font-semibold text-gray-700">🔍 მნიშვნელობა:</p>
+      <p class="text-gray-700">ელვა და მეხი გვიჩვენებს ელექტრონის ძალას და მის გავლენას ბუნებრივ მოვლენებზე.</p>
     </div>
 
+    <!-- 6. ქარიშხალი და წვიმა -->
     <div class="card">
       <h2>⛈️ ქარიშხალი და წვიმა</h2>
       <div class="bubble">ატმოსფეროს წნევის ცვლილება, ტენიანობა და წვიმის წარმოქმნა.</div>
-      <img src="./images/storm.jpg" alt="ქარიშხალი">
+      <img src="https://www.primetime.ge/uploads/files/2024/05/02/86372/tsudi-amindi_w_h.jpeg" class="rounded-xl mb-4" alt="ქარიშხალი">
+      <p class="mb-2 text-gray-800">წვიმა და ქარიშხალი წარმოიქმნება ჰაერის მასების გადაადგილებით და ტემპერატურის ცვალებადობით.</p>
+      <ul class="list-disc list-inside text-green-600 mb-2">
+        <li>✅ ნიადაგის დატენიანება</li>
+        <li>✅ ბუნების ციკლის აუცილებელი ნაწილი</li>
+      </ul>
+      <ul class="list-disc list-inside text-red-600 mb-2">
+        <li>❌ შესაძლებელია ზიანი მოსავალი ან შენობებისთვის</li>
+        <li>❌ იზრდება წყალდიდობის რისკი</li>
+      </ul>
+      <p class="font-semibold text-gray-700">🔍 მნიშვნელობა:</p>
+      <p class="text-gray-700">ქარიშხალი გვასწავლის, როგორ ურთიერთობს ბუნება და ფიზიკური გარემო.</p>
     </div>
 
+    <!-- 7. ზღვის ტალღები -->
     <div class="card">
       <h2>🌊 ზღვის ტალღები და ენერგია</h2>
       <div class="bubble">ტალღების მოძრაობა და ენერგიის გადაცემა გარემოში.</div>
-      <img src="./images/waves.jpg" alt="ზღვის ტალღები">
+      <img src="https://monica.on.ge/2023/11/27/8pN7DqHQzUfN7v0VkrbXRpqjP27UDSePsPtpnQC2_6564d3d61052c.jpg" class="rounded-xl mb-4" alt="ზღვის ტალღები">
+      <p class="mb-2 text-gray-800">ტალღები არის ენერგიის მოძრაობის შედეგი, რომლებიც გავლენას ახდენს ნავიგაციაზე და ეკოსისტემაზე.</p>
+      <ul class="list-disc list-inside text-green-600 mb-2">
+        <li>✅ ენერგიის მიღების წყარო</li>
+        <li>✅ სანაპიროს ფორმირება</li>
+      </ul>
+      <ul class="list-disc list-inside text-red-600 mb-2">
+        <li>❌ საშიშია ცურვისთვის შტორმის დროს</li>
+        <li>❌ ნაპირზე ეროზიას იწვევს</li>
+      </ul>
+      <p class="font-semibold text-gray-700">🔍 მნიშვნელობა:</p>
+      <p class="text-gray-700">ტალღების მოძრაობა გვასწავლის ენერგიის გადაცემის მნიშვნელობას რეალურ გარემოში.</p>
     </div>
 
+    <!-- 8. ჰარმონიული რხევა -->
     <div class="card">
       <h2>🎶 ჰარმონიული რხევა</h2>
       <div class="bubble">ზამბარის მოძრაობა, ტალღები და მუსიკის ფიზიკა.</div>
-      <img src="./images/vibration.jpg" alt="რხევა">
+      <img src="https://sd-iiith.vlabs.ac.in/exp/simple-harmonic-oscillator/images/simple-pendulum.JPG" class="rounded-xl mb-4" alt="რხევა">
+      <p class="mb-2 text-gray-800">რხევა აჩვენებს, როგორ ბრუნდება სხეული საწყის მდგომარეობაში რეგულარულად — მაგალითია მებრუნავი ზამბარა.</p>
+      <ul class="list-disc list-inside text-green-600 mb-2">
+        <li>✅ გამოიყენება მუსიკაში და ტექნიკაში</li>
+        <li>✅ ბიოლოგიურ სისტემებთანაც ახლოს დგას</li>
+      </ul>
+      <ul class="list-disc list-inside text-red-600 mb-2">
+        <li>❌ რეზონანსი შესაძლოა სახიფათო იყოს შენობებისთვის</li>
+      </ul>
+      <p class="font-semibold text-gray-700">🔍 მნიშვნელობა:</p>
+      <p class="text-gray-700">რხევის ფენომენი გვაკავშირებს მუსიკასთან, ტექნიკასთან და ბუნებრივ რიტმებთან.</p>
     </div>
 
+    <!-- 9. ფიზიკის გავლენა ადამიანზე -->
     <div class="card">
       <h2>🧠 ფიზიკის გავლენა ადამიანზე</h2>
       <div class="bubble">ფიზიკური კანონები ადამიანის ჯანმრთობაზე, უსაფრთხოებაზე და ტექნოლოგიებზე.</div>
-      <img src="./images/human_effect.jpg" alt="ადამიანზე გავლენა">
+      <img src="https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/68297671_2656798487697705_2612570044277719040_n.jpg" class="rounded-xl mb-4" alt="ფიზიკის გავლენა">
+      <p class="mb-2 text-gray-800">ფიზიკის ცოდნა საშუალებას გვაძლევს, გავაუმჯობესოთ ტრანსპორტი, კავშირგაბმულობა და სამედიცინო ტექნოლოგიები.</p>
+      <ul class="list-disc list-inside text-green-600 mb-2">
+        <li>✅ ზრდის სიცოცხლის ხარისხს</li>
+        <li>✅ ტექნოლოგიური პროგრესი</li>
+      </ul>
+      <ul class="list-disc list-inside text-red-600 mb-2">
+        <li>❌ არასწორი გამოყენება იწვევს რისკებს</li>
+      </ul>
+      <p class="font-semibold text-gray-700">🔍 მნიშვნელობა:</p>
+      <p class="text-gray-700">ფიზიკა ცვლის სამყაროს — ჩვენს მოძრაობას, ჯანმრთელობას და მომავალს.</p>
     </div>
 
   </div>
 </body>
+
 </html>

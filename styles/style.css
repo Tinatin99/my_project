@@ -168,7 +168,8 @@ a{
   
 
    h1{
-    font-size: 24px;
+    font-family: 'BPG Irubaqidze';  
+    font-size:45px;
     color: black;
     background-color: rgb(228, 508, 299);
    }
@@ -1350,7 +1351,7 @@ h2{
 }
 
 .scientists__title {
-  font-size: 2em;
+  font-size: 3em;
   color: #333;
   margin-bottom: 20px;
 }
