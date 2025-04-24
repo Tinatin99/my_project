@@ -114,8 +114,9 @@
 
      
         <section id="intro" class="main__section--intro">
-            <p class="intro__text"><h1><strong>ფიზიკა არის მეცნიერება ბუნების შესახებ...</strong></h1></p>
+            <h1 class="intro__text"><strong>ფიზიკა არის მეცნიერება ბუნების შესახებ...</strong></h1>
         </section>
+        
     
 
         <section class="main__section scientists">
@@ -123,7 +124,7 @@
     
             <div class="scientists__grid">
                 <div class="scientists__card">
-                        <img src="/images/arqimede.jpg" alt="arqimede" class="scientists__image">
+                        <img src="https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A454523e40f014e81213d6cea507a20046ebd700d63972e9bc86f5519%2BIMAGE_THUMB_POSTCARD_TINY%2BIMAGE_THUMB_POSTCARD_TINY.1" alt="arqimede" class="scientists__image">
                     <div class="scientists__info">არქიმედე</div>
                     <div class="scientists__bio">
 
@@ -388,16 +389,10 @@
 
         </div>
          
-    
-        <button id="loadMoreBtn">იხილეთ მეტი ფიზიკოსები</button>
-        <script>
-            const loadMoreBtn = document.getElementById('loadMoreBtn');
-            const hiddenCards = document.querySelectorAll('.scientist-card.hidden');
-        
-            loadMoreBtn.addEventListener('click', () => {
-                hiddenCards.forEach(card => card.classList.remove('hidden'));
-                loadMoreBtn.style.display = 'none'; // hide the button once all cards are shown
-            });
+        <button id="togglePhysicists" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-800 transition">
+            ნახე მეტი ფიზიკოსი
+          </button>m
+     
         </script>
         
                 </div>
@@ -598,6 +593,10 @@
             <div  class="dv"><h3 id="if2"><strong>"სულ ყველანი ერთი წერტილის შვილები ვართ" <BR></BR>— რას ამბობს გია დვალი სამყაროს საწყისებზე</strong></h3>
                 <iframe class="ifi1" width="700" height="415" src="https://www.youtube.com/embed/00XERXrySB0?si=6HUxjMAtb9sjsabn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
         </section>
+
+
+
+
         <div id="td1">
             <div id="box">
                 <p id="news">1900 წელს ბრიტანელმა ფიზიკოსმა ლორდ კელვინმა განაცხადა: „ფიზიკაში ახალი აღარაფერია აღმოსაჩენი. დარჩა მხოლოდ უფრო და უფრო ზუსტი გაზომვების გაკეთება.” შემდეგი 30 წლის განმავლობაში კვანტურმა მექანიკამ და აინშტაინის ფარდობითობის თეორიაამ ამ დარგში რევოლუცია მოახდინა. დღესდღეობით ვერცერთი ფიზიკოსი გაბედავს იმის თქმას, რომ სამყაროს შესახებ ჩვენი ცოდნა სრულყოფილთან ახლოს არის. უფრო პირიქით – ყოველი ახალი აღმოჩენა ხსნის უფრო დიდი და ღრმა დილემის პანდორას ყუთს. ქვემოთ მოყვანილია 18 საკითხი, რომლებიც ჯერ კიდევ არ გადაწყვეტილი და ყველაზე საკამათო თემებია თანამედროვე ფიზიკაში. <a href="https://charlius.com/2022/04/19/unsolved-mysteries/">იხ.ბმული</a></p>

@@ -1346,9 +1346,19 @@ h2{
   padding: 40px 20px;
 }
 
+
 .hidden {
   display: none;
 }
+.show-more-btn {
+  margin-top: 20px;
+  background-color: #1e40af;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 
 .scientists__title {
   font-size: 3em;
