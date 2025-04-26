@@ -1364,6 +1364,9 @@ h2{
 .hidden {
   display: none;
 }
+
+
+
 .scientists_cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 სვეტი */
@@ -1379,6 +1382,7 @@ h2{
   border: 5px solid #ccc;
   padding: 30px;
   text-align: center;
+  
 }
 .scientist__bio {
   display: none;
