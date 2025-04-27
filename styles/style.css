@@ -1361,6 +1361,19 @@ h2{
   padding: 40px 20px;
 }
 
+
+.scientistss {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+
+.scientistsss {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+
 .hidden {
   display: none;
 }
@@ -1372,11 +1385,21 @@ h2{
   grid-template-columns: repeat(4, 1fr); /* 4 სვეტი */
   gap: 30px; /* უფასო სივრცე */
 }
-.scientists-cards {
+
+
+.scientists_cardss {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 სვეტი */
-  gap: 30px; /* სივრცე ბლოკებს შორის */
+  gap: 30px; /* უფასო სივრცე */
 }
+
+
+.scientists_cardsss {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 სვეტი */
+  gap: 30px; /* უფასო სივრცე */
+}
+
 
 /* .scientists-card {
   border: 5px solid #ccc;
@@ -1408,14 +1431,6 @@ h2{
   background-color: #1565c0;
 }
 
-/* .show-more-btn {
-  margin-top: 20px;
-  background-color: #1e40af;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-} */
 
 
 .scientists__title {
@@ -1433,6 +1448,26 @@ h2{
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.scientists__grids {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scientists__gridss {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
 
 /* ბარათის სტილები */
 .scientists__card {
@@ -1456,6 +1491,40 @@ h2{
           box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+
+/* ქართველი ფიზიკოსები */
+
+.scientists__grids {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* ბარათის სტილები */
+.scientists__cards {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  -o-transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.scientists__cards:hover {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
 /* სურათის სტილი */
 .scientists__image {
   width: 50%;
@@ -1464,12 +1533,6 @@ h2{
 }
 
 /* ტექსტი ბარათში */
-/* .scientists__info {
-  margin-top: 10px;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: aliceblue;
-  } */
   .scientists__info {
     margin-top: 10px;
     font-size: 1.2em;
@@ -1479,40 +1542,14 @@ h2{
 
 
 .scientists__card {
-  /* position: relative;
-  background-color: #6100ea; */
   background-color: #a45eff;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   overflow: visible;
-  /* სხვა სტილები */
-}
+  }
 
-/* .scientists__bio {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-  font-size: 14px;
-  border-radius: 0 0 10px 10px;
-} */
-
-
-
-/* .scientists__bio {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-} */
 
 .scientists__bio {
   position: absolute;
@@ -2257,4 +2294,27 @@ button:hover {
 
 .bmuli1 {
   @apply text-blue-600 hover:text-blue-800 transition duration-300 underline;
+}
+
+
+/* posteri*/
+
+
+
+/* 2) ბაბლის (bubble) სტილი */
+  /* ბაბლი: only text, no bg */
+  .bubble {
+    background: transparent !important;
+    color: #0057b7;
+    transition: color 0.3s ease;
+  }
+  .bubble:hover {
+    color: #003366;
+    cursor: pointer;
+  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
 }

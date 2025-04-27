@@ -203,6 +203,18 @@
     .survey {
         flex-direction: colum;
     }
+    .survey1 {
+      flex-direction: colum;
+  }
+  .survey2 {
+    flex-direction: colum;
+}
+.survey3 {
+  flex-direction: colum;
+}
+.survey4 {
+  flex-direction: colum;
+}
     form {
         width: 100%;
         max-width: 100px;
@@ -346,6 +358,7 @@
 }
 
 
+
 /* about - სიახლეების გვერდი */
 
 
@@ -365,5 +378,34 @@
   .section1, #sectionphys {
     margin-left: 0;
     padding: 10px;
+  }
+}
+
+/* პოსტერი
+
+*/
+    /* 2x2 → 2 სვეტი ტაბლეტზე */
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+    /* 1 სვეტი მცირე ეკრანზე */
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      .card {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+  #hidden-part {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
