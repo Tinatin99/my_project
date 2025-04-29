@@ -465,22 +465,20 @@ a{
 
 
 
-
 .bg_image2{
-  background-image:url('https://upload.wikimedia.org/wikipedia/ka/6/64/%E1%83%9B%E1%83%96%E1%83%98%E1%83%A1_%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%90.png');
-  max-height: 500px;
-  height:200%;
-  max-width: 1750px;
-  width: 100%;
+  background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/6f/CMB_Timeline300_no_WMAP.jpg');
+  min-height: 750px;
+  max-width:1750px ;
+  height:100%;
+  width: 100%;  
   margin: 0 auto;
   background-color: rgb(218, 255, 196);
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover; 
-  /* margin-top: 40px; */
   position: relative;
-  padding: 12px; 
-  margin-top: 80px; 
+  padding: 12px;  
+  border-radius: 20px;
 }
 
 
