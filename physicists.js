@@ -1,10 +1,10 @@
-// const hiddenPart = document.getElementById("hidden-part");
-// const showMoreBtn = document.getElementById("showMoreBtn");
+const hiddenPart = document.getElementById("hidden-part");
+const showMoreBtn = document.getElementById("showMoreBtn");
 
-// showMoreBtn.addEventListener("click", () => {
-//   hiddenPart.classList.toggle("hidden");
-//   showMoreBtn.textContent = hiddenPart.classList.contains("hidden") ? "მეტის ჩვენება" : "დამალვა";
-// });
+showMoreBtn.addEventListener("click", () => {
+  hiddenPart.classList.toggle("hidden");
+  showMoreBtn.textContent = hiddenPart.classList.contains("hidden") ? "მეტის ჩვენება" : "დამალვა";
+});
 
 
 const hiddenPart1 = document.getElementById("hidden-part1");
@@ -24,8 +24,8 @@ showMoreBtn2.addEventListener("click", () => {
 });
 
 
-document.getElementById("toggle-button").addEventListener("click", function () {
-  const hiddenPart = document.getElementById("hidden-part");
-  hiddenPart.classList.toggle("hidden");
-  this.textContent = hiddenPart.classList.contains("hidden") ? "მეტი მეცნიერები" : "ნაკლები მეცნიერები";
-});
+// document.getElementById("toggle-button").addEventListener("click", function () {
+//   const hiddenPart = document.getElementById("hidden-part");
+//   hiddenPart.classList.toggle("hidden");
+//   this.textContent = hiddenPart.classList.contains("hidden") ? "მეტი მეცნიერები" : "ნაკლები მეცნიერები";
+// });
