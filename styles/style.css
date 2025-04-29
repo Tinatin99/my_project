@@ -448,10 +448,12 @@ a{
 .video1{
   margin-top:40px ;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  box-shadow: 10px 10px 10px  10px #007BFF;
+  border-radius: 35px;
 }
 
 .home{
@@ -466,7 +468,9 @@ a{
 
 .bg_image2{
   background-image:url('https://upload.wikimedia.org/wikipedia/ka/6/64/%E1%83%9B%E1%83%96%E1%83%98%E1%83%A1_%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%90.png');
-  height:500px;
+  max-height: 500px;
+  height:200%;
+  max-width: 1750px;
   width: 100%;
   margin: 0 auto;
   background-color: rgb(218, 255, 196);
@@ -533,20 +537,18 @@ width: 40%;
   gap: 5px;
 }
 .container__box {
-  max-width: 480px;
+  max-width: 780px;
   width: 100%;
-  padding: 20px;
-   
+  padding: 20px;   
   border-radius: 20px;
   -webkit-box-shadow: 0 40px 55px rgb(102, 48, 255);
           box-shadow: 0 40px 55px rgb(102, 48, 255);
 }
 
 .container__box1 {
-  max-width: 480px;
+  max-width: 780px;
   width: 100%;
-  padding: 20px;
-  
+  padding: 20px;  
   border-radius: 20px;
   -webkit-box-shadow: 0 30px 45px purple;
           box-shadow: 0 30px 45px purple;
@@ -565,11 +567,11 @@ width: 40%;
 }
 .container__item1{
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .container__image {
-  max-width: 150px;
+  max-width: 200px;
   width: 100%;
   height: auto;
   float: left;
@@ -578,7 +580,7 @@ width: 40%;
 
 .container__text {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .container__title {
@@ -598,7 +600,7 @@ width: 40%;
 }
 
 #container--quotes{
-  max-width: 80%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,7 +609,7 @@ width: 40%;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
-  margin-left: 200px;
+  margin-left: 100px;
   gap: 200px;
 }
 .container__item--quote {
@@ -674,7 +676,8 @@ html, body {
 } */
 
 #td {
-  max-width: 1400px;
+  max-width:1650px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,6 +689,10 @@ html, body {
   gap: 30px;
   margin: 0 auto;
   padding: 20px;
+
+}
+#newsbody{
+  width: 100%;
 }
 
 .box1 {
@@ -920,7 +927,7 @@ html, body {
   border-radius: 20px;
 }
 .bg_image4{
-  background-image:url('https://scontent.ftbs7-1.fna.fbcdn.net/v/t39.30808-6/214532542_4029671400471598_6678748425135507492_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeH5NBh64l0gcdm6SoiqphZ7uqmRqmdC9Vm6qZGqZ0L1WbvhfOEg3TttnST35Mgynf_HlL9q56Ipww0g6e2J4lCu&_nc_ohc=nGBA-bqfNpAQ7kNvwEWnfY7&_nc_oc=AdnHzZWI5nhmEA-82ksA-B_UdqJ2NGPWo3oMiJQDbJ0hYq1g8UC8fZdPl-dR3UfPwYY&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=8PV2DNsNpxY3BBPDn5M-Gg&oh=00_AfFvCyRknKM1IMQVo7fvs1Mp6K9ZXQeUc8gV1rpD-DpIyQ&oe=6808A655');
+  background-image:url('https://scontent.ftbs3-1.fna.fbcdn.net/v/t39.30808-6/214532542_4029671400471598_6678748425135507492_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeH5NBh64l0gcdm6SoiqphZ7uqmRqmdC9Vm6qZGqZ0L1WbvhfOEg3TttnST35Mgynf_HlL9q56Ipww0g6e2J4lCu&_nc_ohc=GQLWsw4CvRoQ7kNvwE1obtG&_nc_oc=AdmjdVdVYlsA0ssfI_1Gl9X5Flg7eqG7e2mniK8eCG24jz5pNbSdHO-UTEWmo_gn9jA&_nc_zt=23&_nc_ht=scontent.ftbs3-1.fna&_nc_gid=4xU2rIaWTfEfQfaimuLjWA&oh=00_AfGOWWDJ3pblCxvFqyUyjI4IcUmB9CceMqe6-d8WRusPmA&oe=68152C95');
   min-height: 550px;
   max-width:1750px ;
   height:100%;
@@ -2317,4 +2324,31 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   justify-items: center;
+}
+
+/* news.html */
+
+.grid {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); 
+  gap: 20px; 
+  font-size: 24px;
+ 
+} 
+
+
+/* სურვილისამებრ, უფრო ლამაზად რომ გამოჩნდეს */
+.container__item--quote {
+  background-color: #f0f4f8; /* ღია ლურჯი ფონზე */
+  padding: 15px;
+  font-size: 24px;
+  display: inline-block;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.container__text{
+  font-size: 22px;
+
 }

@@ -184,18 +184,28 @@
 
 
   @media (max-width: 1024px) {
-    .physicists__grid {
+    .if1 {
         grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 768px) {
-    .physicists__grid {
+    .if1 {
         grid-template-columns: repeat(1, 1fr); /
     }
 } 
  
+@media (max-width: 1024px) {
+  .physicists__grid {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+}
 
+@media (max-width: 768px) {
+  .physicists__grid {
+      grid-template-columns: repeat(1, 1fr); /
+  }
+} 
 
 /* სიახლეების გვერდი */
 
@@ -203,18 +213,7 @@
     .survey {
         flex-direction: colum;
     }
-    .survey1 {
-      flex-direction: colum;
-  }
-  .survey2 {
-    flex-direction: colum;
-}
-.survey3 {
-  flex-direction: colum;
-}
-.survey4 {
-  flex-direction: colum;
-}
+
     form {
         width: 100%;
         max-width: 100px;
@@ -262,23 +261,23 @@
 
 
 
-  /* სიახლეების გვერდი */
+  /* სიახლეების გვერდი
 
   @media (max-width: 768px) {
     .container__item {
-      flex-basis: 100%; /* მცირე ეკრანზე ერთ ხაზზე */
-    }
+      flex-basis: 100%; მცირე ეკრანზე ერთ ხაზზე */
+    /* }
   }
 
   @media (max-width: 768px) {
-    .container__item1 {
-      flex-basis: 100%; /* მცირე ეკრანზე ერთ ხაზზე */
-    }
-  }
+    .container__item1 { */
+      /* flex-basis: 100%; მცირე ეკრანზე ერთ ხაზზე */
+    /* }
+  } */
 
   /* Mobile Responsive  სიახლეების გვერდი, bem მეთოდოლოგია*/
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .container__item--quote {
       width: 100%;
     }
@@ -287,7 +286,7 @@
     .container__item1--quote {
       width: 100%;
     }
-  }
+  } */
 
 
 
@@ -407,5 +406,37 @@
     @media (min-width: 768px) {
   #hidden-part {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* newv.html */
+
+@media (max-width: 420px) {
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container__item--quote {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  iframe.container__text {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* რომ არ გახდეს ძალიან დიდი */
+  }
+
+  .container__title {
+    font-size: 18px;
+    text-align: center;
   }
 }
