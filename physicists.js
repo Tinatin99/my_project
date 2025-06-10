@@ -1,10 +1,4 @@
-const hiddenPart = document.getElementById("hidden-part");
-const showMoreBtn = document.getElementById("showMoreBtn");
 
-showMoreBtn.addEventListener("click", () => {
-  hiddenPart.classList.toggle("hidden");
-  showMoreBtn.textContent = hiddenPart.classList.contains("hidden") ? "მეტის ჩვენება" : "დამალვა";
-});
 
 
 const hiddenPart1 = document.getElementById("hidden-part1");
@@ -25,7 +19,34 @@ showMoreBtn2.addEventListener("click", () => {
 
 
 // document.getElementById("toggle-button").addEventListener("click", function () {
-//   const hiddenPart = document.getElementById("hidden-part");
-//   hiddenPart.classList.toggle("hidden");
-//   this.textContent = hiddenPart.classList.contains("hidden") ? "მეტი მეცნიერები" : "ნაკლები მეცნიერები";
+//   const hiddenPart3 = document.getElementById("hidden-part3");
+//   hiddenPart3.classList.toggle("hidden");
+//   this.box1 = hiddenPart3.classList.contains("hidden") ? "მეტი მეცნიერები" : "ნაკლები მეცნიერები";
 // });
+
+
+// const hiddenPart3 = document.getElementById("hidden-part3");
+// const showMoreBtn3 = document.getElementById("showMoreBtn3");
+
+// showMoreBtn3.addEventListener("click", () => {
+//   hiddenPart3.classList.toggle("hidden");
+//   showMoreBtn3.textContent = hiddenPart3.classList.contains("hidden") ? "მეტის ჩვენება" : "დამალვა";
+// });
+
+// const hiddenPart3 = document.getElementById("hidden-part3");
+// const showMoreBtn3 = document.getElementById("showMoreBtn3");
+
+// showMoreBtn3.addEventListener("click", () => {
+//   hiddenPart3.classList.toggle("hidden");
+//   showMoreBtn3.textContent = hiddenPart3.classList.contains("hidden") ? "მეტის ჩვენება" : "დამალვა";
+// });
+
+
+const hiddenPart3 = document.getElementById("hidden-part3");
+const showMoreBtn3 = document.getElementById("showMoreBtn3");
+
+showMoreBtn3.addEventListener("click", () => {
+  hiddenPart3.classList.toggle("hidden");
+  showMoreBtn3.textContent = hiddenPart3.classList.contains("hidden") ? "მეტის ჩვენება" : "დამალვა";
+});
+
